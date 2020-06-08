@@ -1,0 +1,40 @@
+#+STARTUP: SHOWALL
+* OOP (Object Oriented Programming)
+
+** What is it
+
+   Abstraction is the basic.
+   we can abstract things as object.
+   while we're getting into the middle of the `soluction space` and 
+   `the problem space`, we can abstract the problem into some 
+   seperate Object and solve the problem.
+
+** Why 
+   
+   With OOP, we can reduce the software's complexity, and 
+   we can maintain project easily.
+   
+** How
+
+   Every OOP should have these properties
+   - Encapsulation 
+     we can hide the implementation from outside
+   - Inheritance
+     we can reuse the code
+   - Polymorphism
+     we can dynamic run code
+   - Abstraction
+     abstraction the problems
+
+   Class and Object
+   we define new ADT(abstract data type) with class
+   and we create new object with new keyword which is 
+   the instance of the class
+
+** Conclusion
+   
+   OOP can solve problem in some kind of scope but not fits all.
+   So there are other methods
+   - functional programming
+   - structured programming
+   - imperative programming

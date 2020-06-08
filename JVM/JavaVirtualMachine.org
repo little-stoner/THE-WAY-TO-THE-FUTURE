@@ -1,0 +1,141 @@
+* Java Virtual Machine
+
+  1. specification
+  2. implementation (java runtime environment)
+  3. instance
+
+** Why JVM
+   JVM is an abstract computing machine that enables a computer to run a java program.
+   cross-platform
+
+** What JVM do
+   JVM load the code, verify the code, execute the code
+       manage memory (from os, heap compacting and GC)
+       provide runtime environment
+   
+** Java (JVM) Memory Structure
+   
+    |--------------------------|
+    | Heap   | No-Heap | Other |
+    | Memory | Memory  |       |
+    |--------------------------|
+
+*** Heap Memory
+    run time data area from which the memory for all java class instances and arrays is allocated.
+    Heap is created when JVM starts up and may increase or decrease in size while app runs.
+    The size of heap can be specified using 
+        -Xms12M  : heap initail memory size
+        -Xmx24M  : heap max memory size (default is 64M)
+
+**** JVM Heap Memory Structure
+     
+     
+     |------+----+----+------------+------|
+     |      |    |    |            |      |
+     | Eden | S0 | S1 | Old Memory | Perm |
+     |      |    |    |            |      |
+     |------+----+----+------------+------|
+
+     Heap is  divided into two parts : young generation and old generation
+
+***** Young Genration
+      a part of the heap reserved for the allocation of new objects.
+      if young generation if full, GC starts working to move old-enough objects to old genration
+      THE GC is called *Minor GC*
+      Young Genration is divided into three parts: Eden Memory, Two Survivor Memory.
+
+      -- tips:
+         1. Most of the newly created objects are located in the Eden Memory space
+         2. When Eden space is filled with objects, Minor GC is performed and all the survivor objects are moved to one of the survivor spaces
+         3. Minor GC also checks the survivor objects and moves them to the other survivor space. So at a time, one of the survivor space is always empty
+         4. Objects that have survived many cycles of GC, are moved to the old generation memory space. Usually, it is done by setting a threshold for the age of the nursery objects before they become eligible to promote to the old generation
+
+***** Old generation
+      When the old generation becomes full, garbage is collected there and the process is called as old collection. Old generation memory contains the objects that are long-lived and survived after many rounds of Minor GC. Usually, garbage collection is performed in Old generation memory when it’s full. Old generation garbage collection is called as Major GC and usually takes longer. The reasoning behind a nursery is that most objects are temporary and short-lived.
+
+***** New Features
+      Recent releases include a part of nursery called as keep area and it is reserved. The keep area contains the most recently allocated objects in the nursery and is not garbage collected until the next young generation. This prevents objects from being promoted just because they were allocated right before a young collection is started.
+
+*** No-Heap Memory
+    Perm
+    created at the JVM startup 
+    store per-class structures such as runtime constant pool, field and method data, and the code for methods 
+    and constructors, as well as interned Strings.
+    -XX:MaxPermSize=64M (default is 64M)
+
+***** Permanent Genration (Replaced by Metaspace since Java8)
+      Permanent Generation or “Perm Gen” contains the application metadata required by the JVM to describe the classes and methods used in the application
+      Perm Gen objects are garbage collected in a full garbage collection.
+***** Metaspace
+      With Java 8, there is no Perm Gen, which means there is no more “java.lang.OutOfMemoryError: PermGen” space problems. Unlike Perm Gen which resides in the Java heap, Metaspace is not part of the heap. Most allocations of the class metadata are now allocated out of native memory. Metaspace by default auto increases its size (up to what the underlying OS provides), while Perm Gen always has fixed maximum size. Two new flags can be used to set the size of the metaspace, they are: “-XX:MetaspaceSize” and “-XX:MaxMetaspaceSize”. The theme behind the Metaspace is that the lifetime of classes and their metadata matches the lifetime of the classloaders. That is, as long as the classloader is alive, the metadata remains alive in the Metaspace and can’t be freed.
+
+*** Other
+    store the JVM code itself, JVM internal structure, data etc.
+
+
+** Cache Code
+   When a Java program is run, it executes the code in a tiered manner. In the first tier, it uses the client compiler (C1 compiler) in order to compile the code with instrumentation. The profiling data is used in the second tier (C2 compiler) for the server compiler, to compile that code in an optimized manner. The tiered compilation is not enabled by default in Java 7, but is enabled in Java 8.
+
+The Just-In-Time (JIT) compiler stores the compiled code in an area called code cache. It is a special heap that holds the compiled code. This area is flushed if its size exceeds a threshold and these objects are not relocated by the GC.
+
+Some of the performance issues and the problem of the compiler not getting re-enabled has been addressed in Java 8 and one of the solution to avoid these issues in Java 7 is to increase the size of the code cache up to a point never being reached.
+
+
+** Method Area
+   Method Area is part of space in the Perm Gen and used to store class structure (runtime constants and static variables) and code for methods and constructors
+
+** Memory Pool
+   Memory Pools are created by JVM memory managers to create a pool of immutable objects. Memory Pool can belong to Heap or Perm Gen, depending on JVM memory manager implementation.
+
+** Runtime Constant Pool
+   Runtime constant pool is a per-class runtime representation of a constant pool in a class. It contains class runtime constants and static methods. Runtime constant pool is part of the method area.
+
+** Java Stack Memory
+   Java stack memory is used for the execution of a thread. They contain method-specific values that are short-lived and references to other objects in the heap that is getting referred from the method
+
+
+** Java Heap Memory Switches
+
+   VM Switch	      |                               VM Switch Description
+   -------------------------------------------------------------------------------------------------------------------------------------------
+   –Xms          	  |  For setting the initial heap size when JVM starts
+   -Xmx	              |  For setting the maximum heap size
+   -Xmn	              |  For setting the size of young generation, rest of the space goes for old generation
+   -XX:PermGen	      |  For setting the initial size of the Permanent Generation Memory
+   -XX:MaxPermGen	  |  For setting the maximum size of Perm Gen
+   -XX:SurvivorRatio  |  For providing ratio of Eden space, for example, if young generation size is 10m and VM switch is –XX:SurvivorRatio=2 
+                         then 5m will be reserved for Eden space and 2.5m each for both the Survivor spaces. The default value is 8
+   -XX:NewRatio	      |  For providing ratio of old/new generation sizes. The default value is 2
+   --------------------------------------------------------------------------------------------------------------------------------------------
+
+
+** Garbage Collection
+   Garbage Collection is the process of freeing space in the heap for the allocation of new objects. One of the best features of Java is automatic garbage collection. Garbage Collector is the program running in the background that looks into all the objects in the memory and find out objects that are not referenced by any part of the program. All these unreferenced objects are deleted and space is reclaimed for allocation to other objects. One of the basic ways of garbage collection involves three steps:
+    - Marking: This is the first step where garbage collector identifies which objects are in use and which ones are not in use
+    - Normal Deletion: Garbage collector removes the unused objects and reclaims the free space to be allocated to other objects
+    - Deletion with compacting: For better performance, after deleting unused objects, all the survived objects can be moved to be together. This will increase the performance of allocation of memory to newer objects
+
+** JAVA Garbage Collection Type
+   There are five types of garbage collection types that we can use in our applications. We just need to use JVM switch to enable the garbage collection strategy for the application.
+**** Serial GC (-XX:+UseSerialGC)
+      Serial GC uses the simple mark-sweep-compact approach for young and old generations garbage collection that is, Minor and Major GC
+**** Parallel GC (-XX:+UseParallelGC)
+     Parallel GC is same as Serial GC except that, it spawns N threads for young generation garbage collection where N is the number of CPU cores in the system. We can control the number of threads using –XX:ParallelGCThreads=n JVM option. This is JVM’s default collector in JDK 8.
+**** Parallel Old GC (-XX:+UseParallelOldGC)
+     This is the same as Parallel GC except that it uses multiple threads for both young generation and old generation garbage collection
+**** Concurrent Mark Sweep (CMS) Collector (-XX:+UseConcMarkSweepGC)
+     CMS is also referred as concurrent low pause collector. It does the garbage collection for the old generation. CMS collector tries to minimize the pauses due to garbage collection by doing most of the garbage collection work concurrently within the application threads. CMS collector on the young generation uses the same algorithm as that of the parallel collector. This garbage collector is suitable for responsive applications where we can’t afford longer pause times. We can limit the number of threads in CMS collector using –XX:ParallelCMSThreads=n JVM option
+**** G1 Garbage Collector (-XX:+UseG1GC)
+     The garbage first or G1 Garbage Collector is available from Java 7 and its long term goal is to replace the CMS collector. The G1 collector is a parallel, concurrent and incrementally compact low-pause garbage collector. Garbage first collector doesn’t work like other collectors and there is no concept of young and old generation space. It divides the heap space into multiple equal-sized heap regions. When a garbage collector is invoked, it first collects the region with lesser live data, hence “Garbage First”.
+     G1 is the default garbage collector in JDK 9.
+
+** Monitoring of Memory Use and GC Activity
+   Memory shortage is often the cause of instability and unresponsiveness in Java applications. Consequently, we need to monitor the impact of garbage collection on response time and memory usage to ensure both stability and performance. However, monitoring memory utilization and garbage collection times is not enough, as these two elements alone do not tell us if the application response time is affected by garbage collection. Only GC suspensions affect response time directly, and a GC can also run concurrent to the application. We, therefore, need to correlate the suspensions caused by garbage collection with the application’s response time. Based on this we need to monitor the following:
+
+
+
+* Link
+  https://betsol.com/java-memory-management-for-java-virtual-machine-jvm/
+  http://www.cs.umd.edu/~pugh/java/memoryModel/index.html#reference
+  https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
+  https://medium.com/platform-engineer/understanding-java-memory-model-1d0863f6d973
