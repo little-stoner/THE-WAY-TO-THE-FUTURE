@@ -1,6 +1,7 @@
 # VI
 viberring's interview prepare
 
+
 # with the hint i will figure something out
 # questions
 https://www.zhihu.com/question/60949531  
@@ -17,3 +18,8 @@ https://github.com/doocs/advanced-java
 https://github.com/crossoverJie/JCSprout  
 https://github.com/aalansehaiyang/technology-talk  
 https://github.com/frank-lam/fullstack-tutorial  
+
+
+# Think in Jav
+http://greggordon.org/java/tij4/solutions.htm
+https://lingcoder.github.io/OnJava8/#/
