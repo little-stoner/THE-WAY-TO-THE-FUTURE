@@ -1,7 +1,7 @@
 /**
 
    This is about String 
-
+   link: https://www.cnblogs.com/aspirant/p/9193112.html
  */
 
 import java.util.*;
@@ -39,6 +39,15 @@ public class StringDemo {
         System.out.println(" Add A success ? " + set.add(A));
         // add B will fail
         System.out.println(" Add B success ? " + set.add(B));
+
+        //
+        String a1 = "hello";
+        String a2 = "world";
+        String a3 = "helloworld";
+        System.out.println(s3 == s1 + s2);                  // false
+        System.out.println(s3.equals(s1+s2));               // true
+        System.out.println(s3 == "hello" + "world");        // true
+        System.out.println(s3.equals("hello" + "world"));   // true
         
     }
     
