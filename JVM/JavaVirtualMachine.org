@@ -1,3 +1,4 @@
+#+STARTUP: SHOWALL
 * Java Virtual Machine
 
   1. specification

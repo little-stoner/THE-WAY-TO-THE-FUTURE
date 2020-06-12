@@ -1,0 +1,10 @@
+#+STARTUP: SHOWALL
+* Why Equals and HashCode method in Object matters ?
+
+
+** When you should not override the Equals method?
+
+** when it's appropriate to override equals ?
+
+** Why hashCode matters ?
+
