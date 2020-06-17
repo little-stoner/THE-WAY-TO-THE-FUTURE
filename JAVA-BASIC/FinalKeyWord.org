@@ -1,0 +1,101 @@
+#+STARTUP: SHOWALL
+
+
+Link: https://www.geeksforgeeks.org/final-keyword-java/
+
+
+* Final Key Word
+  
+  Final keyword is a non-access modifer.
+  Final is only used for *variable* *method* *class*
+
+  Final Variable --------> To create constant variables
+  Final Methods  --------> Prevent Method Overriding
+  Final Classed  --------> Prevent Inheritance
+
+** Final Variable
+   When a variable is declared with *final*, its value can't be modified, essentially a constant.
+   Also, you must initialize a final variable.
+   If the final variable is a reference, then you cannot re-bound the variable to another object,
+   but internal state of that object point by the final variable can be changed.
+
+   #+BEGIN_SRC java
+   final int[] a = new int[] { 1, 2, 3 };
+   // we can't assign a to another object but we can change the value in a
+   a = new int[] { 3, 4, 5 }; // you can't do this
+   a[0] = 9;                  // you can do this 
+   #+END_SRC
+   #+BEGIN_SRC java
+   final int b = 1; // you can not change the value of b
+   final int c;     // you must initial the value of c otherwise compiler will throw compilre-time error
+   #+END_SRC
+
+*** Initialize a final variable
+
+    1. initialize a final variable when it is declared.
+    2. initialize in `instance-initializer block` or inside constructor
+    3. initialize inside `static block`
+
+    #+BEGIN_SRC java
+    class KB {
+        final static f;
+        final int g, h;
+        static {
+            f = 1
+            System.out.println("initial f");
+        }
+        public KB() {
+            g = 2;
+            System.out.println("initial g");
+        }
+        {
+            h = 3;
+            System.out.println("initial h");
+        }
+        
+        // local final variable
+        // you must initialize once you use it.
+        public void t() {
+            final ink q;
+        }
+
+        public static void main(String[] args) {
+            KB kb = new KB();
+            // what will print out ????
+        }
+    }
+    #+END_SRC
+
+
+** Final Method
+   A final method cannot be overridden.
+   #+BEGIN_SRC java
+   class C {
+       final void m() {
+            
+       }
+   }
+
+   class D extends C {
+      void m() {
+        
+      }
+   }
+   #+END_SRC
+   
+
+
+** Final Class
+   A Final class cannot be extended (inherited)
+   1. you can prevent a class to be inherited
+   2. you can make a class immutable
+   #+BEGIN_SRC java
+   final class A {}
+   class B extends A {}
+   #+END_SRC
+   
+
+
+* Usage
+
+  The only difference between a normal variable and a final variable is that we can re-assign value to a normal variable but we cannot change the value of a final variable once assigned. Hence final variables must be used only for the values that we want to remain constant throughout the execution of program.

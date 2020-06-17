@@ -1,0 +1,30 @@
+#+STARTUP: SHOWALL
+
+* Access and Non Access Modifiers in Java
+
+
+** Access Modifiers
+   
+**** public
+
+**** private
+
+**** protected
+
+**** default
+
+** Non-access modifiers
+
+**** static
+
+**** final
+
+**** abstract
+
+**** synchronized
+
+**** transient
+
+**** volatile
+
+**** natice
