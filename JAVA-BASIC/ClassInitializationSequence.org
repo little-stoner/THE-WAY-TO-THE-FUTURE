@@ -1,0 +1,166 @@
+#+STARTUP: SHOWALL
+
+Link: https://www.geeksforgeeks.org/order-execution-initialization-blocks-constructors-java/
+Link: https://www.cnblogs.com/jackyrong/archive/2008/08/12/1266161.html
+
+* Order of execution of Initializtion blocks and Constructors
+
+  In a Java program, operations can be performed on methods, constructors and initialization blocks
+
+  1. Instance Initialization Block
+  2. Initializer block
+  3. Constructors
+
+** Order
+   static initialization blocks -> initialization blocks -> instance initialization blocks
+
+   #+BEGIN_SRC java
+   public class  ClassInitializationSequence {
+
+       public static void main(String[] args) {
+            new KB();
+            System.out.println("======================");
+            new KB(1);
+        }
+
+    }
+
+
+    class KB {
+
+        KB() {
+            System.out.println(" No argument constructor");
+        }
+    
+        KB(int i) {
+            System.out.println(" ONE argument constructor, i = " + i);
+        }
+ 
+        static {
+            System.out.println("1st static init");
+        }
+
+        {
+            System.out.println("1st instance init");
+        }
+        {
+            System.out.println("2nd instance init");
+        }
+
+        static {
+            System.out.println("2nd static init");
+        }
+    
+   }
+   #+END_SRC
+   
+   There are some tricky in below code block
+   #+BEGIN_SRC java
+   class T {
+       static {
+           System.out.println(" static block initialization");
+           initialize();
+       }
+       private static int sum;
+       public static int getSum() {
+           initialize();
+           return sum;
+       }
+       private static boolean initialized = false;
+       private static void initialize() {
+           if (!initialized) {
+               for (int i=0; i < 100; i++) {
+                   sum += i;
+               }
+               initialized = true;
+           }
+       }
+   }
+   #+END_SRC
+
+   #+BEGIN_SRC java
+   public class T {
+       public static void main(String[] args) {
+           System.out.println(G.hello_world);
+           G.test();
+       }
+   }
+   class G {
+       static {
+           System.out.println("init G");       
+       }
+       public static final String hello_world = "hello world";
+       public static void test() {
+           System.out.println("this is a test");           
+       }
+   }
+   #+END_SRC
+
+   #+BEGIN_SRC java
+   public class T {
+       private static V v = new V();
+       static {
+           System.out.println("static block");
+       }
+       {
+           System.out.println("instacne block");
+       }
+       private W w = new W();
+       public class T {
+           System.out.println("T constructor");
+       }
+       public static void main(String[] args) {
+           System.out.println("T main ===>");
+           new T();
+       }
+   }
+   class V {
+       public V() { 
+           System.out.println("V constructor");
+       }
+   }
+   class W {
+       public W() {
+           System.out.println("W constructor");
+       }
+   }
+   #+END_SRC
+
+   initialization order with inheritance
+   #+BEGIN_SRC java
+   public class T {
+       public static String p_StaticField = "Parent(T) static variable";
+       public String p_Field = "Parent(T) variable";
+       static {
+           System.out.println(p_StaticField);
+           System.out.println("Parent(T)'s Static Block");           
+       }
+       {
+           System.out.println(p_Field);
+           System.out.println("Parent(T)'s instance Block");           
+       }
+       public T() {
+           System.out.println("Parent(T)'s constructor");       
+       }
+   }
+   public class V extends T {
+       public static String s_StaticField = "child static varibale";
+       public String s_Field = "child variable";
+       static {
+           System.out.println(s_StaticField);
+           System.out.println("child static block");           
+       }
+       {
+           System.out.println(s_Field);       
+           System.out.println("child instance block");
+       }
+       public V() {
+           System.out.println("child constructor");       
+       }
+
+       public static void main(String[] args) {
+           System.out.println("main >>");       
+           new T();
+       }
+   }
+   #+END_SRC
