@@ -18,15 +18,17 @@ class Exception2 extends Exception {
     }
 }
 
-public class TryCatchFinnallyDemo {
-    public static void main(String[] args) {
-        try {
-            test();
-        } catch (Exception1 e) {
-            System.out.println(e.getMessage());
-        } catch (Exception2 e) {
-            System.out.println(e.getMessage());
-        }
+public class TryCatchFinallyDemo {
+    public static void main(String[] args) throws Exception {
+        // try {
+        //     test();
+        // } catch (Exception1 e) {
+        //     System.out.println(e.getMessage());
+        // } catch (Exception2 e) {
+        //     System.out.println(e.getMessage());
+        // }
+        String r = rt();
+        System.out.println(r);        
     }
 
     public static void test() throws Exception1, Exception2 {
@@ -44,6 +46,21 @@ public class TryCatchFinnallyDemo {
                 // 
                 // throw e;
             }
+        }
+    }
+
+    //
+    public static String rt() throws Exception {
+        try {
+            System.out.println("into normal >>>>>>>>>>");
+            throw new Exception("1");
+            //return "normal";
+        } catch (Exception e) {
+            System.out.println("into exception >>>>>>>>>>");
+            return "exception";
+        } finally {
+            System.out.println("into finally >>>>>>>>>>");
+            return "finally";
         }
     }
 }
