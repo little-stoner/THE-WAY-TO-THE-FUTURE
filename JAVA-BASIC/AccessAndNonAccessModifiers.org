@@ -28,3 +28,8 @@
 **** volatile
 
 **** natice
+
+
+#+BEGIN_SRC plantuml :file t.png
+bob -> alice
+#+END_SRC

@@ -1,0 +1,30 @@
+#+STARTUP: SHOWALL
+
+* Static Keyword
+
+  static keyword can be used with class, variable, method and block.
+
+** static class
+   1. Nested static class doesn't need reference of Outer class
+   2. A static class cannot access non-static members of the Outer class
+   #+BEGIN_SRC java
+   class KB {
+       static class GI {
+           
+       }
+   }
+   #+END_SRC
+
+** static method
+
+** static variable
+   #+BEGIN_SRC java
+   public static int i;
+   #+END_SRC
+
+** static block
+
+   #+BEGIN_SRC java
+   static { System.out.println("static block"); }
+   static { System.out.println("static block 2"); }
+   #+END_SRC
