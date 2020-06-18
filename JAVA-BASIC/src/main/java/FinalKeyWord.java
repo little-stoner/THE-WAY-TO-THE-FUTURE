@@ -4,7 +4,7 @@ public class FinalKeyWord {
 
 
     public static void main(String[] args) {
-        KB kb = new KB();
+        KBR kb = new KBR();
         System.out.println(" a[]: " + Arrays.toString(kb.a));
         System.out.println(" a[2]: " + kb.a[2]);
         // you cant modify the final variable;
@@ -23,7 +23,7 @@ public class FinalKeyWord {
     
 }
 
-class KB {
+class KBR {
     final int[] a = new int[] { 1, 2, 3 };
     final int   b = 0;
     final String c = "gigi";
@@ -31,7 +31,7 @@ class KB {
     final int f, h;
     final static int g;
 
-    public KB() {
+    public KBR() {
         f = 1;
         System.out.println("initial f");
     }

@@ -16,8 +16,8 @@ class People {
     private String sex;
 
     //
-    @Override public equals(Object o) {
-        if ()
+    @Override public boolean equals(Object o) {
+        return false;
     }
     
 }

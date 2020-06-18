@@ -1,3 +1,5 @@
+package EffectiveJava3.item10;
+
 import java.util.*;
 import java.util.Objects;
 

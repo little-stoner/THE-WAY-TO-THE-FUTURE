@@ -33,3 +33,6 @@
 #+BEGIN_SRC plantuml :file t.png
 bob -> alice
 #+END_SRC
+
+#+RESULTS:
+[[file:t.png]]

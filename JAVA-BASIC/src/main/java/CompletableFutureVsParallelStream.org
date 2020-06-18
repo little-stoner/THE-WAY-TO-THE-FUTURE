@@ -1,0 +1,160 @@
+#+STARTUP: SHOWALL
+
+Link: https://www.jdon.com/idea/java/java-8-completablefuture-vs-parallel-stream.html
+      https://blog.csdn.net/u014351782/article/details/53812241
+      https://www.cnblogs.com/taiyonghai/p/9397394.
+      https://www.cnblogs.com/dennyzhangdd/p/7010972.html
+      https://www.deadcoderising.com/java8-writing-asynchronous-code-with-completablefuture/
+      https://www.baeldung.com/java-completablefuture
+
+* CompletableFuture && ParallelStream
+
+  You can make you code to run faster if you use multiple thread (or goroutine in go),
+  But is it always the truth?
+
+  - The number of threads to choose (depends mostly on the operatin and the cpu cores)
+    #+BEGIN_SRC markdown
+    1. CPU intensive operations should use a number of threads lower than or equal to the number of cores.
+    2. IO intensive operations HTTP request can use a higher number of threads.
+    #+END_SRC
+
+** CompletableFuture
+   #+BEGIN_SRC java
+   public class CompletableFuture<T> extends Object implements Future<T>, CompletionStage<T>
+   #+END_SRC
+**** Future   
+     future's get method is blocking until the computation is done.
+**** CompletionStage
+     A CompletionStage is a promise.
+     
+   
+   These code execute by the same thread as their predecessor.
+   #+BEGIN_SRC java
+   CompletableFuture.supplyAsync(this::sendMSg);
+
+   // thenAccept doesnot pass value cause it takes a Consumer and Consumer doesnot return a value.
+   CompletableFuture.supplyAsync(this::sendMsg)
+                    .thenAccept(this::notify);
+
+
+   // thenApply takes a Function as argument which return a value.
+   CompletableFuture.supplyAsync(this::findReceiver)
+                    .thenApply(this::sendMsg)
+                    .thenAccept(this::notify);
+   #+END_SRC
+
+   Using different Thread with async suffix
+   #+BEGIN_SRC java
+   CompletableFuture<String> receiver 
+                           = CompletableFuture.supplyAsync(this::findReceiver);
+   receiver.thenApply(this::sendMsg);
+   receiver.thenApply(this::sendOtherMsg);
+
+   receiver.thenApplyAsync(this::sendMsg);
+   receiver.thenApplyAsync(this::sendOtherMsg);
+   #+END_SRC
+
+
+   Deal with Exception happends
+   #+BEGIN_SRC java
+   CompletableFuture.supplyAsync(this::failingMsg)
+                    .exceptionally(ex -> new Result(Status.FAILED))
+                    .thenAccept(this::notify);
+   #+END_SRC
+
+   Handle timeout
+   #+BEGIN_SRC java
+   CompletableFuture.supplyAsync(this::hangingMsg)  
+                 .orTimeout(1, TimeUnit.MINUTES);
+               
+   CompletableFuture.supplyAsync(this::hangingMsg)  
+                 .completeOnTimeout(new Result(Status.TIMED_OUT),1, TimeUnit.MINUTES);
+   #+END_SRC
+
+   Callback depending on multiple computations
+   #+BEGIN_SRC java
+   CompletableFuture<String> to =  
+        CompletableFuture.supplyAsync(this::findReceiver);
+
+   CompletableFuture<String> text =  
+        CompletableFuture.supplyAsync(this::createContent);
+
+   to.thenCombine(text, this::sendMsg);  
+   #+END_SRC
+
+   Callback dependent on one or the other
+   #+BEGIN_SRC java
+   CompletableFuture<String> firstSource =  
+        CompletableFuture.supplyAsync(this::findByFirstSource);
+
+   CompletableFuture<String> secondSource =  
+        CompletableFuture.supplyAsync(this::findBySecondSource);
+
+   firstSource.acceptEither(secondSource, this::sendMsg);  
+   #+END_SRC
+
+** ParallelStream
+
+** Example
+
+   first version
+   #+BEGIN_SRC java
+   class T {
+       public static void main(String[] args) {
+           List<String> promotions = Arrays.asList("Pizza Discount", "Beer Discount", "Coke Discount", "Service Discount");
+           old(promotions);
+       }
+       // the code will execute in sequence and we will wait for a lot of time
+       public static void old(List<String> promotions) {
+           for (String promotion : promotions) {
+               promotion = promotion + "30%";
+               promotion = promotion + " Valid only today ";
+               sendEmailToCustomers(promotion);
+           }
+           sendEmailToTheBoss("Today discount is 39%");
+       }
+
+       public static void sendEmailToCustomer(String promotion) {
+           try {
+               Thread.sleep(1000);
+               System.out.println(" Email sent to Customer for promotion: " + promotion);
+           } catch (Exception e) {
+               
+           }
+       }
+       public static void sendEmailToTheBoss(String promotion) {
+           try {
+               Thread.sleep(1000);
+               System.out.println(" Email sent to Boss for promotion: " + promotion);
+           } catch (Exception e) {
+               
+           }
+       }
+   }
+   #+END_SRC
+
+   second version
+   #+BEGIN_SRC  java
+   public static void ps(List<String> promotions) throws InterruptedException {
+       promotions.parallelStream()
+                       .map(promotion -> promotion + " 30% ")
+                       .map(promotion -> promotion + " Valid only Today ")
+                       .forEach(promotion -> sendEmailToCustomers(promotion));
+       sendEmailToTheBoss("Today discount was 30%");
+   }
+   #+END_SRC
+
+   third version
+   #+BEGIN_SRC java
+   public static void cf(List<String> promotions) throws InterruptedException {
+       CompletableFuture[] futures = promotions.stream()
+                                     .map(promotion -> CompletableFuture.supplyAsync(() -> promotion + " 30%")
+                                     .map(future -> future.thenApplyAsync(pro -> pro + " Valid only Today"))
+                                     .map(future -> future.thenAcceptAsync(pro -> {sendEmailToCustomers((String)pro);}))
+                                     .toArray(CompletableFuture[]::new);
+       sendEmailToTheBoss("Today discount was 30%");
+       CompletableFuture.allOf(futures).join();
+   }
+   #+END_SRC
+
+** Summary
