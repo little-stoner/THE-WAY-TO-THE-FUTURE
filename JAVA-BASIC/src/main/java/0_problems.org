@@ -1,0 +1,22 @@
+#+STARTUP: SHOWALL
+
+* Problem collect
+
+
+**** Class Load Order
+
+**** Final keyword
+
+**** Exception and finally
+
+**** CompetableFuture
+
+**** Random 
+
+**** BigDecimal
+
+**** JUC/ForkJoin
+
+**** Redis Transaction
+
+**** Java8 Stream
