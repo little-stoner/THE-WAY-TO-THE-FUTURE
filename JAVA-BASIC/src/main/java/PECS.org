@@ -1,0 +1,32 @@
+#+STARTUP: SHOWALL
+
+Link: https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+      https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java
+
+* PECS (Producer Extends Consumer Super)
+
+  extends : if you only pulling items from a generic collection, it is a producer and you should use extends
+  super   : if you are only stuffing items in, it is a consumer and you should use super.
+
+
+
+* extends
+  #+BEGIN_SRC java
+  List<? extends T>
+  List<? extends Number> foo;
+  //
+  List<? extends Number> foo = new ArrayList<Number>();
+  List<? extends Number> foo = new ArrayList<Integer>();
+  List<? extends Number> foo = new ArrayList<Double>();
+  
+  #+END_SRC
+
+* super
+
+  #+BEGIN_SRC java
+  List<? super T>
+  List<? super Integer> foo
+  List<? super Integer> foo = new ArrayList<Integer>();
+  List<? super Integer> foo = new ArrayList<Number>();
+  List<? super Integer> foo = new ArrayList<Object>();
+  #+END_SRC

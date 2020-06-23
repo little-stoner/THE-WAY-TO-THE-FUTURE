@@ -1,0 +1,8 @@
+#+STARTUP: SHOWALL
+
+
+* Generics
+      
+    Generics produce parameterized types
+    generic: pertaining or appropriate to large groups of classes
+  
