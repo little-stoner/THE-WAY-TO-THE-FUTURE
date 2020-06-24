@@ -1,0 +1,28 @@
+#+STARTUP: SHOWALL
+
+
+Link: https://www.baeldung.com/cron-expressions
+
+* CRON
+
+  the origin of the name *cron* is from the Greek work for time `chronos`
+
+
+** Explain
+
+     *        *       *             *           *           *            *       <command>
+  second   minutes  hour    day of the month  month   day of the week   year  execute command
+
+
+  <second> <minute> <hour> <day-of-month> <month> <day-of-week> <year> <command>
+
+  - * (all): happen for every time unit
+  - ? (any): it it utilized in the <day-of-month> and <day-of-week> fields to denote the arbitrary value -- neglect the field value
+  - - (range): determine the value range
+  - , (values): specify multiple values
+  - / (increment): specify the increment values
+  - L (last): 
+  - W (weekday): 
+  - # : 
+
+

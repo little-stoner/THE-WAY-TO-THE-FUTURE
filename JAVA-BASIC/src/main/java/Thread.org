@@ -1,0 +1,28 @@
+#+STARTUP: SHOWALL
+
+* Thread
+
+
+** What is thread ?
+
+
+** Concurrentcy && parallism
+
+** Thread in Java ?
+
+** 
+
+** 
+
+** 
+
+** 
+
+** 
+
+** 
+
+** 
+
+** what is interrupt doing ?
+   https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html
