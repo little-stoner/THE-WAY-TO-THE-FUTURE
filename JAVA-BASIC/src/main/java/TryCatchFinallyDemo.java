@@ -28,7 +28,7 @@ public class TryCatchFinallyDemo {
         //     System.out.println(e.getMessage());
         // }
         String r = rt();
-        System.out.println(r);        
+        System.out.println(r);
     }
 
     public static void test() throws Exception1, Exception2 {

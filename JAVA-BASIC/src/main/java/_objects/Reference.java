@@ -19,5 +19,5 @@ public class Reference {
     // also what is the difference
     String a = "a";
     String b = new String("b");
-    
+
 }

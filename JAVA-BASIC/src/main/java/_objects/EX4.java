@@ -16,7 +16,7 @@ public class EX4 {
         do_.b = false;
         System.out.println(" i: " + do_.i);
         System.out.println(" d: " + do_.d);
-        System.out.println(" b: " + do_.b);        
+        System.out.println(" b: " + do_.b);
     }
-    
+
 }

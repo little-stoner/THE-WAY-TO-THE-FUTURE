@@ -1,7 +1,6 @@
 /**
-
-   This is about String 
-   link: https://www.cnblogs.com/aspirant/p/9193112.html
+ * This is about String
+ * link: https://www.cnblogs.com/aspirant/p/9193112.html
  */
 
 import java.util.*;
@@ -30,8 +29,8 @@ public class StringDemo {
         String s3 = "abc";
         System.out.println(" s1 == s2 == s3 ? " + (s1 == s2 ? s2 == s3 : false));
         System.out.println(" s1.equals(s2).equals(s3) ? " +
-                           (s1.equals(s2) ? s2.equals(s3) : false)
-            );
+                (s1.equals(s2) ? s2.equals(s3) : false)
+        );
 
         //
         Set<String> set = new HashSet();
@@ -45,11 +44,11 @@ public class StringDemo {
         String a2 = "world";
         String a3 = "helloworld";
         System.out.println(s3 == s1 + s2);                  // false
-        System.out.println(s3.equals(s1+s2));               // true
+        System.out.println(s3.equals(s1 + s2));               // true
         System.out.println(s3 == "hello" + "world");        // true
         System.out.println(s3.equals("hello" + "world"));   // true
-        
+
     }
-    
+
 }
 

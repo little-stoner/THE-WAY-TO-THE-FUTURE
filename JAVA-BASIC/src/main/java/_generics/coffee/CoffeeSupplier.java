@@ -5,15 +5,19 @@ import java.util.Random;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-public class CoffeeSupplier implements Supplier<Coffee>, Iterable<Coffee>  {
+public class CoffeeSupplier implements Supplier<Coffee>, Iterable<Coffee> {
 
-    private Class<?> [] types = { Latte.class, Mocha.class, Cappuccino.class, Americano.class, Breve.class };
+    private Class<?>[] types = {Latte.class, Mocha.class, Cappuccino.class, Americano.class, Breve.class};
     private static Random rand = new Random(47);
 
-    public CoffeeSupplier(){}
+    public CoffeeSupplier() {
+    }
+
     private int size = 0;
 
-    public CoffeeSupplier(int sz) { size = sz; }
+    public CoffeeSupplier(int sz) {
+        size = sz;
+    }
 
     @Override
     public Coffee get() {

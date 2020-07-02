@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.stream.*;
 import java.util.function.*;
 import java.io.*;
+
 import _onjava.Timer;
 
 
@@ -22,21 +23,21 @@ public class Summing3 {
     static long basicSum(Long[] ia) {
         long sum = 0;
         int size = ia.length;
-        for (int i=0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             sum += ia[i];
         }
         return sum;
     }
 
     public static final int SZ = 100000000;
-    public static final long CHECK = (long)SZ * ((long)SZ + 1)/2;
-    
+    public static final long CHECK = (long) SZ * ((long) SZ + 1) / 2;
+
     public static void main(String[] args) throws IOException {
         System.out.println("CHECK : " + CHECK);
 
-        Long[] la = new Long[SZ+1];
-        Arrays.parallelSetAll(la, i -> (long)i);
-        
+        Long[] la = new Long[SZ + 1];
+        Arrays.parallelSetAll(la, i -> (long) i);
+
         timeTest("Array Stream", CHECK, () -> Arrays.stream(la).reduce(0L, Long::sum));
 
         timeTest("Array Stream Parallel", CHECK, () -> Arrays.stream(la).parallel().reduce(0L, Long::sum));
@@ -44,10 +45,10 @@ public class Summing3 {
         timeTest("Basic Sum", CHECK, () -> basicSum(la));
 
         timeTest("parallelPrefix", CHECK, () -> {
-                Arrays.parallelPrefix(la, Long::sum);
-                return la[la.length-1];
-            });
-        
+            Arrays.parallelPrefix(la, Long::sum);
+            return la[la.length - 1];
+        });
+
     }
 
 }

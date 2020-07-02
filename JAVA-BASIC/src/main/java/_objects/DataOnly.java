@@ -11,7 +11,7 @@ public class DataOnly {
 
     public String toString() {
         return "i = " + i + " d = " + d
-            + " b = " + b + " lt = " + lt;
+                + " b = " + b + " lt = " + lt;
     }
 
     public static void main(String[] args) {
@@ -22,11 +22,12 @@ public class DataOnly {
         d.lt.capacity = 999;
         System.out.println(d);
     }
-    
+
 }
 
 class LeftTank {
     int capacity;
+
     public String toString() {
         return capacity + "";
     }

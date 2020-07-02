@@ -1,6 +1,8 @@
 package _generics;
 
-class Bob {}
+class Bob {
+}
+
 public class Diamond {
     public static void main(String[] args) {
         GenericHolder<Bob> h3 = new GenericHolder<>();

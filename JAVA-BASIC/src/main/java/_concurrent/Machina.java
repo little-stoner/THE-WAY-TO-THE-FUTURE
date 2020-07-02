@@ -5,14 +5,20 @@ import _onjava.Nap;
 public class Machina {
     public enum State {
         START, ONE, TWO, THREE, END;
+
         State step() {
             if (equals(END)) return END;
             return values()[ordinal() + 1];
         }
     }
+
     private State state = State.START;
     private final int id;
-    public Machina(int id) { this.id = id; }
+
+    public Machina(int id) {
+        this.id = id;
+    }
+
     public static Machina work(Machina m) {
         //
         System.out.println("Thread : " + Thread.currentThread().getName());

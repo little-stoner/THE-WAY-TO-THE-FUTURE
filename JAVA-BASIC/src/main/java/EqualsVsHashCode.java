@@ -6,8 +6,7 @@
 
 public class EqualsVsHashCode {
 
-    
-    
+
 }
 
 class People {
@@ -16,8 +15,9 @@ class People {
     private String sex;
 
     //
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         return false;
     }
-    
+
 }

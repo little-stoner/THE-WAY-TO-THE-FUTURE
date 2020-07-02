@@ -7,6 +7,7 @@ import java.util.stream.IntStream;
 
 public class RandomList<T> extends ArrayList<T> {
     private Random rand = new Random(47);
+
     public T select() {
         return get(rand.nextInt(size()));
     }

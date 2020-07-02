@@ -18,14 +18,14 @@ public class FinalKeyWord {
         kb.a[1] = 9;
         System.out.println(" a[]: " + Arrays.toString(kb.a));
         kb.t();
-        kb.t();       
+        kb.t();
     }
-    
+
 }
 
 class KBR {
-    final int[] a = new int[] { 1, 2, 3 };
-    final int   b = 0;
+    final int[] a = new int[]{1, 2, 3};
+    final int b = 0;
     final String c = "gigi";
     private static int counter;
     final int f, h;
@@ -35,17 +35,19 @@ class KBR {
         f = 1;
         System.out.println("initial f");
     }
+
     static {
         g = 2;
         System.out.println("initial g");
     }
+
     {
         h = 3;
-        System.out.println("initial h");        
+        System.out.println("initial h");
     }
 
     public void t() {
-        System.out.println(">>>> ");        
+        System.out.println(">>>> ");
         final int k;
         // int j = 1;
         // System.out.println(j);             

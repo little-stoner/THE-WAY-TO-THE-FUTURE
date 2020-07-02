@@ -9,12 +9,8 @@ import _onjava.Rand;
 import _onjava.Timer;
 
 
-
-
-
 public class CollectionIntoStream {
 
-    
 
     public static void main(String[] args) throws IOException {
 
@@ -23,12 +19,12 @@ public class CollectionIntoStream {
         strings.forEach(System.out::println);
 
         String result = strings.stream().map(String::toUpperCase)
-                                        .map(s -> s.substring(2))
-                                        .reduce(":", (s1, s2) -> s1 + s2);
+                .map(s -> s.substring(2))
+                .reduce(":", (s1, s2) -> s1 + s2);
         System.out.println(result);
-        
-        
-    } 
-    
-    
+
+
+    }
+
+
 }

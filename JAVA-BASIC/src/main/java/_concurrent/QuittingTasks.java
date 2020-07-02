@@ -16,9 +16,9 @@ public class QuittingTasks {
         ExecutorService es = Executors.newCachedThreadPool();
         List<QuittableTask> tasks =
                 IntStream.range(1, COUNT)
-                .mapToObj(QuittableTask::new)
-                .peek(es::execute)
-                .collect(Collectors.toList());
+                        .mapToObj(QuittableTask::new)
+                        .peek(es::execute)
+                        .collect(Collectors.toList());
         new Nap(1);
         tasks.forEach(QuittableTask::quit);
         es.shutdown();

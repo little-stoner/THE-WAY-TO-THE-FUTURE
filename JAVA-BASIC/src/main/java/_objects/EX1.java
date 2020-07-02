@@ -1,9 +1,9 @@
 
 /**
-   Java Will Init primitive field.
-   plus: 
-       but java will not init primitives
-       of local variables.
+ * Java Will Init primitive field.
+ * plus:
+ * but java will not init primitives
+ * of local variables.
  */
 
 public class EX1 {
@@ -28,5 +28,5 @@ public class EX1 {
         ex1.kobe();
     }
 
-    
+
 }

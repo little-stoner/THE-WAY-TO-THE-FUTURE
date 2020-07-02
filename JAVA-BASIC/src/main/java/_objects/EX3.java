@@ -13,7 +13,7 @@ public class EX3 {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
     }
-    
+
 }
