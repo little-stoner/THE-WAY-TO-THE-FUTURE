@@ -20,4 +20,25 @@ public class Erased<T> {
 
     }
 
+    public void g(T i) {
+        System.out.println(i);
+        System.out.println(i.getClass());
+    }
+
+    public void h() {
+
+        System.out.println();
+        T t = (T) "AB";
+        System.out.println(t.getClass());
+    }
+
+    public static void main(String[] args) {
+
+        Erased<String> e = new Erased<>();
+        e.h();
+
+
+
+    }
+
 }
