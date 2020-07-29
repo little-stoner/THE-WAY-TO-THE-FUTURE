@@ -19,12 +19,14 @@ public class ParallelStreamPuzzle {
     }
 
     public static void main(String[] args) throws IOException {
-        List<Integer> x =
-                Stream.generate(new IntGenerator())
-                        .limit(10)
-                        .parallel() //
-                        .collect(Collectors.toList());
-        System.out.println(x);
+        for (int i = 0; i < 10; i++) {
+            List<Integer> x =
+                    Stream.generate(new IntGenerator())
+                            .limit(10)
+                            .parallel() //
+                            .collect(Collectors.toList());
+            System.out.println(x);
+        }
 
     }
 

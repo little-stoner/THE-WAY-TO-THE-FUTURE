@@ -14,7 +14,9 @@ public class CollectionIntoStream {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> strings = Stream.generate(new Rand.String(6)).limit(10).collect(Collectors.toList());
+        List<String> strings = Stream.generate(new Rand.String(6))
+                                    .limit(10)
+                                    .collect(Collectors.toList());
 
         strings.forEach(System.out::println);
 

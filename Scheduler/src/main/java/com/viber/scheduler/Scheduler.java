@@ -1,4 +1,4 @@
 package com.viber.scheduler;
 
-public class Scheduler {
+public interface Scheduler {
 }

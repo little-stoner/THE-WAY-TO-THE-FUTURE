@@ -1,4 +1,7 @@
 package com.viber.scheduler;
 
-public class JobFactory {
+import com.viber.scheduler.entity.Job;
+
+public interface JobFactory {
+    Job createJob();
 }

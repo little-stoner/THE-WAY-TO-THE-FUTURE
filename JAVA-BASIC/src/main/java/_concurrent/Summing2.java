@@ -29,7 +29,7 @@ public class Summing2 {
         return sum;
     }
 
-    public static final int SZ = 20000000;
+    public static final int SZ = 100000000;
     public static final long CHECK = (long) SZ * ((long) SZ + 1) / 2;
 
     public static void main(String[] args) throws IOException {

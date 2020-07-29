@@ -57,6 +57,7 @@ public class Covariant {
     }
 
     public static void main(String[] args) {
+
         array();
 
         List<Integer> a = List.of(1, 2, 3);

@@ -12,7 +12,7 @@ import java.nio.file.*;
 
 public class ParallelPrime {
 
-    static final int COUNT = 100000;
+    static final int COUNT = 1000000;
 
     public static boolean isPrime(long n) {
         return rangeClosed(2, (long) Math.sqrt(n)).
@@ -31,8 +31,17 @@ public class ParallelPrime {
                 .limit(COUNT)
                 .mapToObj(Long::toString)
                 .collect(Collectors.toList());
-        System.out.println(" spend time: " + duration(start));
-        Files.write(Paths.get("E:\\VI\\JAVA-BASIC\\src\\main\\java\\_concurrent\\prime.txt"), primes, StandardOpenOption.CREATE);
+        System.out.println(" 1::spend time: " + duration(start));
+        //Files.write(Paths.get("E:\\VI\\JAVA-BASIC\\src\\main\\java\\_concurrent\\prime.txt"), primes, StandardOpenOption.CREATE);
+
+        start = System.nanoTime();
+        primes = iterate(2, i -> i + 1)
+                //.parallel() // which make the stream to parallel (you can comment this to compare the time)
+                .filter(ParallelPrime::isPrime)
+                .limit(COUNT)
+                .mapToObj(Long::toString)
+                .collect(Collectors.toList());
+        System.out.println(" 2::spend time: " + duration(start));
 
     }
 
