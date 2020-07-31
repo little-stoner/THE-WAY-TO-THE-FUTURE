@@ -1,0 +1,58 @@
+#+STARTUP: SHOWALL
+
+* Spring JdbcTemplate batchUpdate Performance Problem
+
+** Problem Description
+   When I use batch update to update 1000 records, the time spent is kind of shocking about 90s.
+   
+   
+   Maybe I did not notice before.
+
+   
+   #+BEGIN_SRC java
+   System.out.println(">>>>>>>>>>>>>>>>>>> start: " + start);
+   List<Object[]> ids = new ArrayList<>();
+   int id = 17806887;
+   for (int i=0; i < 1000; i++) {
+       ids.add(new Object[]{9527, id+i});
+   }
+   System.out.println(" ++++++++++++++++++++++++++  " + ids.size());
+   jdbcTemplate.batchUpdate("UPDATE transaction_schedule_item set ach_provider_id = ? where id=?", ids);
+   System.out.println(">>>>>>>>>>>>>>>>>>> end. time: " + LocalDateTime.now() );
+   #+END_SRC
+
+
+   #+BEGIN_SRC java
+   System.out.println("=============================::: start :::" + LocalDateTime.now());
+   DataSource dataSource = jdbcTemplate.getDataSource();
+   Connection connection = dataSource.getConnection();
+   connection.setAutoCommit(false);
+   String sql = "UPDATE transaction_schedule_item set ach_provider_id = ? where id=?";
+   PreparedStatement ps = connection.prepareStatement(sql);
+   final int batchSize = 10000;
+   int count = 0;
+   id = 17806887;
+   for (int i=0; i < 10000; i++) {
+       ps.setInt(1, 99);
+       ps.setInt(2, id+i);
+       ps.addBatch();
+       ++count;
+       if (count % batchSize == 0 ||  count == 10000) {
+               ps.executeBatch();
+               ps.clearBatch();
+           }
+   }
+   connection.commit();
+   ps.close();
+
+   System.out.println("=============================::: end ::: " + LocalDateTime.now());
+   #+END_SRC
+
+
+** Problem Solving
+
+   Mysql will lock the table when execute the update statement ?
+   and every sql will be a transaction and this will slow down the process ?
+
+   But, Mysql should lock the row instead of the table?
+   

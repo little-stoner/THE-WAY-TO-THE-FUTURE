@@ -1,0 +1,11 @@
+#+STARTUP: SHOWALL
+
+* Spring JdbcTemplate batchUpdate Performance Problem
+
+** Problem Description
+   When I use batch update to update 1000 records, the time spent is kind of shocking about 90s 
+   
+   
+   Maybe I did not notice before.
+
+   
