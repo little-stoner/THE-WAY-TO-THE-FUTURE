@@ -1,6 +1,13 @@
 #+STARTUP: SHOWALL
 * Why Equals and HashCode method in Object matters ?
 
+*** Basic
+
+    hashCode: native method, return the object's memory location
+
+    if x.equals(y) is true, then x and y will have the same hashCode:
+        if x.equals(y): x.hashCode() = y.hashCode();
+
 
 ** When you should not override the Equals method?
 

@@ -4,6 +4,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class StickHolder {
+
     private static class Chopstick {}
     private Chopstick stick = new Chopstick();
     private BlockingQueue<Chopstick> holder = new ArrayBlockingQueue<>(1);
