@@ -136,7 +136,19 @@ Some of the performance issues and the problem of the compiler not getting re-en
 
 
 * Link
+  # JVM detail
   https://betsol.com/java-memory-management-for-java-virtual-machine-jvm/
-  http://www.cs.umd.edu/~pugh/java/memoryModel/index.html#reference
-  https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
+
+  https://medium.com/platform-engineer/understanding-jvm-architecture-22c0ddf09722
   https://medium.com/platform-engineer/understanding-java-memory-model-1d0863f6d973
+  
+  https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
+  https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
+
+  # java memory model
+  https://howtodoinjava.com/java/garbage-collection/java-memory-model
+  http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
+
+  # JVM officail
+  http://www.cs.umd.edu/~pugh/java/memoryModel/index.html#reference  
+  https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
