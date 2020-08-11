@@ -1,0 +1,15 @@
+#+STARTUP: SHOWALL
+
+* SQL MODE
+
+** Reason
+
+   when using group by or sum() count() etc, the mysql will not execute well
+
+
+** Solution
+
+
+** Resource
+   https://stackoverflow.com/questions/23921117/disable-only-full-group-by
+   

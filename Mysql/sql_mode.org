@@ -1,0 +1,27 @@
+#+STARTUP: SHOWALL
+
+* SQL MODE
+
+** Reason
+
+   when using group by or sum() count() etc, the mysql will not execute well
+
+
+** Solution
+**** ONE
+       #+BEGIN_SRC shell
+       SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+       #+END_SRC
+**** TWO
+     #+BEGIN_SRC shell
+     vim /etc/mysql/my.cnf
+     [mysqld]  
+     sql_mode = "STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+     restart mysql
+     #+END_SRC
+
+   
+
+** Resource
+   https://stackoverflow.com/questions/23921117/disable-only-full-group-by
+   
