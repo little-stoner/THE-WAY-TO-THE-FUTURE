@@ -1,0 +1,5 @@
+#+STARTUP: SHOWALL
+* Stream
+
+
+  I need be more familiar with java stream and Collectors and practice with it.
