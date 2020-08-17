@@ -2,6 +2,8 @@ package _jackson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.util.Optional;
+
 public class JacksonUtils {
 
     /**
@@ -17,6 +19,16 @@ public class JacksonUtils {
         } catch (Exception e) {
             e.printStackTrace();
             return "";
+        }
+    }
+
+    public static Optional<String> toString(Object o) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            return Optional.of(objectMapper.writeValueAsString(o));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Optional.empty();
         }
     }
 

@@ -17,6 +17,9 @@ public class ClassInitializationSequence {
         System.out.println("======================");
         new KB(1);
         System.out.println(T.getSum());
+        short a = 1;
+        int b = 1;
+        double c = 3.123;
     }
 
 }
@@ -55,6 +58,13 @@ class GIGI extends KB {
 }
 
 class T {
+
+    static boolean a;
+    static  {
+        System.out.println(">>>>>>>>>>>>>>>>> a: " + a);
+        a = true;
+        System.out.println(">>>>>>>>>>>>>>>   a: " + a);
+    }
     static {
         System.out.println(">>>>> static block initialization");
         System.out.println(">>>>> first initialize....");
@@ -71,7 +81,13 @@ class T {
         return sum;
     }
 
+    static  {
+        System.out.println("##########; " + T.initialized);
+    }
     private static boolean initialized = false;
+    static  {
+        System.out.println("#########; " + T.initialized);
+    }
 
     private static void initialize() {
         System.out.println(">>>>>>> local initialized " + T.initialized);

@@ -21,6 +21,8 @@ public class StringDemo {
         // == means the reference is the same or not.
         System.out.println(" A == B ? " + (A == B));
 
+        System.out.println("B == B.intern() ? " + (B == B.intern()));
+
         // this will locate string in StringPool which is in
         // permanent generation
         // and all these variables point to the same location.
@@ -43,10 +45,16 @@ public class StringDemo {
         String a1 = "hello";
         String a2 = "world";
         String a3 = "helloworld";
-        System.out.println(s3 == s1 + s2);                  // false
-        System.out.println(s3.equals(s1 + s2));               // true
-        System.out.println(s3 == "hello" + "world");        // true
-        System.out.println(s3.equals("hello" + "world"));   // true
+        System.out.println(a3 == a1 + a2);                  // false
+        System.out.println(a3.equals(a1 + a2));               // true
+        System.out.println(a3 == "hello" + "world");        // true
+        System.out.println(a3.equals("hello" + "world"));   // true
+
+        String a4 = a1 + a2;
+        System.out.println(a3 == a4);
+        System.out.println(a3 == a4.intern());
+
+        System.out.println(" type: " + 0.123);
 
     }
 
