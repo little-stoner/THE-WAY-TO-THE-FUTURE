@@ -27,4 +27,4 @@ https://github.com/frank-lam/fullstack-tutorial
 http://greggordon.org/java/tij4/solutions.htm
 https://lingcoder.github.io/OnJava8/#/
 
-!(https://github.com/Viberring/VI/blob/master/jetbrains-variant-4.png)
+![jetbrains logo](https://github.com/Viberring/VI/blob/master/jetbrains-variant-4.png)
