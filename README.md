@@ -1,3 +1,6 @@
+# Thanks To JetBrains
+[jetbrains](https://www.jetbrains.com/?from=VI)
+
 # VI
 viberring's interview prepare
 
