@@ -1,5 +1,3 @@
-# Thanks To JetBrains
-[jetbrains's home page](https://www.jetbrains.com/?from=VI)
 
 # VI
 viberring's interview prepare
@@ -27,4 +25,6 @@ https://github.com/frank-lam/fullstack-tutorial
 http://greggordon.org/java/tij4/solutions.htm
 https://lingcoder.github.io/OnJava8/#/
 
+# Thanks To JetBrains
+[jetbrains's home page](https://www.jetbrains.com/?from=VI)
 ![jetbrains logo](https://github.com/Viberring/VI/blob/master/jetbrains-variant-4.png)
