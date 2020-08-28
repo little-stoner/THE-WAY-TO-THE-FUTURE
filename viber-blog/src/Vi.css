@@ -1,0 +1,10 @@
+#interview {
+    margin: 10px;
+}
+#interview ul {
+    display: flex;
+    flex-direction: column;    
+    list-style: none;
+}
+#interview li {
+}
