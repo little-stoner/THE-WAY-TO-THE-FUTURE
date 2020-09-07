@@ -32,4 +32,4 @@ build/
 .DS_Store
 
 ### node js ###
-/node_modules/
+*/node_modules/

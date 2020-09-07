@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './kobe.svg';
+import logo from './kobe.jpg';
 import './App.css';
 import './Vi.css';
 import {
