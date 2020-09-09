@@ -1,0 +1,25 @@
+#+STARTUP: SHOWALL
+
+* Vitrualbox
+
+* Start With Command Line
+
+** Check VM 
+#+BEGIN_SRC sh
+VBoxManage -v
+VBoxManage list vms
+VBoxManage list runningvms
+VBoxManage showvminfo UbuntuRDHome
+VBoxManage list hdds
+VBoxManage list dvds
+#+END_SRC
+
+** start vm
+#+BEGIN_SRC sh
+VBoxManage startvm 3ec6da56-6919-43c0-a636-331058e56620 --type headless
+#+END_SRC
+** stop vm
+#+BEGIN_SRC 
+VboxManage controlvm 3ec6da56-6919-43c0-a636-331058e56620 poweroff
+#+END_SRC
+
