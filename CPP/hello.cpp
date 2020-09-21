@@ -1,3 +1,5 @@
 #include <stdio.h>
 
-namespace v;
+int main(void) {
+    return 0;
+}
