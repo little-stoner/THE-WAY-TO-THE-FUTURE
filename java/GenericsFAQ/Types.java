@@ -28,6 +28,7 @@ public class Types {
         public String toString() {
             return "<Pair" + "(" + first + ", " + second + ")" + ">";
         }
+
         public void printPair(Pair<String, Long> pair) {
             System.out.println("(" + pair.getFirst() + ", " + pair.getSecond() + ")");
         }
@@ -51,12 +52,22 @@ public class Types {
     // cast to a parameterized type
     public static void cast_to_parameterized_type() {
         System.out.println(" !!runtime detection::::: ");
-        List<String> b = (List<String>) new Object();  // runtime check, which will raise a ClassCastException
+        // downcast
+        // cast happends to raw type
+        //List<String> b = (List<String>) new Object();  // runtime check, which maybe raise a ClassCastException unanticipated !!
         System.out.println("==================================");
         System.out.println(" !!compile detection::::: ");
         // List<String> a = (List<String>) new ArrayList<Integer>();  // compile detection
+        // upcast will not lead to an "unchecked" warning.
+        List a = (List<String>) new ArrayList<String>() {{add("A--A");}};
+        List b = (List<Object>) new ArrayList<Object>();
+        System.out.println("==>>> " + a.getClass());        
+        System.out.println("==> " + a.get(0));
+        System.out.println("==> " + a.get(0).getClass());        
         System.out.println("==================================");
     }
+    //
+    
 
     // 
     public static void main(String[] args) {
