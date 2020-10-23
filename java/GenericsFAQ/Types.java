@@ -61,15 +61,59 @@ public class Types {
         // upcast will not lead to an "unchecked" warning.
         List a = (List<String>) new ArrayList<String>() {{add("A--A");}};
         List b = (List<Object>) new ArrayList<Object>();
-        System.out.println("==>>> " + a.getClass());        
+        System.out.println(a.getClass().getSimpleName());        
         System.out.println("==> " + a.get(0));
         System.out.println("==> " + a.get(0).getClass());        
         System.out.println("==================================");
     }
-    //
-    
+    // exceptin handle
+    // static class X<T> extends Exception {} // generic class may not extend java.lang.Throwable
 
-    // 
+    // generic static member
+
+    // List<Object> && List<String>
+    public static void printAll(ArrayList<Object> c) {
+        for (Object o : c) {
+            System.out.println(o);
+        }
+    }
+    public static void printAll(Collection<Object> c) {
+        for (Object o : c) {
+            System.out.println(o);
+        }
+    }
+    public static void supertype_relation() {
+        ArrayList<String> list = new ArrayList<String>();
+        //printAll(list);  // error: no suitable method found  for printAll(ArrayList<String>)
+        List<Object> list0 = new ArrayList<Object>();
+        list0.add("QQQ");
+        printAll(list0); // fine
+    }
+    // array of generic
+    public static void generics_array() {
+        // Pair<Integer, Integer>[] intPairArr = new Pair<Integer, Integer>[10]; // error: generic array creation
+        Pair<Integer, Integer>[] intPairArr = new Pair[10];
+        Object[] objArr = intPairArr;
+        objArr[0] = new Pair<String, String>("", ""); // should fail, but would succeed
+        Integer i = intPairArr[0].getFirst(); // fails at runtime with ClassCashException
+    }
+    
+    //// workaround
+    public static void generic_workaround() {
+        // Pair<Integer, Integer>[] intPairArr = new Pair<Integer, Integer>[10]; // error
+        // Pair<Integer, Integer>[] intPairArr = new Pair[10];
+        Pair[] intPairArr = new Pair[10];
+        addElements(intPairArr);
+        Pair<Integer, Integer> pair = intPairArr[1]; // unchecked warning
+        Integer i = pair.getFirst();
+        pair.setSecond(i);
+    }
+    public static void addElements(Object[] objArr) {
+        objArr[0] = new Pair<Integer, Integer>(0, 0);
+        objArr[1] = new Pair<String, String>("", ""); // should fail with ArrayStoreException
+    }
+    //
+
     public static void main(String[] args) {
         
         System.out.println("anonymous inner class with generics: ");
@@ -80,7 +124,11 @@ public class Types {
         System.out.println("==================================");
         System.out.println("cast parameterized type: ");
         cast_to_parameterized_type();
-        System.out.println("==================================");            
+        System.out.println("==================================");
+        supertype_relation();
+        System.out.println("==================================");        
+        generic_workaround();
+        System.out.println("==================================");          
         
     }
     
