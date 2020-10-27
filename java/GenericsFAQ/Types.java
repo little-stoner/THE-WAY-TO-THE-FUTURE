@@ -102,9 +102,10 @@ public class Types {
     public static void generic_workaround() {
         // Pair<Integer, Integer>[] intPairArr = new Pair<Integer, Integer>[10]; // error
         // Pair<Integer, Integer>[] intPairArr = new Pair[10];
-        Pair[] intPairArr = new Pair[10];
+        // Pair[] intPairArr = new Pair[10];
+        Pair<?,?>[] intPairArr = new Pair<?,?>[10];
         addElements(intPairArr);
-        Pair<Integer, Integer> pair = intPairArr[1]; // unchecked warning
+        Pair<Integer, Integer> pair = intPairArr[1]; // error
         Integer i = pair.getFirst();
         pair.setSecond(i);
     }
