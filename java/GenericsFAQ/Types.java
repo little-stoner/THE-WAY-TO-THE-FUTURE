@@ -1,5 +1,5 @@
 import java.util.*;
-
+import java.io.*;
 
 public class Types {
 
@@ -105,16 +105,127 @@ public class Types {
         // Pair[] intPairArr = new Pair[10];
         Pair<?,?>[] intPairArr = new Pair<?,?>[10];
         addElements(intPairArr);
-        Pair<Integer, Integer> pair = intPairArr[1]; // error
-        Integer i = pair.getFirst();
-        pair.setSecond(i);
+        // Pair<Integer, Integer> pair = intPairArr[1]; // error: incompatible types
+        //Integer i = pair.getFirst();
+        //pair.setSecond(i);
     }
     public static void addElements(Object[] objArr) {
         objArr[0] = new Pair<Integer, Integer>(0, 0);
         objArr[1] = new Pair<String, String>("", ""); // should fail with ArrayStoreException
     }
     //
+    // raw type
+    Collection c = new ArrayList();
+    public static class SomeLegacyClass {
+        private List c;
+        public void setNames(List c) {this.c = c;}
+        public List getNames() {return c;}
+    }
+    public static void raw_types() {
+        SomeLegacyClass obj = new SomeLegacyClass();
+        List<String> names = new LinkedList<>();
+        obj.setNames(names);
+        names = obj.getNames();  // [warning] unchecked conversion
+    }
+    
+    interface Copyable<T> {
+        T copy();
+    }
 
+    final static class Wrapped<Elem extends Copyable<Elem>> {
+        private Elem theObject;
+        public Wrapped(Elem arg) { theObject = arg.copy(); }
+        public void setObject(Elem arg) { theObject = arg.copy(); }
+        public Elem getObject() { return theObject.copy(); }
+        public boolean equals(Object other) {
+            if (other == null) return false;
+            if (! (other instanceof Wrapped)) return false;
+            return (this.theObject.equals(((Wrapped)other).theObject));
+        }
+    }
+
+    static class MyString implements Copyable<MyString> {
+        private StringBuilder buffer;
+        public MyString(String s) { buffer = new StringBuilder(s); }
+        public MyString copy() {
+            return new MyString(buffer.toString());
+        }
+        public String toString() {
+            return buffer.toString();
+        }
+    }
+
+    private static void test_raw(Wrapped raw_wrapper) {
+        raw_wrapper.setObject(new MyString("Deutsche Bank"));   // unchecked warning
+        Object s = raw_wrapper.getObject();
+        System.out.println("raw wrapper:  " + s);
+    }
+    private static void generic_wrapper() {
+        Wrapped<MyString> generic_wrapper = new Wrapped<>(new MyString("Citibank"));
+        MyString ss = generic_wrapper.getObject();
+        System.out.println("generic wrapper:  " + ss);
+        test_raw(generic_wrapper);
+    }
+
+    // wildcard
+    public static void wildcard_test() {
+        Collection<?> coll = new ArrayList<>();
+        // List<? extends Number> list = new ArrayList<String>(); // error
+        ArrayList<?> anyList = new ArrayList<Long>();
+        ArrayList<String> stringList = new ArrayList<String>();
+        anyList = stringList;
+        // stringList = anyList;  // incompatible types: ArrayList<CAP#1> cannot be converted to ArrayList<String>
+    }
+    public static class Box<T> {
+        private T t;
+        public Box(T t) { this.t = t; }
+        public void put(T t) { this.t = t;}
+        public T take() { return t; }
+        public boolean equalTo(Box<T> other) { return this.t.equals(other.t); }
+        public Box<T> copy() { return new Box<T>(t); }
+    }
+    public static void access_test() {
+        Box<?> box = new Box<String>("abc");
+        // box.put("xyz");  // error
+        box.put(null);
+        // String s = box.take(); // error
+        Object o = box.take();
+        // boolean equal = box.equalTo(box); // error
+        // equal = box.equalTo(new Box<String>("abc")); // error
+        Box<?> box1 = box.copy(); // ok
+        // Box<String> box2 = box.copy(); // error
+    }
+    interface Comparable<T> {
+        int compareTo(T arg);
+    }
+    
+    ///////////////
+
+    // generic method
+    public static class S {
+        public <E> S(E e) {
+            System.out.println(e);
+        }
+    }
+    ///////////////
+    // type parameter
+
+    ////
+    public static class X0<T extends Integer> {} // error
+
+    ////////////////
+    // Enum<E extends Enum<E>>
+    public static abstract class Enum<E extends Enum<E>> implements Comparable<E>, Serializable {
+        public int compareTo(E e) {
+            return 0;
+        }
+    }
+
+    public static class Timo extends Enum<Timo> {
+        
+    }
+
+    
     public static void main(String[] args) {
         
         System.out.println("anonymous inner class with generics: ");
@@ -129,7 +240,17 @@ public class Types {
         supertype_relation();
         System.out.println("==================================");        
         generic_workaround();
-        System.out.println("==================================");          
+        System.out.println("==================================");
+        raw_types();
+        generic_wrapper();
+        System.out.println("==================================");
+        wildcard_test();
+        System.out.println("==================================");
+        new S("a"); new S(1);
+        System.out.println("==================================");
+        System.out.println(" XX ");
+        Timo t = new Timo();
+        System.out.println("==================================");        
         
     }
     
