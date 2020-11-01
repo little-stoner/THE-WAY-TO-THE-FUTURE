@@ -24,6 +24,8 @@ public class TEST {
     
     public static void main(String[] args) {
         t();
+        List a;
+        ArrayList b;
     }
     
 }

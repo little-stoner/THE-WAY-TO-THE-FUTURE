@@ -27,7 +27,7 @@ public class Types {
         public void setSecond(Y arg) { second = arg; }
         public String toString() {
             return "<Pair" + "(" + first + ", " + second + ")" + ">";
-        }
+n        }
 
         public void printPair(Pair<String, Long> pair) {
             System.out.println("(" + pair.getFirst() + ", " + pair.getSecond() + ")");
