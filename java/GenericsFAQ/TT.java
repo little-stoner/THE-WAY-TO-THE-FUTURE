@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class TEST {
+public class TT {
 
 
     static class T<E> {

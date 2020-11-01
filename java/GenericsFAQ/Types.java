@@ -27,7 +27,7 @@ public class Types {
         public void setSecond(Y arg) { second = arg; }
         public String toString() {
             return "<Pair" + "(" + first + ", " + second + ")" + ">";
-n        }
+        }
 
         public void printPair(Pair<String, Long> pair) {
             System.out.println("(" + pair.getFirst() + ", " + pair.getSecond() + ")");
@@ -225,6 +225,104 @@ n        }
         
     }
 
+    enum Color { RED, BLUD, GREEN }
+
+    // Example (before type erasure):
+    // class Sequence<T> {
+    //     public T[] asArray(int size) {
+    //         T[] array = new T[size]; // error: generic array creation
+    //         return array;
+    //     }
+    // }
+    // Example (after a conceivable translation by type erasure):
+    class Sequnce {
+        public Object[] asArray(int size) {
+            Object[] array = new Object[size];
+            return array;
+        }
+    }
+
+    ////////////////////////////
+    // Scope 
+    public static class SomeClass<T> {
+        // static initializer, static field, static method
+        static {
+            // SomeClass<T> test = new SomeClass<T>(); // T can not be referenced from a static context
+            System.out.println("==== staic =======");
+        }
+        // private static T globalInfo; // error
+        // public static T getGlobalInfo() {
+        //     return globalInfo;  // error
+        // }
+        public SomeClass() {
+            System.out.println(">>>>>>>. constructor <<<<<<<<<<");
+        }
+
+        // non-static initializer, non-static field, non-static method
+            {
+                System.out.println("@@@@@ instance @@@@");
+                // SomeClass<T> test = new SomeClass<T>();
+            }
+        private T localInfo;
+        public T getLocalInfo() { return localInfo; }
+        // static nested types
+        // public static class Failure extends Exception {
+        //     private final T info;                  // error
+        //     public Failure(T t) { info = t; }      // error
+        //     public T getInfo() { return info; }    // error
+        // }
+        // private interface Copyable0 {
+        //     T copy();  // error
+        // }
+        // private enum State {
+        //     VALID, INVALID;
+        //     private T info; // error
+        //     public void setInfo(T t) { info = t; }// error
+        //     public T getInfo() { return info; } // error
+        // }
+        // non-static nested types
+        public class Accessor {
+            public T getInfo() { return localInfo; }
+        }
+        // non-static method
+        <T extends Copyable<T>> void nonStaticMethod(T t) {
+            final T copy = t.copy();
+            class Task implements Runnable {
+                public void run() {
+                     T tmp = copy; System.out.println(tmp);
+                }       
+            }
+            (new Task()).run();
+        }
+        // // static method
+        static <T extends Copyable<T>> void staticMethod(T t) {
+            final T copy = t.copy();
+            class Task implements Runnable {
+                public void run() {
+                    T tmp = copy;
+                    System.out.println(tmp);
+                }
+            }
+            (new Task()).run();
+        }
+    }
+
+    public final class Wrapper<T> {
+        public final T theObject;
+        public Wrapper(T t) { theObject = t; } public T getWrapper() { return theObject; }
+        private final class WrapperComparator<W extends Wrapper<? extends Comparable<T>>>
+            implements Comparator<W> {
+            public int compare(W lhs, W rhs) {
+                return lhs.theObject.compareTo((T)(rhs.theObject)); }
+        }
+        public <V extends Wrapper<? extends Comparable<T>>> Comparator<V> comparator() {
+            return this.new WrapperComparator<V>();
+        }
+    }
+
+
+    
+    ///////////////////////////
     
     public static void main(String[] args) {
         
@@ -250,7 +348,9 @@ n        }
         System.out.println("==================================");
         System.out.println(" XX ");
         Timo t = new Timo();
-        System.out.println("==================================");        
+        System.out.println("==================================");
+        new SomeClass<String>();
+        System.out.println("==================================");              
         
     }
     
