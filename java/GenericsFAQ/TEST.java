@@ -23,7 +23,10 @@ public class TEST {
     }    
     
     public static void main(String[] args) {
-        t();
+        System.out.println("=================");
+        t();   
     }
+
+
     
 }

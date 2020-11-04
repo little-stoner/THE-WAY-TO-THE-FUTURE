@@ -321,6 +321,26 @@ public class Types {
     }
 
 
+    /// wildcard
+    class Boxx<T extends Comparable<T> & Cloneable>
+        implements Comparable<Boxx<T>>, Cloneable {
+        private T theObject;
+
+        pubilc Boxx(T arg) {
+            theObject = arg;
+        }
+
+        public Boxx(Boxx<? extends T> box) {
+            theObject = box.theObject;
+        }
+        public int compareTo(Boxx<T> other) {
+            return 0;
+        }
+        public Boxx<T> clone() {
+            return null;
+        }
+    }
+
     
     ///////////////////////////
     
@@ -350,8 +370,11 @@ public class Types {
         Timo t = new Timo();
         System.out.println("==================================");
         new SomeClass<String>();
-        System.out.println("==================================");              
+        System.out.println("==================================");
+        List<? extends Runnable> l;
+        System.out.println("==================================");
         
+        System.out.println("==================================");
     }
     
 }
