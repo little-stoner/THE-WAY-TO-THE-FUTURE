@@ -58,3 +58,7 @@ yarn-error.log*
 *.*~
 *.class
 
+.ccls-cache
+.clang_complete
+.dir-locals.el
+*.out
