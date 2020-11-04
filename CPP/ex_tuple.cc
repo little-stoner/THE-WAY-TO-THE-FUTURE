@@ -1,7 +1,7 @@
 #include <tuple>
 #include <iostream>
 #include <string>
-#include <stdexcept>
+#include <sztdexcept>
 
 std::tuple<double, char, std::string> get_student(int id) {
     if (id == 0) return std::make_tuple(3.8, 'A', "KKK");
@@ -26,5 +26,7 @@ int main() {
               << "GPA: " << gpa1 << ", "
               << "grade: " << grade1 << ", "
               << "name: " << name1 << '\n';
+
+    
     
 }
