@@ -1,6 +1,6 @@
 package _efectivejava.generics;
 
-qpublic class StaticGenericMethod {
+public class StaticGenericMethod {
 
     public static <T> void hold(T input) {
         System.out.println(" parameter type T: " + input.getClass());

@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.*;
 
 
@@ -24,7 +25,26 @@ public class TEST {
     
     public static void main(String[] args) {
         System.out.println("=================");
-        t();   
+        t();
+        System.out.println("=================");
+
+        Long approvedAt = 1603857600000L;
+        Long current = System.currentTimeMillis();
+        Long offset = current - approvedAt;
+
+        System.out.println(" ========> " + offset);
+        System.out.println(" =======> " + (offset / 1000 / 60 / 60 / 24));
+        System.out.println(" =======> " + (Math.floorDiv(offset, 1000 * 60 * 60 * 24)));
+        System.out.println(" =======> " + (Math.floor(offset / 1000 / 60 / 60 / 24)));
+
+        System.out.println("========<><>><<<<<<<<<<<<=========");
+
+        LocalDate now = LocalDate.now();
+        System.out.println("==> " + now.getDayOfWeek());
+
+        
+        
+        
     }
 
 

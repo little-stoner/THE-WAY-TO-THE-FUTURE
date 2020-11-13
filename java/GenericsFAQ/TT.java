@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 
@@ -22,10 +23,11 @@ public class TT {
         };
     }    
     
-    public static void main(String[] args) {
+    public static <T> void main(String[] args) {
         t();
         List a;
         ArrayList b;
+        T[] c = Array.newInstance(T, 0);
     }
     
 }

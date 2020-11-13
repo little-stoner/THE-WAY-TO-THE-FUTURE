@@ -1,5 +1,8 @@
 import java.util.*;
+import java.util.concurrent.Future;
 import java.io.*;
+import java.lang.annotation.Annotation;
+import java.lang.annotation.Documented;
 
 public class Types {
 
@@ -325,8 +328,7 @@ public class Types {
     class Boxx<T extends Comparable<T> & Cloneable>
         implements Comparable<Boxx<T>>, Cloneable {
         private T theObject;
-
-        pubilc Boxx(T arg) {
+        public Boxx(T arg) {
             theObject = arg;
         }
 
@@ -343,6 +345,240 @@ public class Types {
 
     
     ///////////////////////////
+    // Generic types
+
+    // poor style
+    List<String> list = new ArrayList<>();
+    // Iterator iter = list.iterator();
+    Iterator<String> iter = list.iterator();    
+    // String s = (String) iter.next;
+    String s = iter.next();
+
+    // getClass workaround
+    public void f(Object obj) {
+        Class type = obj.getClass(); // unchecked warning
+        Class<?> type0 = obj.getClass();
+        Annotation a = type.getAnnotation(Documented.class);
+    }
+
+    static class Legacy {
+        public static List create() {
+            List rawList = new ArrayList();
+            rawList.add("abc"); // unchecked warning
+            return rawList;
+        }
+        public static void insert(List rawList) {
+            rawList.add(new Date()); // unchecked warning
+        }
+    }
+
+    static class Modern {
+        private void someMethod() {
+            List<String> stringList = Legacy.create();
+            List<String> stringList0 = Collections.checkedList(Legacy.create(), String.class);
+            Legacy.insert(stringList);
+            Legacy.insert(stringList0);
+            Unrelated.useStringList(stringList);
+            Unrelated.useStringList(stringList0);
+        }
+    }
+    static class Unrelated {
+        public static void useStringList(List<String> stringList) {
+            String s = stringList.get(1); // ClassCastException
+        }
+    }
+    /////////////////////////////
+
+
+    static class Legacy0 {
+        public static List legacyCreate() {
+            List rawList = new ArrayList();
+            rawList.add(new Pair<>("abc", "xyz"));
+            return rawList;
+        }
+        public static void legacyInsert(List rawList) {
+            rawList.add(new Pair(new Date(), "Xmas"));
+        }
+    }
+    static class Modern0 {
+        private void someModernMethod() {
+            List<Pair<String, String>> stringPairs =
+                    Collections.checkedList(Legacy0.legacyCreate(), Pair.class);
+            Legacy0.legacyInsert(stringPairs);
+            Unrelated0.useStringList(stringPairs);
+        }
+    }
+    static class Unrelated0 {
+        public static void useStringList(List<Pair<String, String>> stringList) {
+            String s = stringList.get(1).getFirst(); // ClassCastException
+        }
+    }
+
+    public static void CollectionCompare() {
+        Collection<Pair<String, Object>> c = new ArrayList<>();
+        // c.add(new Pair<String, Date>("today", new Date()));
+        c.add(new Pair<String, Object>("today", new Date()));
+        Collection<Pair<String, ?>> cc = new ArrayList<>();
+        cc.add(new Pair<String, Date>("to", new Date()));
+    }
+
+    
+ 
+    ///////////////////////////////////////////////////
+    // generic method
+
+    static void overloadedMethod(Object o) {
+        System.out.println("overloadedMethod(Object) called");
+    }
+    static void overloadedMethod(String s) {
+        System.out.println("overloadedMethod(String) called");
+    }
+    static void overloadedMethod(Integer i) {
+        System.out.println("overloadedMethod(Integer) called");
+    }
+    static <T> void genericMethod(T t) {
+        overloadedMethod(t); // which method is called ?
+    }
+
+    public final static class GenericClass<T> {
+        private void overloadedMethod(Collection<?> o) {
+            System.out.println("===> overloadedMethod(Collection<?>)");
+        }
+        private void overloadedMethod(List<Number> s) {
+            System.out.println("===> overloadedMethod(List<Number>)");
+        }
+        private void overloadedMethod(ArrayList<Integer> i) {
+            System.out.println("===> overloadedMethod(ArrayList<Integer>)");
+        }
+        private void method(List<T> t) {
+            overloadedMethod(t); // which method is called?
+        }
+        private void method0(List<Integer> t) {
+            overloadedMethod(t);
+        }
+    }
+
+    /////////////////////////////////
+    //// copy with legacy
+
+
+    ///
+    static class Animal {}
+    static class Fish extends Animal {}
+    static class TypeArgument {}
+    abstract class Habitat {
+        protected Collection theAnimals;
+        public void addInhabitant(Animal animal) {
+            theAnimals.add(animal);
+        }
+    }
+
+    class Aquarium extends Habitat {
+        public void addInhabitant(Animal fish) {
+            if (fish instanceof Fish) {
+                theAnimals.add(fish);
+            } else
+                throw new IllegalArgumentException(fish.toString());
+        }
+    }
+
+
+
+    // defining generic types and 
+    interface Contained {}
+    interface Container<T extends Contained> {
+        void add(T element);
+        List<T> elements();
+        Class<T> getElementType();
+    }
+    class MyContained implements Contained {
+        private final String name;
+
+        public MyContained(String name) {
+            this.name = name;
+        }
+        public @Override String toString() {
+            return name;
+        }
+    }
+    class MyContainer implements Container<MyContained> {
+        private final List<MyContained> _elements = new ArrayList<>();
+
+        public void add(MyContained element) {
+            _elements.add(element);
+        }
+
+        public List<MyContained> elements() {
+            return _elements;
+        }
+        public Class<MyContained> getElementType() {
+            return MyContained.class;
+        }
+    }
+    static class  MetaContainer {
+        private Container<? extends Contained> container;
+        public void setContainer(Container<? extends Contained> container) {
+            this.container = container;
+        }
+        public void add(Contained element) {
+            // container.add(element); // error
+            // container.add(container.getElementType().cast(element)); // error
+            _add(container, element);
+        }
+        private static <T extends Contained> void _add(Container<T> container, Contained element) {
+            container.add(container.getElementType().cast(element));
+        }
+        public List<? extends Contained> elements() {
+            return container.elements();
+        }
+    }
+
+    interface GenericType<T> {
+        void method(T arg);
+
+        Class<T> getTypeArgument();
+    }
+    class ConcreteType implements GenericType<TypeArgument> {
+        public void method(TypeArgument arg) {}
+        public Class<TypeArgument> getTypeArgument() {
+            return TypeArgument.class;
+        }
+    }
+    static class GenericUsage {
+        private GenericType<?> reference;
+        public void method(Object arg) {
+            // reference.method(arg); // error
+            _helper(reference, arg);
+        }
+        private static <T> void _helper(GenericType<T> reference, Object arg) {
+            reference.method(reference.getTypeArgument().cast(arg));
+        }
+    }
+
+    /////////////
+    // design generic method
+    @SafeVarargs
+    public static <E> void addAll(List<E> list, E... array) {
+        for (E element : array) list.add(element);
+    }
+    public static <E> void addAll0(List<E> list, E[] array) {
+        for (E element : array)
+            list.add(element);
+    }
+
+    
+    public static Pair<String, String>[] method(Pair<String, String>... lists) {
+        Object[] objs = lists;
+        objs[0] = new Pair<>("x", "y");
+        objs[1] = new Pair<>(0L, 0L);
+        return lists;
+    }
+
+
+
+        
+
+       
     
     public static void main(String[] args) {
         
@@ -373,8 +609,35 @@ public class Types {
         System.out.println("==================================");
         List<? extends Runnable> l;
         System.out.println("==================================");
-        
+        //new Modern().someMethod();
         System.out.println("==================================");
+        //new Modern0().someModernMethod();
+        System.out.println("==================================");
+        System.out.println("==== Generic Method  ====");
+        
+        genericMethod(new Object());
+        genericMethod("abc");
+
+        GenericClass<Integer> test = new GenericClass<Integer>();
+        test.method(new ArrayList<Integer> ());
+        test.method0(new ArrayList<>());
+        // output : overloadedMethod(Collection<?>)        
+        
+        System.out.println("========= addAll ==============");
+        addAll(new ArrayList<String>(), "Leonardo ", "Vasco");
+        addAll(new ArrayList<Pair<String,String>>(),
+               new Pair<String, String>("A", "B"),
+               new Pair<String, String>("C", "D")
+            );
+        System.out.println("==================================");
+        Pair<String,String>[] result
+            = method(new Pair<String,String>("Vasco","da Gama"), // unchecked warning
+                     new Pair<String,String>("Leonard","da Vinci"));
+        for (Pair<String, String> p : result) {
+            String s = p.getFirst(); // ClassCastException
+        }
+        System.out.println("==================================");
+        
     }
     
 }
