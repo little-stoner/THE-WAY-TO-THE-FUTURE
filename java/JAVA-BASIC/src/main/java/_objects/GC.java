@@ -2,6 +2,13 @@ package _objects;
 
 public class GC {
 
+    private static int counter;
+
+    @Override
+    public String toString() {
+        return "GC[" + counter++ + "]";
+    }
+
     public static void main(String[] args) throws Exception  {
 
         GC g1 = new GC();
@@ -16,7 +23,6 @@ public class GC {
         Runtime.getRuntime().gc();
 
         Thread.sleep(1000);
-
     }
 
     @Override

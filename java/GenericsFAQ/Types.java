@@ -574,11 +574,12 @@ public class Types {
         return lists;
     }
 
+    ////////////////
+    //
 
+    
 
-        
-
-       
+    
     
     public static void main(String[] args) {
         
@@ -634,7 +635,8 @@ public class Types {
             = method(new Pair<String,String>("Vasco","da Gama"), // unchecked warning
                      new Pair<String,String>("Leonard","da Vinci"));
         for (Pair<String, String> p : result) {
-            String s = p.getFirst(); // ClassCastException
+            // String s = p.getFirst(); // ClassCastException
+            Object s = p.getFirst();    // fine
         }
         System.out.println("==================================");
         

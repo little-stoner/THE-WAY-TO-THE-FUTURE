@@ -1,4 +1,4 @@
-
+package _objects;
 
 // java use reference to attach object
 // and if you pass the reference
@@ -8,7 +8,7 @@
 
 public class Reference {
 
-    // you can create a refrence not attaching to nothing
+    // you can create a reference not attaching to nothing
     String no;
 
     // you can initial String with value

@@ -1,4 +1,4 @@
-
+package _objects;
 
 public class ShowProperties {
     public static void main(String[] args) {
