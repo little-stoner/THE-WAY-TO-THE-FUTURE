@@ -1,4 +1,4 @@
-package _housekeeping;
+package _onjava8._housekeeping;
 
 class Rock2 {
     Rock2(int i) {

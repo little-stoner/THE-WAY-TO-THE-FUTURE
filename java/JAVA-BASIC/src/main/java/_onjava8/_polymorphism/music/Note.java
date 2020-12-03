@@ -1,2 +1,10 @@
-package _onjava8._polymorphism.music;public class Note {
+package _onjava8._polymorphism.music;
+
+public enum  Note {
+
+    MIDDLE_C,
+    C_SHARP,
+    B_FLAT,
+    ;
+
 }

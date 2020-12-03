@@ -1,2 +1,13 @@
-package _onjava8._hiding;public class IceCream {
+package _onjava8._hiding;
+
+class Sundae {
+    private Sundae() { }
+    static Sundae makeASundae() {
+        return new Sundae();
+    }
+}
+public class IceCream {
+    public static void main(String[] args) {
+        Sundae x = Sundae.makeASundae();
+    }
 }

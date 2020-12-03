@@ -1,4 +1,4 @@
-package _housekeeping;
+package _onjava8._housekeeping;
 
 public class SimpleEnumUse {
     public static void main(String[] args) {

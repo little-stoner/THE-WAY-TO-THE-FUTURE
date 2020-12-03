@@ -1,4 +1,4 @@
-package _housekeeping;
+package _onjava8._housekeeping;
 
 public class NewVarArgs {
     static void printArray(Object... args) {
