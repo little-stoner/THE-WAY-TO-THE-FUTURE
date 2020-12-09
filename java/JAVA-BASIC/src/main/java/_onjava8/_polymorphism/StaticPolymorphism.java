@@ -1,7 +1,5 @@
 package _onjava8._polymorphism;
 
-import org.w3c.dom.ls.LSOutput;
-
 class StaticSuper {
     public static String staticGet() {
         return "Base staticGet()";

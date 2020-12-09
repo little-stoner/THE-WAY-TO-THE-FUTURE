@@ -1,6 +1,7 @@
 package _interfaces.music4;
 
-import _polymorphism.music.Note;
+
+import _onjava8._polymorphism.music.Note;
 
 public  class Music4 {
 
