@@ -45,9 +45,31 @@ int main() {
     int *m = &a;
     int *n = &b;
     int **mm = &m;
+    
+    std::cout << " m:" << m <<  "\n";
+    std::cout << " &m: " << &m <<  "\n";        
+    
+    std::cout << " mm: " << mm <<  "\n";
+    std::cout << " *mm: " << *mm <<  "\n";
+    std::cout << " **mm: " << **mm <<  "\n";        
+    
+    
     mm = &n; // *mm = n;
     **mm = 4;
 
+    long k = 12;
+    long *w = &k;
+    long **ww = &w;
+    long ***www = &ww;
+    long ****wwww = &www;
+    long *****wwwww = &wwww;
+    long ******wwwwww = &wwwww;
+    
+    std::cout << " w: " << w <<  "\n";        
+    std::cout << " ww: " << ww <<  "\n";        
+    std::cout << " www: " << www <<  "\n";        
+    std::cout << " wwww: " << wwww <<  "\n";
+    
     std::cout << " a: " << a <<  "\n";
     std::cout << " b: " << b <<  "\n";
     
