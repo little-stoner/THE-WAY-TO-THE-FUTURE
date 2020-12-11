@@ -1,4 +1,4 @@
-package _interfaces.interfaceprocessor;
+package _onjava8._interfaces.interfaceprocessor;
 
 public interface Processor {
     default String name() {

@@ -27,5 +27,17 @@ interface Sam2 {
 
 class Sam implements Sam1, Sam2 {}
 
+interface Max1 {
+    default void max() {
+        System.out.println("Max1::max");
+    }
+}
+
+interface Max2 {
+    default int max() {
+        return 47;
+    }
+}
+
 public class MICollision {
 }
