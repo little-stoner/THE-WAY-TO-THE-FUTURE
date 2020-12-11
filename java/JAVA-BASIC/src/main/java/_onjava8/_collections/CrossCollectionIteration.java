@@ -1,4 +1,4 @@
-package _collections;
+package _onjava8._collections;
 
 
 import _onjava8._typeinfo.pets.Pet;
@@ -16,7 +16,7 @@ public class CrossCollectionIteration {
     }
 
     public static void main(String[] args) {
-        List<Pet> pets = Pets.list(9);
+        List<Pet> pets = Pets.list(8);
         LinkedList<Pet> petsLL = new LinkedList<>(pets);
         HashSet<Pet> petsHS = new HashSet<>(pets);
         TreeSet<Pet> petsTS = new TreeSet<>(pets);
