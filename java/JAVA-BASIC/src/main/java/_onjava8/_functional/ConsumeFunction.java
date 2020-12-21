@@ -1,6 +1,6 @@
 package _onjava8._functional;
 
-import _string.T;
+
 
 import java.util.function.Function;
 
