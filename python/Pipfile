@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 ipython = "*"
 inflection = "*"
+sshtunnel = {index = "https://pypi.douban.com/simple", version = "*"}
 
 [requires]
 python_version = "3.8"
