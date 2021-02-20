@@ -32,8 +32,13 @@ build/
 .DS_Store
 
 # dependencies
+**/node_mmodules
 /node_modules
 /.pnp
+npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
+npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
+npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
+npm config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
 .pnp.js
 
 # testing
