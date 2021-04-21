@@ -1,0 +1,184 @@
+public class Snow {
+    /**
+     * Twitter_Snowflake<br>
+     * SnowFlake The structure is as follows: <br>
+     * 0 - 0000000000 0000000000 0000000000 0000000000 0 - 00000 - 00000 - 000000000000 <br>
+     * 1 Bit identifier, because long basic type is symbolic in Java, the highest bit is symbolic bit, positive number is 0, negative number is 1, so id is generally positive, the highest bit is 0 < br >
+     * 41 Bit time cut (in milliseconds), note that the 41-bit time cut is not the time cut for storing the current time, but the difference between the storage time cut (current time cut-start time cut)
+     * The starting time cut here is usually the time when our id generator starts to use, which is specified by our program (as follows: the startTime property of the IdWorker class). The time cut of 41 bits can be used for 69 years, year T = 1 L < 41 / (1000L * 60 * 60 * 24 * 365) = 69 < br >
+     * 10 Bit data machine bits can be deployed at 1024 nodes, including 5-bit data center Id and 5-bit workerId < br>.
+     * 12 Bit sequences, counts in milliseconds, and 12-bit counting sequence numbers support 4096 ID numbers per millisecond (same machine, same time cut) for each node.
+     * It adds up to 64 bits, which is a Long type. <br>
+     * SnowFlake The advantage of SnowFlake is that it can generate about 260,000 IDs per second, because it can be sorted by time, and there is no ID collision (distinguished by data center ID and machine ID) in the whole distributed system.
+     *
+     * @author wsh
+     * @version 1.0
+     * @since JDK1.8
+     * @date 2019/7/31
+     */
+    public class Snow {
+
+        // ==============================Fields===========================================
+        /**
+         * Start time cut-off (2015-01-01)
+         */
+        private final long twepoch = 1420041600000L;
+
+        /**
+         * Number of ndigits occupied by machine id
+         */
+        private final long workerIdBits = 5L;
+
+        /**
+         * The number of digits occupied by the data identifier id
+         */
+        private final long datacenterIdBits = 5L;
+
+        /**
+         * Supported maximum machine id, the result is 31 (this shift algorithm can quickly calculate the maximum decimal number represented by several bits of binary number)
+         */
+        private final long maxWorkerId = -1L ^ (-1L << workerIdBits);
+
+        /**
+         * Supported maximum data identifier id, resulting in 31
+         */
+        private final long maxDatacenterId = -1L ^ (-1L << datacenterIdBits);
+
+        /**
+         * Number of digits in id of sequence
+         */
+        private final long sequenceBits = 12L;
+
+        /**
+         * Machine ID moved 12 bits to the left
+         */
+        private final long workerIdShift = sequenceBits;
+
+        /**
+         * Data id moved 17 bits to the left (12 + 5)
+         */
+        private final long datacenterIdShift = sequenceBits + workerIdBits;
+
+        /**
+         * Time truncation moves 22 bits to the left (5 + 5 + 12)
+         */
+        private final long timestampLeftShift = sequenceBits + workerIdBits + datacenterIdBits;
+
+        /**
+         * The mask of the generated sequence is 4095 (0b111111111111111111111 = 0xfff = 4095)
+         */
+        private final long sequenceMask = -1L ^ (-1L << sequenceBits);
+
+        /**
+         * Work Machine ID (0-31)
+         */
+        private long workerId;
+
+        /**
+         * Data Center ID (0-31)
+         */
+        private long datacenterId;
+
+        /**
+         * Sequences in milliseconds (0-4095)
+         */
+        private long sequence = 0L;
+
+        /**
+         * Time cut of last ID generation
+         */
+        private long lastTimestamp = -1L;
+
+        //==============================Constructors=====================================
+
+    /**
+     * Constructor
+     *
+     * @param workerId     Work ID (0-31)
+     * @param datacenterId Data Center ID (0-31)
+     */
+    public SnowflakeDistributeId(long workerId, long datacenterId) {
+        if (workerId > maxWorkerId || workerId < 0) {
+            throw new IllegalArgumentException(String.format("worker Id can't be greater than %d or less than 0", maxWorkerId));
+        }
+        if (datacenterId > maxDatacenterId || datacenterId < 0) {
+            throw new IllegalArgumentException(String.format("datacenter Id can't be greater than %d or less than 0", maxDatacenterId));
+        }
+        this.workerId = workerId;
+        this.datacenterId = datacenterId;
+    }
+
+        // ==============================Methods==========================================
+
+        /**
+         * Get the next ID (this method is thread-safe)
+         *
+         * @return SnowflakeId
+         */
+        public synchronized long nextId() {
+            long timestamp = timeGen();
+
+            //If the current time is less than the time stamp generated by the last ID, the system clock should throw an exception when it falls back.
+            if (timestamp < lastTimestamp) {
+                throw new RuntimeException(
+                        String.format("Clock moved backwards.  Refusing to generate id for %d milliseconds",
+                                lastTimestamp - timestamp));
+            }
+
+            //If it is generated at the same time, the sequence in milliseconds is performed.
+            if (lastTimestamp == timestamp) {
+                sequence = (sequence + 1) & sequenceMask;
+                //Sequence overflow in milliseconds
+                if (sequence == 0) {
+                    //Blocking to the next millisecond to get a new timestamp
+                    timestamp = tilNextMillis(lastTimestamp);
+                }
+            }
+            //Time stamp change, sequence reset in milliseconds
+            else {
+                sequence = 0L;
+            }
+
+            //Time cut of last ID generation
+            lastTimestamp = timestamp;
+
+            //Shift and assemble 64-bit ID s together by operation or operation
+            return ((timestamp - twepoch) << timestampLeftShift) //
+                    | (datacenterId << datacenterIdShift) //
+                    | (workerId << workerIdShift) //
+                    | sequence;
+        }
+
+        /**
+         * Block to the next millisecond until a new timestamp is obtained
+         *
+         * @param lastTimestamp Time cut of last ID generation
+         * @return Current timestamp
+         */
+        protected long tilNextMillis(long lastTimestamp) {
+            long timestamp = timeGen();
+            while (timestamp <= lastTimestamp) {
+                timestamp = timeGen();
+            }
+            return timestamp;
+        }
+
+        /**
+         * Returns the current time in milliseconds
+         *
+         * @return Current time (milliseconds)
+         */
+        protected long timeGen() {
+            return System.currentTimeMillis();
+        }
+
+        public static void main(String[] args) {
+            Snow s = new Snow(1, 1);
+            for (int i = 0; i < 1000; i++) {
+                long id = idWorker.nextId();
+                // System.out.println(Long.toBinaryString(id));
+                System.out.println(id);
+            }
+        }
+    }
+}

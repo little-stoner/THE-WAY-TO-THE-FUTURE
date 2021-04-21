@@ -582,7 +582,7 @@ public class Types {
     
     
     public static void main(String[] args) {
-        
+
         System.out.println("anonymous inner class with generics: ");
         t();
         System.out.println("==================================");
