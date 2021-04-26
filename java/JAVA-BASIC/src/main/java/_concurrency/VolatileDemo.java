@@ -1,5 +1,7 @@
 package _concurrency;
 
+import java.util.concurrent.TimeUnit;
+
 public class VolatileDemo extends Thread {
 
     private
@@ -31,7 +33,20 @@ public class VolatileDemo extends Thread {
     public static void main(String[] args) throws Exception {
         new VolatileDemo("Thread 1").start();
         new VolatileDemo("Thread 2").start();
+
+        VolatileDemo v = new VolatileDemo("");
+        v = null;
+
+        System.gc();
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("  @@@ ");
+
+
     }
 
-
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println(">>>>>>>>>>>>>>>>");
+        throw new RuntimeException("@@@@@@@");
+    }
 }

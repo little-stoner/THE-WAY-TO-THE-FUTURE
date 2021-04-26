@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "username": "a",
+    "password": "a",
+    "salt": "a",
+    "valid": 1,
+    "created_by": "a",
+    "updated_by": "a",
+    "created_at": "2021-04-26 10:21:45",
+    "updated_at": "2021-04-26 10:21:48"
+  },
+  {
+    "id": 2,
+    "username": "b",
+    "password": "b",
+    "salt": "b",
+    "valid": 1,
+    "created_by": "b",
+    "updated_by": "b",
+    "created_at": "2021-04-26 10:21:45",
+    "updated_at": "2021-04-26 10:21:48"
+  }
+]
