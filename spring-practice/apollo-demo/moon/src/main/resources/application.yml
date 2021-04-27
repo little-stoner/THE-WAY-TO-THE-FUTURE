@@ -1,1 +1,31 @@
+############ APOLLO ##################################
+######################################################
+app:
+    id: moon-one
+apollo:
+    meta: http://172.17.41.250:8080
+    autoUpdateInjectedSpringProperties: false
+    bootstrap:
+        enabled: true
+        eagerLoad:
+            enabled: true
+######################################################
+server:
+    port: 8888
+spring:
+    application:
+        name: moon
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://127.0.0.1:8761/eureka/
 
+
+
+---
+spring:
+    profiles: cloud
+eureka:
+    instance:
+        hostname: ${APPLICATION_DOMAIN}
+        nonSecurePort: 80

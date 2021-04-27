@@ -1,0 +1,5 @@
+app.id=moon-one
+apollo.meta=http://172.17.41.250:8080
+appllo.meta.autoUpdateInjectedSpringProperties= false
+apollo.bootstrap.enabled=true
+apollo.eagerLoad.enabled=true
