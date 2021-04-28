@@ -3,7 +3,8 @@
 app:
     id: moon-one
 apollo:
-    meta: http://172.17.41.250:8080
+    #meta: http://172.17.41.250:8080
+    meta: http://127.0.0.1:8080
     autoUpdateInjectedSpringProperties: false
     bootstrap:
         enabled: true
