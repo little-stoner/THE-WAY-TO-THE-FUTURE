@@ -1,1 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.kickoff.KickoffFactory
+org.springframework.boot.BootstrapRegistryInitializer=com.kickoff.BootStrap

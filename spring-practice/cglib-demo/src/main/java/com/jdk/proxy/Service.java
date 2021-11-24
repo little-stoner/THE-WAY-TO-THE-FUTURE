@@ -1,2 +1,3 @@
-package com.jdk.proxy;public class Service {
-}
+package com.jdk.proxy;
+
+public interface Service {}
