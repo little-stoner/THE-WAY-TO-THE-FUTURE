@@ -1,2 +1,48 @@
-package _concurrency.jcip;public class Indexer {
+package _concurrency.jcip;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+public class Indexer implements Runnable {
+
+    private final BlockingQueue<File> queue;
+
+    public Indexer(BlockingQueue<File> queue) {
+        this.queue = queue;
+    }
+
+    @Override
+    public void run() {
+        try {
+            while (true) {
+                indexFile(queue.take());
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
+
+    private void indexFile(File file) {
+
+    }
+
+    public static void startIndexing(File[] roots) {
+        BlockingQueue<File> queue = new LinkedBlockingQueue<>(10);
+        FileFilter filter = new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                return true;
+            }
+        };
+        for (File root : roots) {
+            new Thread(new FileCrawler(queue, filter, root)).start();
+        }
+
+        for (int i = 0; i < 100; i++) {
+            new Thread(new Indexer(queue)).start();
+        }
+    }
+
 }

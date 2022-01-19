@@ -1,4 +1,4 @@
-package _efectivejava.generics.item36;
+package _efectivejava.chapter6.item36;
 
 import java.util.EnumSet;
 import java.util.Objects;

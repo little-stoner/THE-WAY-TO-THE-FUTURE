@@ -1,4 +1,4 @@
-package _efectivejava.item79;
+package _efectivejava._concurrency.item79;
 
 import java.util.*;
 import java.util.concurrent.ExecutionException;
@@ -100,6 +100,7 @@ public class ObservableSet<E> extends ForwardingSet<E> {
                 if (element == 23) {
                     ExecutorService exec = Executors.newSingleThreadExecutor();
                     try {
+                        System.out.println("++++++++++++++++++++++++++=");
                         exec.submit(() -> set.removeObserver(this)).get();
                     } catch (ExecutionException | InterruptedException e) {
                         throw new AssertionError(e);

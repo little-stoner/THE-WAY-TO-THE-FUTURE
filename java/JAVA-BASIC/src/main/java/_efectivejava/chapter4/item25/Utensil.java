@@ -1,2 +1,9 @@
-package _efectivejava.chapter4.item25;public class Utensil {
+package _efectivejava.chapter4.item25;
+
+class Utensil {
+    static final String NAME = "pan";
+}
+
+class Dessert {
+    static final String NAME = "cake";
 }

@@ -1,4 +1,4 @@
-package _efectivejava.chapter4;
+package _efectivejava.chapter4.item17;
 
 public class Complex {
 
@@ -6,12 +6,17 @@ public class Complex {
     private final double im;
 
     public Complex(double re, double im) {
-        this.re = re    ;
-        this.im = im    ;
+        this.re = re;
+        this.im = im;
     }
 
-    public double realPart()      { return re; }
-    public double imaginaryPart() { return im; }
+    public double realPart() {
+        return re;
+    }
+
+    public double imaginaryPart() {
+        return im;
+    }
 
     public Complex plus(Complex c) {
         return new Complex(re + c.re, im + c.im);
@@ -37,7 +42,8 @@ public class Complex {
                 (im * c.re - re * c.im) / tmp);
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (o == this) {
             return true;
         }
@@ -51,11 +57,13 @@ public class Complex {
                 && Double.compare(c.im, im) == 0;
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         return 31 * Double.hashCode(re) + Double.hashCode(im);
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "(" + re + " + " + im + "i)";
     }
 

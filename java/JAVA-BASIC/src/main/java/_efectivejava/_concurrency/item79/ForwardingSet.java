@@ -1,4 +1,4 @@
-package _efectivejava.item79;
+package _efectivejava._concurrency.item79;
 
 import java.util.Collection;
 import java.util.Iterator;

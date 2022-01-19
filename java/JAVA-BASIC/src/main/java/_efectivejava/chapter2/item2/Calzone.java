@@ -1,4 +1,4 @@
-package _efectivejava.chapter2;
+package _efectivejava.chapter2.item2;
 
 /**
  * @author viber

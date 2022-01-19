@@ -1,2 +1,5 @@
-package _efectivejava.chapter8.item52;public class SparklingWine {
+package _efectivejava.chapter8.item52;
+
+class SparklingWine extends Wine {
+    @Override String name() { return "sparkling wine"; }
 }

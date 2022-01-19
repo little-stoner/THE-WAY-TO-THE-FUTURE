@@ -1,2 +1,10 @@
-package _concurrency.jcip;public class MutableInteger {
+package _concurrency.jcip;
+
+import javax.annotation.concurrent.NotThreadSafe;
+
+@NotThreadSafe
+public class MutableInteger {
+    private int value;
+    public int get() { return value; }
+    public void set(int value) { this.value = value; }
 }

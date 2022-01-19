@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * @author viber
+ */
 public class PhoneNumber {
+
     private final short areaCode, prefix, lineNum;
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
@@ -14,16 +18,19 @@ public class PhoneNumber {
     }
 
     private static short rangeCheck(int val, int max, String arg) {
-        if (val < 0 || val > max)
+        if (val < 0 || val > max) {
             throw new IllegalArgumentException(arg + ": " + val);
+        }
         return (short) val;
     }
 
     @Override public boolean equals(Object o) {
-        if (o == this)
+        if (o == this) {
             return true;
-        if (!(o instanceof PhoneNumber))
+        }
+        if (!(o instanceof PhoneNumber)) {
             return false;
+        }
         PhoneNumber pn = (PhoneNumber)o;
         return pn.lineNum == lineNum && pn.prefix == prefix
                 && pn.areaCode == areaCode;
@@ -39,16 +46,18 @@ public class PhoneNumber {
         return result;
     }
     */
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(areaCode, prefix, lineNum);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(areaCode, prefix, lineNum);
+//    }
 
     public static void main(String[] args) {
         Map<PhoneNumber, String> m = new HashMap<>();
         m.put(new PhoneNumber(707, 867, 5309), "Jenny");
+        m.put(new PhoneNumber(707, 867, 5309), "Jenny");
+        System.out.println(m);
         System.out.println(m.get(new PhoneNumber(707, 867, 5309)));
+        System.out.println(m);
     }
 
 }

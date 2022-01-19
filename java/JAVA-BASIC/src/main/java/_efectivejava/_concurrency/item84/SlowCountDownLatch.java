@@ -1,4 +1,4 @@
-package _efectivejava.item84;
+package _efectivejava._concurrency.item84;
 
 public class SlowCountDownLatch {
 

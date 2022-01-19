@@ -1,4 +1,4 @@
-package _efectivejava.chapter2;
+package _efectivejava.chapter2.item2;
 
 import java.util.EnumSet;
 import java.util.Objects;
@@ -20,6 +20,7 @@ public abstract class Pizza {
             return self();
         }
         abstract Pizza build();
+
         protected abstract T self();
     }
 

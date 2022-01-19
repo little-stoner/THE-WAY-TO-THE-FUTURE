@@ -1,4 +1,4 @@
-package _efectivejava.item78;
+package _efectivejava._concurrency.item78;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +12,7 @@ public class StopThread {
            int i = 0;
            while (!stopRequested) {
                i++;
+               System.out.println(">>>>>>>>" + i);
            }
         });
 

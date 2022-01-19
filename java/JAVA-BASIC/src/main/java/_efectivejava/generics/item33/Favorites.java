@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Favorites {
 
-    private Map<Class<?>, Object> favorites = new HashMap<>();
+    private final Map<Class<?>, Object> favorites = new HashMap<>();
 
     public <T> void putFavorite(Class<T> type, T instance) {
         favorites.put(Objects.requireNonNull(type), instance);

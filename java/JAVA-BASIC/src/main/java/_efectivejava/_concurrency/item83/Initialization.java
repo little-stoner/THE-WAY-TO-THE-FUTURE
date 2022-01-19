@@ -1,4 +1,4 @@
-package _efectivejava.item83;
+package _efectivejava._concurrency.item83;
 
 public class Initialization {
 

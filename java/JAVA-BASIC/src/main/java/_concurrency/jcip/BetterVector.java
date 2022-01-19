@@ -1,2 +1,17 @@
-package _concurrency.jcip;public class BetterVector {
+package _concurrency.jcip;
+
+import javax.annotation.concurrent.ThreadSafe;
+import java.util.Vector;
+
+@ThreadSafe
+public class BetterVector<E> extends Vector<E> {
+
+    public synchronized boolean putIfAbsent(E x) {
+        boolean absent = !contains(x);
+        if (absent) {
+            add(x);
+        }
+        return absent;
+    }
+
 }

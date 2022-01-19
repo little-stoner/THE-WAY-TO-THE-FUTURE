@@ -1,2 +1,7 @@
-package _efectivejava.chapter2.item5;public class Lexicon {
+package _efectivejava.chapter2.item5;
+
+/**
+ * @author viber
+ */
+public class Lexicon {
 }

@@ -1,4 +1,4 @@
-package _efectivejava.item79;
+package _efectivejava._concurrency.item79;
 
 public interface SetObserver<E> {
     // Invoked when an element is added to the observable set

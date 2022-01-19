@@ -1,4 +1,4 @@
-package _efectivejava.item81;
+package _efectivejava._concurrency.item81;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;

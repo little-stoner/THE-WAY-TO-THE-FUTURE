@@ -1,2 +1,9 @@
-package _clone;public class CloneConstructor {
+package _clone;
+
+/**
+ * @author viber
+ */
+
+public class CloneConstructor {
+
 }

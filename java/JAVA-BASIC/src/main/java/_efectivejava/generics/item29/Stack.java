@@ -1,4 +1,4 @@
-package _efectivejava.generics;
+package _efectivejava.generics.item29;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

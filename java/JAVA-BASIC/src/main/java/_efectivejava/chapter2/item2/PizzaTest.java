@@ -1,4 +1,4 @@
-package _efectivejava.chapter2;
+package _efectivejava.chapter2.item2;
 
 public class PizzaTest {
     public static void main(String[] args) {
