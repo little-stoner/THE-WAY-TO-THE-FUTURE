@@ -38,10 +38,12 @@ public class Complex {
     }
 
     @Override public boolean equals(Object o) {
-        if (o == this)
+        if (o == this) {
             return true;
-        if (!(o instanceof Complex))
+        }
+        if (!(o instanceof Complex)) {
             return false;
+        }
         Complex c = (Complex) o;
 
         // See page 47 to find out why we use compare instead of ==
