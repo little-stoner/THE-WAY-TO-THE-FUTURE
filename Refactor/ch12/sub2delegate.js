@@ -52,3 +52,22 @@ class PremiumBooking extends Booking {
         return this._extras.hasOwnProperty('dinner') && !this.isPeakDay;
     }
 }
+
+function createBooking(show, date) {
+    return new Booking(show, date); 
+}
+function createPremiumBooking(show, date, extras) {
+    return new PremiumBooking (show, date, extras); 
+}
+    
+function createBooking(show, date) {
+return new Booking(show, date); }
+function createPremiumBooking(show, date, extras) {
+return new PremiumBooking (show, date, extras); }
+
+class PremiumBookingDelegate {
+    constructor(hostBooking, extras) { 
+        this._host = hostBooking;
+        this._extras = extras;
+    }    
+}
