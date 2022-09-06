@@ -1,2 +1,9 @@
-package com.cglib.demo;public class LogService {
+package com.cglib.demo;
+
+
+public class LogService {
+
+    public void log() {
+        System.out.println("Logging...");
+    }
 }

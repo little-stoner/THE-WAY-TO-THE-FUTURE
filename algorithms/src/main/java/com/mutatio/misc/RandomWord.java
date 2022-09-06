@@ -1,6 +1,6 @@
 package com.mutatio.misc;
 
-import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Random;
 

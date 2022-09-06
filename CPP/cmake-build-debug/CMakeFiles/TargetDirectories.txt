@@ -1,0 +1,3 @@
+/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles/a.dir

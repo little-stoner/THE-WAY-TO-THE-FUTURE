@@ -1,7 +1,7 @@
 package com.mutatio.misc;
 
-import edu.princeton.cs.introcs.StdDraw;
-import edu.princeton.cs.introcs.StdRandom;
+import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.StdRandom;
 
 import java.awt.*;
 

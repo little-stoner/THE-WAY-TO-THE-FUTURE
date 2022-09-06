@@ -10,6 +10,7 @@ ipython = "*"
 inflection = "*"
 sshtunnel = {index = "https://pypi.douban.com/simple", version = "*"}
 requests = {index = "https://pypi.douban.com/simple", version = "*"}
+websockets = "*"
 
 [requires]
 python_version = "3.8"

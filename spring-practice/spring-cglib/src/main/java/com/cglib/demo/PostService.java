@@ -1,2 +1,5 @@
-package com.cglib.demo;public class PostService {
+package com.cglib.demo;
+
+public interface PostService {
+    void save();
 }

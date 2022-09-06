@@ -1,9 +1,6 @@
 package _efectivejava.generics.item28;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
@@ -21,7 +18,7 @@ public class Chooser<T> {
     }
 
     public static void main(String[] args) {
-        List<Integer> intList = List.of(1, 2, 3, 4, 5, 6);
+        List<Integer> intList = Arrays.asList(1, 2, 3, 4, 5, 6);
         Chooser<Integer> chooser = new Chooser<>(intList);
 
     }
