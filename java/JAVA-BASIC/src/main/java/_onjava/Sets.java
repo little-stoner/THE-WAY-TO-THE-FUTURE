@@ -12,8 +12,8 @@ public class Sets {
 
     public static <T> Set<T> intersection(Set<T> a, Set<T> b) {
         Set<T> result = new HashSet<>(a);
-        a.retainAll(b);
-        return a;
+        result.retainAll(b);
+        return result;
     }
 
     public static <T> Set<T> difference(Set<T> superset, Set<T> subset) {

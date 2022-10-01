@@ -1,7 +1,7 @@
 package _collections;
 
-import _onjava8._typeinfo.pets.Pet;
-import _onjava8._typeinfo.pets.Pets;
+import onjava8._typeinfo.pets.Pet;
+import onjava8._typeinfo.pets.Pets;
 
 import java.util.List;
 import java.util.ListIterator;
