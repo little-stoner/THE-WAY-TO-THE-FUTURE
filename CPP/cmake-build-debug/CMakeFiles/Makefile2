@@ -73,6 +73,10 @@ CMAKE_BINARY_DIR = /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debu
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/crtp.dir/all
+all: CMakeFiles/d.dir/all
+all: CMakeFiles/b.dir/all
+all: CMakeFiles/c.dir/all
 all: CMakeFiles/a.dir/all
 
 .PHONY : all
@@ -83,9 +87,121 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/crtp.dir/clean
+clean: CMakeFiles/d.dir/clean
+clean: CMakeFiles/b.dir/clean
+clean: CMakeFiles/c.dir/clean
 clean: CMakeFiles/a.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/crtp.dir
+
+# All Build rule for target.
+CMakeFiles/crtp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target crtp"
+.PHONY : CMakeFiles/crtp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/crtp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/crtp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/crtp.dir/rule
+
+# Convenience name for target.
+crtp: CMakeFiles/crtp.dir/rule
+
+.PHONY : crtp
+
+# clean rule for target.
+CMakeFiles/crtp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/clean
+.PHONY : CMakeFiles/crtp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/d.dir
+
+# All Build rule for target.
+CMakeFiles/d.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target d"
+.PHONY : CMakeFiles/d.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/d.dir/rule
+
+# Convenience name for target.
+d : CMakeFiles/d.dir/rule
+
+.PHONY : d
+
+# clean rule for target.
+CMakeFiles/d.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/clean
+.PHONY : CMakeFiles/d.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/b.dir
+
+# All Build rule for target.
+CMakeFiles/b.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target b"
+.PHONY : CMakeFiles/b.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/b.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/b.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/b.dir/rule
+
+# Convenience name for target.
+b : CMakeFiles/b.dir/rule
+
+.PHONY : b
+
+# clean rule for target.
+CMakeFiles/b.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/clean
+.PHONY : CMakeFiles/b.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/c.dir
+
+# All Build rule for target.
+CMakeFiles/c.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target c"
+.PHONY : CMakeFiles/c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/c.dir/rule
+
+# Convenience name for target.
+c : CMakeFiles/c.dir/rule
+
+.PHONY : c
+
+# clean rule for target.
+CMakeFiles/c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/clean
+.PHONY : CMakeFiles/c.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/a.dir

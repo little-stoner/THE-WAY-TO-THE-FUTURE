@@ -1,9 +1,9 @@
 package main
 
 import (
+    "github.com/gin-gonic/gin"
     //"fmt"
     "net/http"
-    "github.com/gin-gonic/gin"
 )
 
 type album struct {
@@ -44,7 +44,7 @@ func getAlbumByID(c *gin.Context) {
     c.IndentedJSON(http.StatusNotFound, gin.H{"message":"album not found"})
 }
 
-func main() {
+func main00() {
     router := gin.Default()
     router.GET("/albums", getAlbums)
     router.GET("/albums/:id", getAlbumByID)

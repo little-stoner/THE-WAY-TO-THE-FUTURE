@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debu
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -129,6 +129,58 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named crtp
+
+# Build rule for target.
+crtp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crtp
+.PHONY : crtp
+
+# fast build rule for target.
+crtp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/build
+.PHONY : crtp/fast
+
+#=============================================================================
+# Target rules for targets named d
+
+# Build rule for target.
+d : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 d
+.PHONY : d
+
+# fast build rule for target.
+d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/build
+.PHONY : d/fast
+
+#=============================================================================
+# Target rules for targets named b
+
+# Build rule for target.
+b : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b
+.PHONY : b
+
+# fast build rule for target.
+b/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/build
+.PHONY : b/fast
+
+#=============================================================================
+# Target rules for targets named c
+
+# Build rule for target.
+c : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c
+.PHONY : c
+
+# fast build rule for target.
+c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
+.PHONY : c/fast
 
 #=============================================================================
 # Target rules for targets named a
@@ -170,6 +222,114 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+primer/ch01/main.o: primer/ch01/main.cpp.o
+
+.PHONY : primer/ch01/main.o
+
+# target to build an object file
+primer/ch01/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/primer/ch01/main.cpp.o
+.PHONY : primer/ch01/main.cpp.o
+
+primer/ch01/main.i: primer/ch01/main.cpp.i
+
+.PHONY : primer/ch01/main.i
+
+# target to preprocess a source file
+primer/ch01/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/primer/ch01/main.cpp.i
+.PHONY : primer/ch01/main.cpp.i
+
+primer/ch01/main.s: primer/ch01/main.cpp.s
+
+.PHONY : primer/ch01/main.s
+
+# target to generate assembly for a file
+primer/ch01/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/primer/ch01/main.cpp.s
+.PHONY : primer/ch01/main.cpp.s
+
+primer/ch03/main.o: primer/ch03/main.cpp.o
+
+.PHONY : primer/ch03/main.o
+
+# target to build an object file
+primer/ch03/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/primer/ch03/main.cpp.o
+.PHONY : primer/ch03/main.cpp.o
+
+primer/ch03/main.i: primer/ch03/main.cpp.i
+
+.PHONY : primer/ch03/main.i
+
+# target to preprocess a source file
+primer/ch03/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/primer/ch03/main.cpp.i
+.PHONY : primer/ch03/main.cpp.i
+
+primer/ch03/main.s: primer/ch03/main.cpp.s
+
+.PHONY : primer/ch03/main.s
+
+# target to generate assembly for a file
+primer/ch03/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/primer/ch03/main.cpp.s
+.PHONY : primer/ch03/main.cpp.s
+
+primer/ch16/crtp.o: primer/ch16/crtp.cpp.o
+
+.PHONY : primer/ch16/crtp.o
+
+# target to build an object file
+primer/ch16/crtp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/primer/ch16/crtp.cpp.o
+.PHONY : primer/ch16/crtp.cpp.o
+
+primer/ch16/crtp.i: primer/ch16/crtp.cpp.i
+
+.PHONY : primer/ch16/crtp.i
+
+# target to preprocess a source file
+primer/ch16/crtp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/primer/ch16/crtp.cpp.i
+.PHONY : primer/ch16/crtp.cpp.i
+
+primer/ch16/crtp.s: primer/ch16/crtp.cpp.s
+
+.PHONY : primer/ch16/crtp.s
+
+# target to generate assembly for a file
+primer/ch16/crtp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/primer/ch16/crtp.cpp.s
+.PHONY : primer/ch16/crtp.cpp.s
+
+primer/ch16/main.o: primer/ch16/main.cpp.o
+
+.PHONY : primer/ch16/main.o
+
+# target to build an object file
+primer/ch16/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch16/main.cpp.o
+.PHONY : primer/ch16/main.cpp.o
+
+primer/ch16/main.i: primer/ch16/main.cpp.i
+
+.PHONY : primer/ch16/main.i
+
+# target to preprocess a source file
+primer/ch16/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch16/main.cpp.i
+.PHONY : primer/ch16/main.cpp.i
+
+primer/ch16/main.s: primer/ch16/main.cpp.s
+
+.PHONY : primer/ch16/main.s
+
+# target to generate assembly for a file
+primer/ch16/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch16/main.cpp.s
+.PHONY : primer/ch16/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +339,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... a"
+	@echo "... b"
+	@echo "... c"
+	@echo "... crtp"
+	@echo "... d"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... primer/ch01/main.o"
+	@echo "... primer/ch01/main.i"
+	@echo "... primer/ch01/main.s"
+	@echo "... primer/ch03/main.o"
+	@echo "... primer/ch03/main.i"
+	@echo "... primer/ch03/main.s"
+	@echo "... primer/ch16/crtp.o"
+	@echo "... primer/ch16/crtp.i"
+	@echo "... primer/ch16/crtp.s"
+	@echo "... primer/ch16/main.o"
+	@echo "... primer/ch16/main.i"
+	@echo "... primer/ch16/main.s"
 .PHONY : help
 
 

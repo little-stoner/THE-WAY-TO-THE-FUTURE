@@ -22,7 +22,6 @@ class C extends SelfBounded<C> {
     }
 }
 
-class D {}
 
 // class E extends SelfBounded<D> {}
 
@@ -39,6 +38,7 @@ public class SelfBounding {
 
         C c = new C();
         c = c.setAndGet(new C());
+        System.out.println(c);
 
     }
 

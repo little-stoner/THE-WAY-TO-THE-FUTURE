@@ -10,6 +10,10 @@ public class ObjectGeneric {
         o.add(1);
         o.add("a");
         System.out.println(o);
+        List l = new ArrayList();
+        l.add(1);
+        l.add("a");
+        System.out.println(l);
     }
 
 }

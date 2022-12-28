@@ -20,14 +20,24 @@ func main() {
 		SumIntsOrFloats[string, int64](ints),
 		SumIntsOrFloats[string, float64](floats))
 
+	m := map[int]string{1: "2", 2: "4", 3: "8"}
+	fmt.Println(" keys: ", MapKeys(m))
 }
 
-func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
+func MapKeys[K comparable, V any](m map[K]V) []K {
+	r := make([]K, 0, len(m))
+	for k := range m {
+		r = append(r, k)
+	}
+	return r
+}
+
+func SumIntsOrFloats[K comparable, V any](m map[K]V) V {
 	var s V
 	for _, v := range m {
 		s += v
 	}
-	fmt.Printf(">>>>>>> %s \n", reflect.TypeOf(s));
+	fmt.Printf(">>>>>>> %s \n", reflect.TypeOf(s))
 	return s
 }
 
