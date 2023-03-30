@@ -3,4 +3,4 @@ project(tcpl)
 set(CMAKE_C_STANDARD 11)
 
 
-add_executable(p2i.c p2i.c)
+add_executable(fopen.c fopen.c)

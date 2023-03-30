@@ -2,14 +2,17 @@ package com.book.ch01;
 
 import java.util.Iterator;
 
-public class ResizeingArrayStack<Item> implements Iterable<Item> {
+/**
+ * @author viber
+ */
+public class ResizingArrayStack<Item> implements Iterable<Item> {
 
     @SuppressWarnings("unchecked")
     private Item[] array = (Item[]) new Object[1];
 
     private int N = 0;
 
-    public ResizeingArrayStack() {
+    public ResizingArrayStack() {
     }
     public void push(Item item) {
         if (N == array.length) {
@@ -55,4 +58,6 @@ public class ResizeingArrayStack<Item> implements Iterable<Item> {
 
         }
     }
+
+
 }

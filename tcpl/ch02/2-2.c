@@ -1,18 +1,12 @@
 #include <stdio.h>
 
+#define MAX 100
 
 int main() {
+    int i, lim, c;
+    if (i < lim -1) {
+        while ((c = getchar()) != EOF) {
 
-
-    for (int i = 0; i < 1000; i++) {
-        char c = getchar();
-        if (c == '\n') {
-            
-        }
-        else if (c == EOF) {
-            
-        } else {
-            
         }
     }
     

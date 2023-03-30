@@ -1,10 +1,10 @@
-package main
+package goreflect
 
 import (
-    "fmt"
-    "reflect"
-    "bytes"
-    "encoding/json"
+	"bytes"
+	"encoding/json"
+	"fmt"
+	"reflect"
 )
 
 func main() {

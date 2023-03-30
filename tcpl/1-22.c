@@ -1,25 +1,14 @@
 #include <stdio.h>
 
-#define COL 5
+#define TAB 8
 
 int main() {
 
     int c;
-    int count = 0;
+    int wc = 0;
     char last;
     while ((c = getchar()) != EOF) {
-        if (count == COL) {
-            count = 0;
-            printf("\n");
-        } else {
-            putchar(c);
-            count++;
-            if (c == ' ' || c == '\t') {
-            
-            } else {
-                last = c;
-            }
-        }
+
     }
     
 }

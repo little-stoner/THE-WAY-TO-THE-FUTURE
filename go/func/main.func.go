@@ -1,4 +1,4 @@
-package main
+package gofunc
 
 import (
 	"fmt"
@@ -14,6 +14,7 @@ type score struct {
 	player, opponent, thisTurn int
 }
 type action func(current score) (result score, turnIsOver bool)
+
 func roll(s score) (score, bool) {
 	outcome := rand.Intn(6) + 1
 	if outcome == 1 {
@@ -27,6 +28,7 @@ func stay(s score) (score, bool) {
 }
 
 type strategy func(score) action
+
 func stayAtK(k int) strategy {
 	return func(s score) action {
 		if s.thisTurn >= k {

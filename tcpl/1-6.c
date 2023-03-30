@@ -2,7 +2,7 @@
 
 int main() {
 
-    int test = -1;
-    printf("%d\n", (test != EOF));
+    int r;
+    printf("%d\n", (r = test != EOF));
     
 }

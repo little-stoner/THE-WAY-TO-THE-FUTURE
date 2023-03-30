@@ -2,14 +2,23 @@
 
 int main() {
 
-    int c, num;
-    num = 0;
-    while((c = getchar()) != EOF && c != '\n') {
-        printf(">>>>>>>>>\n");
-        if (c == '\n' || c == ' ' || c == '\t') {
-            num++;
+    int c;
+    printf(" >>> c: %d", c);
+
+    int newline = 0;
+    int blank = 0;
+    int tab = 0;
+    while((c = getchar()) != EOF) {
+        if (c == '\n') {
+            ++newline;
+        }
+        if (c == ' ') {
+            ++blank;
+        }
+        if (c == '\t') {
+            ++tab;
         }
     }
-    printf("%d\n", num);
+    printf("nl: %d, blank: %d, tab: %d\n", newline, blank, tab);
     
 }

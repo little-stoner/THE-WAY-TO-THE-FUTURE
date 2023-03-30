@@ -4,7 +4,7 @@ int main() {
 
     int c;
 
-    while((c = getchar()) != EOF && c != '\n') {
+    while((c = getchar()) != EOF) {
         if (c == ' ') {
             putchar('\\');
             putchar('b');
@@ -13,7 +13,9 @@ int main() {
             putchar('\\');
             putchar('t');
         }
-        else if (c == '\\') putchar('\\');
+        else if (c == '\\') {
+            putchar('\\\\');
+        }
         else putchar(c);
     }
     printf("\n");

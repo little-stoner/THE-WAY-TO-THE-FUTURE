@@ -10,23 +10,22 @@ int main() {
 
 void squeese(char s1[], char s2[]) {
 
-    int i = 0, j = 0;
-    while (s1[i++] != '\0') {}
-    while (s2[j++] != '\0') {}
-
-    printf(">>> %s \n", s1);
-    
-    for (int n = 0; n < i; n++) {
-        for(int m = 0; m < j; m++) {
-            if (s1[n] == s2[m]) {
-                s1[n] = '\0';
+    int i, j, match;
+    for (i = 0, j = 0; s1[i] != '\0'; ++i) {
+        char c = s1[i];
+        match = 0;
+        for (int k = 0; s2[k] != '\0'; ++k) {
+            if (s2[k] == c) {
+                match = 1;
             }
         }
+        if (!match) {
+            s1[j++] = s1[i];
+        }
     }
+    s1[j] = '\0';
 
-    for (int k = 0; k < i; k++) {
-        printf("%c", s1[k]);
-    }
+    printf("%s", s1);
     printf("\n");
     
 }

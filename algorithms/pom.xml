@@ -7,8 +7,20 @@
     <groupId>com.mutio</groupId>
     <artifactId>algorithms</artifactId>
     <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-<!--    <dependencies>-->
+    <!--    <dependencies>-->
 <!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.googlecode.princeton-java-algorithms/algorithms &ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>com.googlecode.princeton-java-algorithms</groupId>-->

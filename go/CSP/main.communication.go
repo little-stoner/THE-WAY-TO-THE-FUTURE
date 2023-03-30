@@ -1,4 +1,4 @@
-package main
+package csp
 
 import (
 	"fmt"
@@ -9,19 +9,20 @@ import (
 )
 
 const (
-	numPollers = 2
-	pollInterval = 60 * time.Second
+	numPollers     = 2
+	pollInterval   = 60 * time.Second
 	statusInterval = 10 * time.Second
-	errTimeout = 10 * time.Second
+	errTimeout     = 10 * time.Second
 )
 
-var urls = []string {
+var urls = []string{
 	"http://www.google.com/",
 	"http://golang.org/",
 	"http://blog.golang.org/",
 }
+
 type State struct {
-	url string
+	url    string
 	status string
 }
 
@@ -49,9 +50,10 @@ func logState(s map[string]string) {
 }
 
 type Resource struct {
-	url string
+	url      string
 	errCount int
 }
+
 func (r *Resource) Poll() string {
 	resp, err := http.Head(r.url)
 	if err != nil {
@@ -71,7 +73,7 @@ func Poller(in <-chan *Resource, out chan<- *Resource, status chan<- State) {
 	for r := range in {
 		s := r.Poll()
 		status <- State{r.url, s}
-		out<- r
+		out <- r
 	}
 }
 

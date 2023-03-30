@@ -1,27 +1,24 @@
-
-package main
-
+package gosql
 
 import (
-	"fmt"
-	"database/sql"
-	"log"
-	"github.com/go-sql-driver/mysql"
 	"context"
+	"database/sql"
+	"fmt"
+	"github.com/go-sql-driver/mysql"
+	"log"
 	"time"
 )
-
 
 var db *sql.DB
 
 func main() {
 
 	cfg := mysql.Config{
-		User: "root",
-		Passwd: "root",
-		Net: "tcp",
-		Addr: "127.0.0.1:3306",
-		DBName: "viber",
+		User:                 "root",
+		Passwd:               "root",
+		Net:                  "tcp",
+		Addr:                 "127.0.0.1:3306",
+		DBName:               "viber",
 		AllowNativePasswords: true,
 	}
 
@@ -39,15 +36,11 @@ func main() {
 	}
 	fmt.Println(" Connected ")
 
-
-
-
 }
-
 
 func QueryWithTimeout(ctx context.Context) {
 
-	queryCtx, cancel := context.WithTimeout(ctx, 5 * time.Second)
+	queryCtx, cancel := context.WithTimeout(ctx, 5*time.Second)
 	defer cancel()
 
 	rows, err := db.QueryContext(queryCtx, "Select * from user")
@@ -59,7 +52,6 @@ func QueryWithTimeout(ctx context.Context) {
 	//
 
 }
-
 
 func CreateOrder(ctx context.Context, userId, quantity int) (oid int64, err error) {
 
@@ -86,7 +78,6 @@ func CreateOrder(ctx context.Context, userId, quantity int) (oid int64, err erro
 	if !enough {
 		return fail(fmt.Errorf(" not enough order permission "))
 	}
-
 
 	_, err = tx.ExecContext(ctx, "UPDATE user set quantity = quantity - ? where id = ?",
 		quantity, userId)
@@ -115,10 +106,10 @@ func CreateOrder(ctx context.Context, userId, quantity int) (oid int64, err erro
 }
 
 type User struct {
-	Id int64
+	Id       int64
 	Username string
-	Salt string
-	Valid int8
+	Salt     string
+	Valid    int8
 }
 
 func crud() {
@@ -182,7 +173,6 @@ func userById(id int64) (User, error) {
 	return user, nil
 }
 
-
 func addUser(user User) (int64, error) {
 	result, err := db.Exec("insert into user(username) values (?)", user.Username)
 	if err != nil {
@@ -194,4 +184,3 @@ func addUser(user User) (int64, error) {
 	}
 	return id, nil
 }
-

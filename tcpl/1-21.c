@@ -3,7 +3,7 @@
 #define IN 1
 #define OUT 0
 
-int main() {
+int main0() {
 
     int pos = 0;
     int c, state = OUT;
@@ -42,4 +42,21 @@ int main() {
     }
     
     return 0;
+}
+
+int main() {
+    int c, span;
+    int wc = 0;
+    while ((c = getchar()) != EOF) {
+        if (c == '\t') {
+            span = TAB - wc % TAB;
+            for (int i = 0; i < span; ++i) {
+                putchar('*');
+            }
+            wc += span;
+        } else {
+            wc++;
+            putchar(c);
+        }
+    }
 }

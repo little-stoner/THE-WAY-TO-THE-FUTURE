@@ -1,5 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    printf("asd\c");
+    printf("asd\y");
+    printf("\n");
+    printf("asd\7");
+    printf("\n");
+    printf("asd\?");
 }

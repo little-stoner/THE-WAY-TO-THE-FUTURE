@@ -1,4 +1,4 @@
-package com.mutatio;
+package com.book.ch01;
 
 import edu.princeton.cs.algs4.Stopwatch;
 import edu.princeton.cs.algs4.In;
@@ -19,6 +19,7 @@ public class BinarySearch {
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
             if (a[mid] == key) {
+                // StdOut.printf(">>> lo: %d, hi: %d <<<\n", lo, hi);
                 return mid;
             } else if (a[mid] < key) {
                 lo = mid + 1;
@@ -26,10 +27,11 @@ public class BinarySearch {
                 hi = mid - 1;
             }
         }
+        // StdOut.printf(">>> lo: %d, hi: %d <<<\n", lo, hi);
         return -1;
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main0(String[] args) throws FileNotFoundException {
         Stopwatch start = new Stopwatch();
         int[] whitelist = new In("/Users/viber/Mamba/algs4-data/largeW.txt").readAllInts();
         Arrays.sort(whitelist);
@@ -46,10 +48,12 @@ public class BinarySearch {
 
     }
 
-    private static void position() {
+    public static void main(String[] args) {
         int[] a = {8, 5, 9, 12};
         Arrays.sort(a);
-        rank(5, a);
+        rank(6, a);
+        StdOut.println("============================================");
+        rank(1, a);
         System.out.println("+++++++++++++++++++++++++++++++++++++++");
         a = new int[]{2, 0, 4, 1, 2,};
         Arrays.sort(a);

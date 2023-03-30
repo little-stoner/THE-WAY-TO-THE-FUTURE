@@ -1,16 +1,16 @@
-package main
+package goweb
 
 import (
-	"log"
-	"os"
-	"net/http"
 	"html/template"
+	"log"
+	"net/http"
+	"os"
 	"regexp"
 )
 
 type Page struct {
 	Title string
-	Body []byte
+	Body  []byte
 }
 
 func (p *Page) save() error {

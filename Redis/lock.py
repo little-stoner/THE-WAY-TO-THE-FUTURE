@@ -5,7 +5,7 @@ def acquire_lock(conn, lockname, acquire_timeout=10):
     while time.time() < end:
         if conn.setnx('lock:' + lockname, identifier):
             return identifier
-        time.sleep(0.001);
+        time.sleep(0.001)
     return False
 
 
