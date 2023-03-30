@@ -12,8 +12,9 @@ abstract class StateMachine {
     protected abstract boolean changeState();
 
     protected final void runAll() {
-        while (changeState())
+        while (changeState()) {
             currentState.run();
+        }
     }
 }
 
@@ -58,8 +59,9 @@ class Washer extends StateMachine {
             // surrogate reference to a new object:
             currentState = states[i++];
             return true;
-        } else
+        } else {
             return false;
+        }
     }
 }
 
