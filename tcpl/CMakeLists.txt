@@ -8,6 +8,7 @@ add_subdirectory(ch04)
 add_subdirectory(ch05)
 add_subdirectory(ch08)
 add_subdirectory(practice)
+add_subdirectory(socket)
 
 add_executable(HELLO hello.c)
 add_executable(1-1.c 1-1.c)

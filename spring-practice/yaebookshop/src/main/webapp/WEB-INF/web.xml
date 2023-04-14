@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    <!-- To save as <CATALINA_HOME>\webapps\yaebookshop\WEB-INF\web.xml -->
+    <context-param>
+        <param-name>databaseURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/viber</param-value>
+    </context-param>
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+    <resource-ref>
+        <description>DB Connection Pool</description>
+        <res-ref-name>jdbc/mysql_ebookshop</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+
+    <servlet>
+        <servlet-name>EntryServlet</servlet-name>
+        <servlet-class>yaebscart.EntryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EntryServlet</servlet-name>
+        <url-pattern>/start</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueryServlet</servlet-name>
+        <servlet-class>yaebscart.QueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>yaebscart.OrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>yaebscart.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>yaebscart.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>yaebscart.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>yaebscart.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoSomethingServlet</servlet-name>
+        <servlet-class>yaebscart.DoSomethingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoSomethingServlet</servlet-name>
+        <url-pattern>/dosomething</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+<!--    <welcome-file-list>-->
+<!--        <welcome-file>index.html</welcome-file>-->
+<!--    </welcome-file-list>-->
+
+
+</web-app>

@@ -13,7 +13,8 @@ public class TL {
         // Thread local variable containing each thread's ID
         private static final ThreadLocal<Integer> threadId =
                 new ThreadLocal<Integer>() {
-                    @Override protected Integer initialValue() {
+                    @Override
+                    protected Integer initialValue() {
                         return nextId.getAndIncrement();
                     }
                 };

@@ -5,6 +5,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "HHHHH" << '\n';
+
     return 0;
 }

@@ -2,14 +2,21 @@ package _0practice.vi;
 
 public class T {
 
-    public static String f() {
-        System.out.println(" Test foo called");
-        return "";
-    }
+    private static class Checked extends Throwable {
 
+    }
+    private static class E extends Error {
+
+    }
+    private static void e() throws E {
+
+    }
+    private static void c() throws Checked {
+
+    }
     public static void main(String[] args) {
-        T obj = null;
-        System.out.println(obj.f());
+        e();
+        // c();
     }
 
 }

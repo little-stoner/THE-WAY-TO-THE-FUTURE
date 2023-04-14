@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    <!-- To save as <CATALINA_HOME>\webapps\helloservlet\WEB-INF\web.xml -->
+    <context-param>
+        <param-name>jdbcDriver</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>databaseUrl</param-name>
+        <param-value>jdbc:mysql://localhost/eshop</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>mypkg.HelloServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EchoServletExample</servlet-name>
+        <servlet-class>mypkg.EchoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionTestServlet</servlet-name>
+        <servlet-class>mypkg.SessionServlet</servlet-class>
+        <init-param>
+            <param-name>databaseURL</param-name>
+            <param-value>jdbc:mysql://localhost:3306/viber</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>root</param-value>
+        </init-param>
+    </servlet>
+
+    <!-- Note: All <servlet> elements MUST be grouped together and
+          placed IN FRONT of the <servlet-mapping> elements -->
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/sayhello</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EchoServletExample</servlet-name>
+        <url-pattern>/echo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionTestServlet</servlet-name>
+        <url-pattern>/sessiontest</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
+        </web-app>
