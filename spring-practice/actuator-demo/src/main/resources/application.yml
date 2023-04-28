@@ -1,0 +1,22 @@
+
+
+management:
+    endpoints:
+        shutdown:
+            enabled: true
+        web:
+            exposure:
+                include: "*"
+        jmx:
+            exposure:
+                include: "*"
+
+server:
+    port: 8888
+    shutdown: graceful
+
+spring:
+    application:
+        name: xxx
+    profiles:
+        active: prod
