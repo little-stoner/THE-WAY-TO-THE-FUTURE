@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
 				<Option type="4"/>
@@ -37,30 +27,18 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="crtp">
-				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/crtp" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
-					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
-					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
-					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
-					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 crtp"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="crtp/fast">
-				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/crtp" prefix_auto="0" extension_auto="0"/>
+			<Target title="ex-ccopy">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-ccopy" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -75,14 +53,14 @@
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 crtp/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-ccopy"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="d">
-				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/d" prefix_auto="0" extension_auto="0"/>
+			<Target title="ex-ccopy/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-ccopy" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -97,14 +75,14 @@
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 d"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-ccopy/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="d/fast">
-				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/d" prefix_auto="0" extension_auto="0"/>
+			<Target title="ex-allocator">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-allocator" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -119,7 +97,293 @@
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 d/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-allocator"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-allocator/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-allocator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-allocator/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-varying">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-varying" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-varying"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-varying/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-varying" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-varying/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_class">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_class" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_class"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_class/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_class" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_class/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_func">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_func" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_func"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_func/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_func" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_func/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_cast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_cast" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_cast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_cast/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_cast" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_cast/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-io">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-io" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-io"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-io/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-io" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-io/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/f" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 f"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/f" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 f/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -169,8 +433,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="c">
-				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/c" prefix_auto="0" extension_auto="0"/>
+			<Target title="learncpp_struct">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_struct" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -185,14 +449,14 @@
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 c"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_struct"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="c/fast">
-				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/c" prefix_auto="0" extension_auto="0"/>
+			<Target title="learncpp_struct/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_struct" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -207,7 +471,447 @@
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 c/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_struct/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.36">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/2.36" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 2.36"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2.36/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/2.36" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 2.36/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.23">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.23" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.23"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.23/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.23" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.23/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-pointer-arithmetic">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-pointer-arithmetic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-pointer-arithmetic"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-pointer-arithmetic/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-pointer-arithmetic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-pointer-arithmetic/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.11">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.11" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.11"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.11/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.11" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.11/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.10">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.10"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.10/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.10" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.10/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-assign">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-assign" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-assign"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-assign/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-assign" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-assign/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crtp">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/crtp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 crtp"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crtp/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/crtp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 crtp/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-string">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-string"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-string/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-string" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-string/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-random">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-random" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-random"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-random/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-random" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-random/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex3">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex3/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -257,21 +961,1385 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="ex-clz">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-clz" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-clz"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-clz/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-clz" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-clz/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-unique">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-unique" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-unique"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-unique/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-unique" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-unique/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-adt">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-adt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-adt"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-adt/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-adt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-adt/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-array">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-array" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-array"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-array/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-array" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-array/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-tuple">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-tuple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-tuple"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-tuple/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-tuple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-tuple/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_goto">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_goto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_goto"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_goto/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_goto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_goto/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.14">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.14" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.14"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.14/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.14" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.14/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex1">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex1"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex1/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex1/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-func">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-func" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-func"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-func/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-func" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-func/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/c" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 c"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/c" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 c/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex6">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex6"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex6/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex6/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-bitwise">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-bitwise" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-bitwise"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-bitwise/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-bitwise" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-bitwise/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-constructor">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-constructor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-constructor"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-constructor/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-constructor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-constructor/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-operator-overloading">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-operator-overloading" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-operator-overloading"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-operator-overloading/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-operator-overloading" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-operator-overloading/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-dynamic">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-dynamic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-dynamic"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-dynamic/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-dynamic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-dynamic/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-decltype">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-decltype" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-decltype"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-decltype/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-decltype" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-decltype/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_ctad">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_ctad" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_ctad"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_ctad/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_ctad" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_ctad/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="d">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 d"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="d/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 d/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-alias">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-alias" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-alias"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-alias/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-alias" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-alias/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-free">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-free" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-free"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-free/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-free" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-free/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex8">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex8"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex8/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex8" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex8/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="e">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/e" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 e"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="e/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/e" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 e/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-multi">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-multi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-multi"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-multi/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-multi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-multi/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-static">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-static" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex-static/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex-static" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex-static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.12">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.12" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.12"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.12/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/1.12" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.12/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_a">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_a"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_a/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_a/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_class_template">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_class_template" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_class_template"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learncpp_class_template/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/learncpp_class_template" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 learncpp_class_template/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex5">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex5"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex5/fast">
+				<Option output="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/ex5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/../../../../../../include/c++/11/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0_3/bin/../lib/gcc/11/gcc/x86_64-apple-darwin20/11/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex5/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/cast.cpp">
+			<Option target="learncpp_cast"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/class-template.cpp">
+			<Option target="learncpp_class_template"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/class.cpp">
+			<Option target="learncpp_class"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/ctad.cpp">
+			<Option target="learncpp_ctad"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/exp.cpp">
+			<Option target="learncpp_a"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/func.cpp">
+			<Option target="learncpp_func"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/goto.cpp">
+			<Option target="learncpp_goto"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/learncpp/struct.cpp">
+			<Option target="learncpp_struct"/>
+		</Unit>
 		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/main.cpp">
 			<Option target="a"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/1.10.cpp">
+			<Option target="1.10"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/1.11.cpp">
+			<Option target="1.11"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/1.12.cpp">
+			<Option target="1.12"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/1.14.cpp">
+			<Option target="1.14"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/1.23.cpp">
+			<Option target="1.23"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/ex1.cpp">
+			<Option target="ex1"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/ex3-while.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/ex5-flow.cpp">
+			<Option target="ex5"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/ex6-if.cpp">
+			<Option target="ex6"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/ex8-book.cpp">
+			<Option target="ex8"/>
 		</Unit>
 		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch01/main.cpp">
 			<Option target="b"/>
 		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch02/2.36.cpp">
+			<Option target="2.36"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch02/ex-alias.cpp">
+			<Option target="ex-alias"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch02/ex-decltype.cpp">
+			<Option target="ex-decltype"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch03/ex-multidimension.cpp">
+			<Option target="ex-multi"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch03/ex-pointer-arithmetic.cpp">
+			<Option target="ex-pointer-arithmetic"/>
+		</Unit>
 		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch03/main.cpp">
 			<Option target="c"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch04/ex-assign.cpp">
+			<Option target="ex-assign"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch04/ex-bitwise.cpp">
+			<Option target="ex-bitwise"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch06/ex-array.cpp">
+			<Option target="ex-array"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch06/ex-func.cpp">
+			<Option target="ex-func"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch06/ex-varying.cpp">
+			<Option target="ex-varying"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch07/ex-adt.cpp">
+			<Option target="ex-adt"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch07/ex-clz.cpp">
+			<Option target="ex-clz"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch07/ex-constructor.cpp">
+			<Option target="ex-constructor"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch07/ex-static.cpp">
+			<Option target="ex-static"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch07/main.cpp">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch08/ex-io.cpp">
+			<Option target="ex-io"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch08/ex-string.cpp">
+			<Option target="ex-string"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch12/ex-allocator.cpp">
+			<Option target="ex-allocator"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch12/ex-dynamic.cpp">
+			<Option target="ex-dynamic"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch12/ex-new-free.cpp">
+			<Option target="ex-free"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch12/ex-unique.cpp">
+			<Option target="ex-unique"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch13/ex-copy.cpp">
+			<Option target="ex-ccopy"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch14/ex-operator-overloading.cpp">
+			<Option target="ex-operator-overloading"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch15/main.cpp">
+			<Option target="d"/>
 		</Unit>
 		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch16/crtp.cpp">
 			<Option target="crtp"/>
 		</Unit>
 		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch16/main.cpp">
-			<Option target="d"/>
+			<Option target="e"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch17/ex-random.cpp">
+			<Option target="ex-random"/>
+		</Unit>
+		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/primer/ch17/ex-tuple.cpp">
+			<Option target="ex-tuple"/>
 		</Unit>
 		<Unit filename="/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

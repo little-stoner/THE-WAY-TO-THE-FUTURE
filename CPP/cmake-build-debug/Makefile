@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debu
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,30 +131,108 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named crtp
+# Target rules for targets named ex-ccopy
 
 # Build rule for target.
-crtp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crtp
-.PHONY : crtp
+ex-ccopy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-ccopy
+.PHONY : ex-ccopy
 
 # fast build rule for target.
-crtp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/build
-.PHONY : crtp/fast
+ex-ccopy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/build
+.PHONY : ex-ccopy/fast
 
 #=============================================================================
-# Target rules for targets named d
+# Target rules for targets named ex-allocator
 
 # Build rule for target.
-d : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 d
-.PHONY : d
+ex-allocator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-allocator
+.PHONY : ex-allocator
 
 # fast build rule for target.
-d/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/build
-.PHONY : d/fast
+ex-allocator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/build
+.PHONY : ex-allocator/fast
+
+#=============================================================================
+# Target rules for targets named ex-varying
+
+# Build rule for target.
+ex-varying: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-varying
+.PHONY : ex-varying
+
+# fast build rule for target.
+ex-varying/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/build
+.PHONY : ex-varying/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_class
+
+# Build rule for target.
+learncpp_class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_class
+.PHONY : learncpp_class
+
+# fast build rule for target.
+learncpp_class/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/build
+.PHONY : learncpp_class/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_func
+
+# Build rule for target.
+learncpp_func: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_func
+.PHONY : learncpp_func
+
+# fast build rule for target.
+learncpp_func/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/build
+.PHONY : learncpp_func/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_cast
+
+# Build rule for target.
+learncpp_cast: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_cast
+.PHONY : learncpp_cast
+
+# fast build rule for target.
+learncpp_cast/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/build
+.PHONY : learncpp_cast/fast
+
+#=============================================================================
+# Target rules for targets named ex-io
+
+# Build rule for target.
+ex-io: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-io
+.PHONY : ex-io
+
+# fast build rule for target.
+ex-io/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/build
+.PHONY : ex-io/fast
+
+#=============================================================================
+# Target rules for targets named f
+
+# Build rule for target.
+f : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 f
+.PHONY : f
+
+# fast build rule for target.
+f/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/build
+.PHONY : f/fast
 
 #=============================================================================
 # Target rules for targets named b
@@ -170,17 +248,147 @@ b/fast:
 .PHONY : b/fast
 
 #=============================================================================
-# Target rules for targets named c
+# Target rules for targets named learncpp_struct
 
 # Build rule for target.
-c : cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c
-.PHONY : c
+learncpp_struct: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_struct
+.PHONY : learncpp_struct
 
 # fast build rule for target.
-c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
-.PHONY : c/fast
+learncpp_struct/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/build
+.PHONY : learncpp_struct/fast
+
+#=============================================================================
+# Target rules for targets named 2.36
+
+# Build rule for target.
+2.36: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2.36
+.PHONY : 2.36
+
+# fast build rule for target.
+2.36/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/build
+.PHONY : 2.36/fast
+
+#=============================================================================
+# Target rules for targets named 1.23
+
+# Build rule for target.
+1.23: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1.23
+.PHONY : 1.23
+
+# fast build rule for target.
+1.23/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/build
+.PHONY : 1.23/fast
+
+#=============================================================================
+# Target rules for targets named ex-pointer-arithmetic
+
+# Build rule for target.
+ex-pointer-arithmetic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-pointer-arithmetic
+.PHONY : ex-pointer-arithmetic
+
+# fast build rule for target.
+ex-pointer-arithmetic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/build
+.PHONY : ex-pointer-arithmetic/fast
+
+#=============================================================================
+# Target rules for targets named 1.11
+
+# Build rule for target.
+1.11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1.11
+.PHONY : 1.11
+
+# fast build rule for target.
+1.11/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/build
+.PHONY : 1.11/fast
+
+#=============================================================================
+# Target rules for targets named 1.10
+
+# Build rule for target.
+1.10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1.10
+.PHONY : 1.10
+
+# fast build rule for target.
+1.10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/build
+.PHONY : 1.10/fast
+
+#=============================================================================
+# Target rules for targets named ex-assign
+
+# Build rule for target.
+ex-assign: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-assign
+.PHONY : ex-assign
+
+# fast build rule for target.
+ex-assign/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/build
+.PHONY : ex-assign/fast
+
+#=============================================================================
+# Target rules for targets named crtp
+
+# Build rule for target.
+crtp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crtp
+.PHONY : crtp
+
+# fast build rule for target.
+crtp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/build
+.PHONY : crtp/fast
+
+#=============================================================================
+# Target rules for targets named ex-string
+
+# Build rule for target.
+ex-string: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-string
+.PHONY : ex-string
+
+# fast build rule for target.
+ex-string/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/build
+.PHONY : ex-string/fast
+
+#=============================================================================
+# Target rules for targets named ex-random
+
+# Build rule for target.
+ex-random: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-random
+.PHONY : ex-random
+
+# fast build rule for target.
+ex-random/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/build
+.PHONY : ex-random/fast
+
+#=============================================================================
+# Target rules for targets named ex3
+
+# Build rule for target.
+ex3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex3
+.PHONY : ex3
+
+# fast build rule for target.
+ex3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/build
+.PHONY : ex3/fast
 
 #=============================================================================
 # Target rules for targets named a
@@ -194,6 +402,586 @@ a : cmake_check_build_system
 a/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
 .PHONY : a/fast
+
+#=============================================================================
+# Target rules for targets named ex-clz
+
+# Build rule for target.
+ex-clz: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-clz
+.PHONY : ex-clz
+
+# fast build rule for target.
+ex-clz/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/build
+.PHONY : ex-clz/fast
+
+#=============================================================================
+# Target rules for targets named ex-unique
+
+# Build rule for target.
+ex-unique: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-unique
+.PHONY : ex-unique
+
+# fast build rule for target.
+ex-unique/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/build
+.PHONY : ex-unique/fast
+
+#=============================================================================
+# Target rules for targets named ex-adt
+
+# Build rule for target.
+ex-adt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-adt
+.PHONY : ex-adt
+
+# fast build rule for target.
+ex-adt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/build
+.PHONY : ex-adt/fast
+
+#=============================================================================
+# Target rules for targets named ex-array
+
+# Build rule for target.
+ex-array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-array
+.PHONY : ex-array
+
+# fast build rule for target.
+ex-array/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/build
+.PHONY : ex-array/fast
+
+#=============================================================================
+# Target rules for targets named ex-tuple
+
+# Build rule for target.
+ex-tuple: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-tuple
+.PHONY : ex-tuple
+
+# fast build rule for target.
+ex-tuple/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/build
+.PHONY : ex-tuple/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_goto
+
+# Build rule for target.
+learncpp_goto: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_goto
+.PHONY : learncpp_goto
+
+# fast build rule for target.
+learncpp_goto/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/build
+.PHONY : learncpp_goto/fast
+
+#=============================================================================
+# Target rules for targets named 1.14
+
+# Build rule for target.
+1.14: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1.14
+.PHONY : 1.14
+
+# fast build rule for target.
+1.14/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/build
+.PHONY : 1.14/fast
+
+#=============================================================================
+# Target rules for targets named ex1
+
+# Build rule for target.
+ex1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex1
+.PHONY : ex1
+
+# fast build rule for target.
+ex1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/build
+.PHONY : ex1/fast
+
+#=============================================================================
+# Target rules for targets named ex-func
+
+# Build rule for target.
+ex-func: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-func
+.PHONY : ex-func
+
+# fast build rule for target.
+ex-func/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/build
+.PHONY : ex-func/fast
+
+#=============================================================================
+# Target rules for targets named c
+
+# Build rule for target.
+c : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c
+.PHONY : c
+
+# fast build rule for target.
+c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
+.PHONY : c/fast
+
+#=============================================================================
+# Target rules for targets named ex6
+
+# Build rule for target.
+ex6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex6
+.PHONY : ex6
+
+# fast build rule for target.
+ex6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/build
+.PHONY : ex6/fast
+
+#=============================================================================
+# Target rules for targets named ex-bitwise
+
+# Build rule for target.
+ex-bitwise: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-bitwise
+.PHONY : ex-bitwise
+
+# fast build rule for target.
+ex-bitwise/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/build
+.PHONY : ex-bitwise/fast
+
+#=============================================================================
+# Target rules for targets named ex-constructor
+
+# Build rule for target.
+ex-constructor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-constructor
+.PHONY : ex-constructor
+
+# fast build rule for target.
+ex-constructor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/build
+.PHONY : ex-constructor/fast
+
+#=============================================================================
+# Target rules for targets named ex-operator-overloading
+
+# Build rule for target.
+ex-operator-overloading: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-operator-overloading
+.PHONY : ex-operator-overloading
+
+# fast build rule for target.
+ex-operator-overloading/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/build
+.PHONY : ex-operator-overloading/fast
+
+#=============================================================================
+# Target rules for targets named ex-dynamic
+
+# Build rule for target.
+ex-dynamic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-dynamic
+.PHONY : ex-dynamic
+
+# fast build rule for target.
+ex-dynamic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/build
+.PHONY : ex-dynamic/fast
+
+#=============================================================================
+# Target rules for targets named ex-decltype
+
+# Build rule for target.
+ex-decltype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-decltype
+.PHONY : ex-decltype
+
+# fast build rule for target.
+ex-decltype/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/build
+.PHONY : ex-decltype/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_ctad
+
+# Build rule for target.
+learncpp_ctad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_ctad
+.PHONY : learncpp_ctad
+
+# fast build rule for target.
+learncpp_ctad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/build
+.PHONY : learncpp_ctad/fast
+
+#=============================================================================
+# Target rules for targets named d
+
+# Build rule for target.
+d : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 d
+.PHONY : d
+
+# fast build rule for target.
+d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/build
+.PHONY : d/fast
+
+#=============================================================================
+# Target rules for targets named ex-alias
+
+# Build rule for target.
+ex-alias: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-alias
+.PHONY : ex-alias
+
+# fast build rule for target.
+ex-alias/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/build
+.PHONY : ex-alias/fast
+
+#=============================================================================
+# Target rules for targets named ex-free
+
+# Build rule for target.
+ex-free: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-free
+.PHONY : ex-free
+
+# fast build rule for target.
+ex-free/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/build
+.PHONY : ex-free/fast
+
+#=============================================================================
+# Target rules for targets named ex8
+
+# Build rule for target.
+ex8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex8
+.PHONY : ex8
+
+# fast build rule for target.
+ex8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/build
+.PHONY : ex8/fast
+
+#=============================================================================
+# Target rules for targets named e
+
+# Build rule for target.
+e : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 e
+.PHONY : e
+
+# fast build rule for target.
+e/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/build
+.PHONY : e/fast
+
+#=============================================================================
+# Target rules for targets named ex-multi
+
+# Build rule for target.
+ex-multi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-multi
+.PHONY : ex-multi
+
+# fast build rule for target.
+ex-multi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/build
+.PHONY : ex-multi/fast
+
+#=============================================================================
+# Target rules for targets named ex-static
+
+# Build rule for target.
+ex-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex-static
+.PHONY : ex-static
+
+# fast build rule for target.
+ex-static/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/build
+.PHONY : ex-static/fast
+
+#=============================================================================
+# Target rules for targets named 1.12
+
+# Build rule for target.
+1.12: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1.12
+.PHONY : 1.12
+
+# fast build rule for target.
+1.12/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/build
+.PHONY : 1.12/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_a
+
+# Build rule for target.
+learncpp_a: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_a
+.PHONY : learncpp_a
+
+# fast build rule for target.
+learncpp_a/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/build
+.PHONY : learncpp_a/fast
+
+#=============================================================================
+# Target rules for targets named learncpp_class_template
+
+# Build rule for target.
+learncpp_class_template: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 learncpp_class_template
+.PHONY : learncpp_class_template
+
+# fast build rule for target.
+learncpp_class_template/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/build
+.PHONY : learncpp_class_template/fast
+
+#=============================================================================
+# Target rules for targets named ex5
+
+# Build rule for target.
+ex5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex5
+.PHONY : ex5
+
+# fast build rule for target.
+ex5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/build
+.PHONY : ex5/fast
+
+learncpp/cast.o: learncpp/cast.cpp.o
+
+.PHONY : learncpp/cast.o
+
+# target to build an object file
+learncpp/cast.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/learncpp/cast.cpp.o
+.PHONY : learncpp/cast.cpp.o
+
+learncpp/cast.i: learncpp/cast.cpp.i
+
+.PHONY : learncpp/cast.i
+
+# target to preprocess a source file
+learncpp/cast.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/learncpp/cast.cpp.i
+.PHONY : learncpp/cast.cpp.i
+
+learncpp/cast.s: learncpp/cast.cpp.s
+
+.PHONY : learncpp/cast.s
+
+# target to generate assembly for a file
+learncpp/cast.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/learncpp/cast.cpp.s
+.PHONY : learncpp/cast.cpp.s
+
+learncpp/class-template.o: learncpp/class-template.cpp.o
+
+.PHONY : learncpp/class-template.o
+
+# target to build an object file
+learncpp/class-template.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/learncpp/class-template.cpp.o
+.PHONY : learncpp/class-template.cpp.o
+
+learncpp/class-template.i: learncpp/class-template.cpp.i
+
+.PHONY : learncpp/class-template.i
+
+# target to preprocess a source file
+learncpp/class-template.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/learncpp/class-template.cpp.i
+.PHONY : learncpp/class-template.cpp.i
+
+learncpp/class-template.s: learncpp/class-template.cpp.s
+
+.PHONY : learncpp/class-template.s
+
+# target to generate assembly for a file
+learncpp/class-template.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/learncpp/class-template.cpp.s
+.PHONY : learncpp/class-template.cpp.s
+
+learncpp/class.o: learncpp/class.cpp.o
+
+.PHONY : learncpp/class.o
+
+# target to build an object file
+learncpp/class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/learncpp/class.cpp.o
+.PHONY : learncpp/class.cpp.o
+
+learncpp/class.i: learncpp/class.cpp.i
+
+.PHONY : learncpp/class.i
+
+# target to preprocess a source file
+learncpp/class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/learncpp/class.cpp.i
+.PHONY : learncpp/class.cpp.i
+
+learncpp/class.s: learncpp/class.cpp.s
+
+.PHONY : learncpp/class.s
+
+# target to generate assembly for a file
+learncpp/class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/learncpp/class.cpp.s
+.PHONY : learncpp/class.cpp.s
+
+learncpp/ctad.o: learncpp/ctad.cpp.o
+
+.PHONY : learncpp/ctad.o
+
+# target to build an object file
+learncpp/ctad.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/learncpp/ctad.cpp.o
+.PHONY : learncpp/ctad.cpp.o
+
+learncpp/ctad.i: learncpp/ctad.cpp.i
+
+.PHONY : learncpp/ctad.i
+
+# target to preprocess a source file
+learncpp/ctad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/learncpp/ctad.cpp.i
+.PHONY : learncpp/ctad.cpp.i
+
+learncpp/ctad.s: learncpp/ctad.cpp.s
+
+.PHONY : learncpp/ctad.s
+
+# target to generate assembly for a file
+learncpp/ctad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/learncpp/ctad.cpp.s
+.PHONY : learncpp/ctad.cpp.s
+
+learncpp/exp.o: learncpp/exp.cpp.o
+
+.PHONY : learncpp/exp.o
+
+# target to build an object file
+learncpp/exp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/learncpp/exp.cpp.o
+.PHONY : learncpp/exp.cpp.o
+
+learncpp/exp.i: learncpp/exp.cpp.i
+
+.PHONY : learncpp/exp.i
+
+# target to preprocess a source file
+learncpp/exp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/learncpp/exp.cpp.i
+.PHONY : learncpp/exp.cpp.i
+
+learncpp/exp.s: learncpp/exp.cpp.s
+
+.PHONY : learncpp/exp.s
+
+# target to generate assembly for a file
+learncpp/exp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/learncpp/exp.cpp.s
+.PHONY : learncpp/exp.cpp.s
+
+learncpp/func.o: learncpp/func.cpp.o
+
+.PHONY : learncpp/func.o
+
+# target to build an object file
+learncpp/func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/learncpp/func.cpp.o
+.PHONY : learncpp/func.cpp.o
+
+learncpp/func.i: learncpp/func.cpp.i
+
+.PHONY : learncpp/func.i
+
+# target to preprocess a source file
+learncpp/func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/learncpp/func.cpp.i
+.PHONY : learncpp/func.cpp.i
+
+learncpp/func.s: learncpp/func.cpp.s
+
+.PHONY : learncpp/func.s
+
+# target to generate assembly for a file
+learncpp/func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/learncpp/func.cpp.s
+.PHONY : learncpp/func.cpp.s
+
+learncpp/goto.o: learncpp/goto.cpp.o
+
+.PHONY : learncpp/goto.o
+
+# target to build an object file
+learncpp/goto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/learncpp/goto.cpp.o
+.PHONY : learncpp/goto.cpp.o
+
+learncpp/goto.i: learncpp/goto.cpp.i
+
+.PHONY : learncpp/goto.i
+
+# target to preprocess a source file
+learncpp/goto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/learncpp/goto.cpp.i
+.PHONY : learncpp/goto.cpp.i
+
+learncpp/goto.s: learncpp/goto.cpp.s
+
+.PHONY : learncpp/goto.s
+
+# target to generate assembly for a file
+learncpp/goto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/learncpp/goto.cpp.s
+.PHONY : learncpp/goto.cpp.s
+
+learncpp/struct.o: learncpp/struct.cpp.o
+
+.PHONY : learncpp/struct.o
+
+# target to build an object file
+learncpp/struct.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/learncpp/struct.cpp.o
+.PHONY : learncpp/struct.cpp.o
+
+learncpp/struct.i: learncpp/struct.cpp.i
+
+.PHONY : learncpp/struct.i
+
+# target to preprocess a source file
+learncpp/struct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/learncpp/struct.cpp.i
+.PHONY : learncpp/struct.cpp.i
+
+learncpp/struct.s: learncpp/struct.cpp.s
+
+.PHONY : learncpp/struct.s
+
+# target to generate assembly for a file
+learncpp/struct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/learncpp/struct.cpp.s
+.PHONY : learncpp/struct.cpp.s
 
 main.o: main.cpp.o
 
@@ -222,6 +1010,276 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+primer/ch01/1.10.o: primer/ch01/1.10.cpp.o
+
+.PHONY : primer/ch01/1.10.o
+
+# target to build an object file
+primer/ch01/1.10.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/primer/ch01/1.10.cpp.o
+.PHONY : primer/ch01/1.10.cpp.o
+
+primer/ch01/1.10.i: primer/ch01/1.10.cpp.i
+
+.PHONY : primer/ch01/1.10.i
+
+# target to preprocess a source file
+primer/ch01/1.10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/primer/ch01/1.10.cpp.i
+.PHONY : primer/ch01/1.10.cpp.i
+
+primer/ch01/1.10.s: primer/ch01/1.10.cpp.s
+
+.PHONY : primer/ch01/1.10.s
+
+# target to generate assembly for a file
+primer/ch01/1.10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/primer/ch01/1.10.cpp.s
+.PHONY : primer/ch01/1.10.cpp.s
+
+primer/ch01/1.11.o: primer/ch01/1.11.cpp.o
+
+.PHONY : primer/ch01/1.11.o
+
+# target to build an object file
+primer/ch01/1.11.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/primer/ch01/1.11.cpp.o
+.PHONY : primer/ch01/1.11.cpp.o
+
+primer/ch01/1.11.i: primer/ch01/1.11.cpp.i
+
+.PHONY : primer/ch01/1.11.i
+
+# target to preprocess a source file
+primer/ch01/1.11.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/primer/ch01/1.11.cpp.i
+.PHONY : primer/ch01/1.11.cpp.i
+
+primer/ch01/1.11.s: primer/ch01/1.11.cpp.s
+
+.PHONY : primer/ch01/1.11.s
+
+# target to generate assembly for a file
+primer/ch01/1.11.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/primer/ch01/1.11.cpp.s
+.PHONY : primer/ch01/1.11.cpp.s
+
+primer/ch01/1.12.o: primer/ch01/1.12.cpp.o
+
+.PHONY : primer/ch01/1.12.o
+
+# target to build an object file
+primer/ch01/1.12.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/primer/ch01/1.12.cpp.o
+.PHONY : primer/ch01/1.12.cpp.o
+
+primer/ch01/1.12.i: primer/ch01/1.12.cpp.i
+
+.PHONY : primer/ch01/1.12.i
+
+# target to preprocess a source file
+primer/ch01/1.12.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/primer/ch01/1.12.cpp.i
+.PHONY : primer/ch01/1.12.cpp.i
+
+primer/ch01/1.12.s: primer/ch01/1.12.cpp.s
+
+.PHONY : primer/ch01/1.12.s
+
+# target to generate assembly for a file
+primer/ch01/1.12.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/primer/ch01/1.12.cpp.s
+.PHONY : primer/ch01/1.12.cpp.s
+
+primer/ch01/1.14.o: primer/ch01/1.14.cpp.o
+
+.PHONY : primer/ch01/1.14.o
+
+# target to build an object file
+primer/ch01/1.14.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/primer/ch01/1.14.cpp.o
+.PHONY : primer/ch01/1.14.cpp.o
+
+primer/ch01/1.14.i: primer/ch01/1.14.cpp.i
+
+.PHONY : primer/ch01/1.14.i
+
+# target to preprocess a source file
+primer/ch01/1.14.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/primer/ch01/1.14.cpp.i
+.PHONY : primer/ch01/1.14.cpp.i
+
+primer/ch01/1.14.s: primer/ch01/1.14.cpp.s
+
+.PHONY : primer/ch01/1.14.s
+
+# target to generate assembly for a file
+primer/ch01/1.14.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/primer/ch01/1.14.cpp.s
+.PHONY : primer/ch01/1.14.cpp.s
+
+primer/ch01/1.23.o: primer/ch01/1.23.cpp.o
+
+.PHONY : primer/ch01/1.23.o
+
+# target to build an object file
+primer/ch01/1.23.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/primer/ch01/1.23.cpp.o
+.PHONY : primer/ch01/1.23.cpp.o
+
+primer/ch01/1.23.i: primer/ch01/1.23.cpp.i
+
+.PHONY : primer/ch01/1.23.i
+
+# target to preprocess a source file
+primer/ch01/1.23.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/primer/ch01/1.23.cpp.i
+.PHONY : primer/ch01/1.23.cpp.i
+
+primer/ch01/1.23.s: primer/ch01/1.23.cpp.s
+
+.PHONY : primer/ch01/1.23.s
+
+# target to generate assembly for a file
+primer/ch01/1.23.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/primer/ch01/1.23.cpp.s
+.PHONY : primer/ch01/1.23.cpp.s
+
+primer/ch01/ex1.o: primer/ch01/ex1.cpp.o
+
+.PHONY : primer/ch01/ex1.o
+
+# target to build an object file
+primer/ch01/ex1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/primer/ch01/ex1.cpp.o
+.PHONY : primer/ch01/ex1.cpp.o
+
+primer/ch01/ex1.i: primer/ch01/ex1.cpp.i
+
+.PHONY : primer/ch01/ex1.i
+
+# target to preprocess a source file
+primer/ch01/ex1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/primer/ch01/ex1.cpp.i
+.PHONY : primer/ch01/ex1.cpp.i
+
+primer/ch01/ex1.s: primer/ch01/ex1.cpp.s
+
+.PHONY : primer/ch01/ex1.s
+
+# target to generate assembly for a file
+primer/ch01/ex1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/primer/ch01/ex1.cpp.s
+.PHONY : primer/ch01/ex1.cpp.s
+
+primer/ch01/ex3-while.o: primer/ch01/ex3-while.cpp.o
+
+.PHONY : primer/ch01/ex3-while.o
+
+# target to build an object file
+primer/ch01/ex3-while.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/primer/ch01/ex3-while.cpp.o
+.PHONY : primer/ch01/ex3-while.cpp.o
+
+primer/ch01/ex3-while.i: primer/ch01/ex3-while.cpp.i
+
+.PHONY : primer/ch01/ex3-while.i
+
+# target to preprocess a source file
+primer/ch01/ex3-while.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/primer/ch01/ex3-while.cpp.i
+.PHONY : primer/ch01/ex3-while.cpp.i
+
+primer/ch01/ex3-while.s: primer/ch01/ex3-while.cpp.s
+
+.PHONY : primer/ch01/ex3-while.s
+
+# target to generate assembly for a file
+primer/ch01/ex3-while.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/primer/ch01/ex3-while.cpp.s
+.PHONY : primer/ch01/ex3-while.cpp.s
+
+primer/ch01/ex5-flow.o: primer/ch01/ex5-flow.cpp.o
+
+.PHONY : primer/ch01/ex5-flow.o
+
+# target to build an object file
+primer/ch01/ex5-flow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/primer/ch01/ex5-flow.cpp.o
+.PHONY : primer/ch01/ex5-flow.cpp.o
+
+primer/ch01/ex5-flow.i: primer/ch01/ex5-flow.cpp.i
+
+.PHONY : primer/ch01/ex5-flow.i
+
+# target to preprocess a source file
+primer/ch01/ex5-flow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/primer/ch01/ex5-flow.cpp.i
+.PHONY : primer/ch01/ex5-flow.cpp.i
+
+primer/ch01/ex5-flow.s: primer/ch01/ex5-flow.cpp.s
+
+.PHONY : primer/ch01/ex5-flow.s
+
+# target to generate assembly for a file
+primer/ch01/ex5-flow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/primer/ch01/ex5-flow.cpp.s
+.PHONY : primer/ch01/ex5-flow.cpp.s
+
+primer/ch01/ex6-if.o: primer/ch01/ex6-if.cpp.o
+
+.PHONY : primer/ch01/ex6-if.o
+
+# target to build an object file
+primer/ch01/ex6-if.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/primer/ch01/ex6-if.cpp.o
+.PHONY : primer/ch01/ex6-if.cpp.o
+
+primer/ch01/ex6-if.i: primer/ch01/ex6-if.cpp.i
+
+.PHONY : primer/ch01/ex6-if.i
+
+# target to preprocess a source file
+primer/ch01/ex6-if.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/primer/ch01/ex6-if.cpp.i
+.PHONY : primer/ch01/ex6-if.cpp.i
+
+primer/ch01/ex6-if.s: primer/ch01/ex6-if.cpp.s
+
+.PHONY : primer/ch01/ex6-if.s
+
+# target to generate assembly for a file
+primer/ch01/ex6-if.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/primer/ch01/ex6-if.cpp.s
+.PHONY : primer/ch01/ex6-if.cpp.s
+
+primer/ch01/ex8-book.o: primer/ch01/ex8-book.cpp.o
+
+.PHONY : primer/ch01/ex8-book.o
+
+# target to build an object file
+primer/ch01/ex8-book.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/primer/ch01/ex8-book.cpp.o
+.PHONY : primer/ch01/ex8-book.cpp.o
+
+primer/ch01/ex8-book.i: primer/ch01/ex8-book.cpp.i
+
+.PHONY : primer/ch01/ex8-book.i
+
+# target to preprocess a source file
+primer/ch01/ex8-book.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/primer/ch01/ex8-book.cpp.i
+.PHONY : primer/ch01/ex8-book.cpp.i
+
+primer/ch01/ex8-book.s: primer/ch01/ex8-book.cpp.s
+
+.PHONY : primer/ch01/ex8-book.s
+
+# target to generate assembly for a file
+primer/ch01/ex8-book.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/primer/ch01/ex8-book.cpp.s
+.PHONY : primer/ch01/ex8-book.cpp.s
+
 primer/ch01/main.o: primer/ch01/main.cpp.o
 
 .PHONY : primer/ch01/main.o
@@ -249,6 +1307,141 @@ primer/ch01/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/primer/ch01/main.cpp.s
 .PHONY : primer/ch01/main.cpp.s
 
+primer/ch02/2.36.o: primer/ch02/2.36.cpp.o
+
+.PHONY : primer/ch02/2.36.o
+
+# target to build an object file
+primer/ch02/2.36.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/primer/ch02/2.36.cpp.o
+.PHONY : primer/ch02/2.36.cpp.o
+
+primer/ch02/2.36.i: primer/ch02/2.36.cpp.i
+
+.PHONY : primer/ch02/2.36.i
+
+# target to preprocess a source file
+primer/ch02/2.36.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/primer/ch02/2.36.cpp.i
+.PHONY : primer/ch02/2.36.cpp.i
+
+primer/ch02/2.36.s: primer/ch02/2.36.cpp.s
+
+.PHONY : primer/ch02/2.36.s
+
+# target to generate assembly for a file
+primer/ch02/2.36.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/primer/ch02/2.36.cpp.s
+.PHONY : primer/ch02/2.36.cpp.s
+
+primer/ch02/ex-alias.o: primer/ch02/ex-alias.cpp.o
+
+.PHONY : primer/ch02/ex-alias.o
+
+# target to build an object file
+primer/ch02/ex-alias.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/primer/ch02/ex-alias.cpp.o
+.PHONY : primer/ch02/ex-alias.cpp.o
+
+primer/ch02/ex-alias.i: primer/ch02/ex-alias.cpp.i
+
+.PHONY : primer/ch02/ex-alias.i
+
+# target to preprocess a source file
+primer/ch02/ex-alias.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/primer/ch02/ex-alias.cpp.i
+.PHONY : primer/ch02/ex-alias.cpp.i
+
+primer/ch02/ex-alias.s: primer/ch02/ex-alias.cpp.s
+
+.PHONY : primer/ch02/ex-alias.s
+
+# target to generate assembly for a file
+primer/ch02/ex-alias.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/primer/ch02/ex-alias.cpp.s
+.PHONY : primer/ch02/ex-alias.cpp.s
+
+primer/ch02/ex-decltype.o: primer/ch02/ex-decltype.cpp.o
+
+.PHONY : primer/ch02/ex-decltype.o
+
+# target to build an object file
+primer/ch02/ex-decltype.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/primer/ch02/ex-decltype.cpp.o
+.PHONY : primer/ch02/ex-decltype.cpp.o
+
+primer/ch02/ex-decltype.i: primer/ch02/ex-decltype.cpp.i
+
+.PHONY : primer/ch02/ex-decltype.i
+
+# target to preprocess a source file
+primer/ch02/ex-decltype.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/primer/ch02/ex-decltype.cpp.i
+.PHONY : primer/ch02/ex-decltype.cpp.i
+
+primer/ch02/ex-decltype.s: primer/ch02/ex-decltype.cpp.s
+
+.PHONY : primer/ch02/ex-decltype.s
+
+# target to generate assembly for a file
+primer/ch02/ex-decltype.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/primer/ch02/ex-decltype.cpp.s
+.PHONY : primer/ch02/ex-decltype.cpp.s
+
+primer/ch03/ex-multidimension.o: primer/ch03/ex-multidimension.cpp.o
+
+.PHONY : primer/ch03/ex-multidimension.o
+
+# target to build an object file
+primer/ch03/ex-multidimension.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/primer/ch03/ex-multidimension.cpp.o
+.PHONY : primer/ch03/ex-multidimension.cpp.o
+
+primer/ch03/ex-multidimension.i: primer/ch03/ex-multidimension.cpp.i
+
+.PHONY : primer/ch03/ex-multidimension.i
+
+# target to preprocess a source file
+primer/ch03/ex-multidimension.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/primer/ch03/ex-multidimension.cpp.i
+.PHONY : primer/ch03/ex-multidimension.cpp.i
+
+primer/ch03/ex-multidimension.s: primer/ch03/ex-multidimension.cpp.s
+
+.PHONY : primer/ch03/ex-multidimension.s
+
+# target to generate assembly for a file
+primer/ch03/ex-multidimension.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/primer/ch03/ex-multidimension.cpp.s
+.PHONY : primer/ch03/ex-multidimension.cpp.s
+
+primer/ch03/ex-pointer-arithmetic.o: primer/ch03/ex-pointer-arithmetic.cpp.o
+
+.PHONY : primer/ch03/ex-pointer-arithmetic.o
+
+# target to build an object file
+primer/ch03/ex-pointer-arithmetic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/primer/ch03/ex-pointer-arithmetic.cpp.o
+.PHONY : primer/ch03/ex-pointer-arithmetic.cpp.o
+
+primer/ch03/ex-pointer-arithmetic.i: primer/ch03/ex-pointer-arithmetic.cpp.i
+
+.PHONY : primer/ch03/ex-pointer-arithmetic.i
+
+# target to preprocess a source file
+primer/ch03/ex-pointer-arithmetic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/primer/ch03/ex-pointer-arithmetic.cpp.i
+.PHONY : primer/ch03/ex-pointer-arithmetic.cpp.i
+
+primer/ch03/ex-pointer-arithmetic.s: primer/ch03/ex-pointer-arithmetic.cpp.s
+
+.PHONY : primer/ch03/ex-pointer-arithmetic.s
+
+# target to generate assembly for a file
+primer/ch03/ex-pointer-arithmetic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/primer/ch03/ex-pointer-arithmetic.cpp.s
+.PHONY : primer/ch03/ex-pointer-arithmetic.cpp.s
+
 primer/ch03/main.o: primer/ch03/main.cpp.o
 
 .PHONY : primer/ch03/main.o
@@ -275,6 +1468,519 @@ primer/ch03/main.s: primer/ch03/main.cpp.s
 primer/ch03/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/primer/ch03/main.cpp.s
 .PHONY : primer/ch03/main.cpp.s
+
+primer/ch04/ex-assign.o: primer/ch04/ex-assign.cpp.o
+
+.PHONY : primer/ch04/ex-assign.o
+
+# target to build an object file
+primer/ch04/ex-assign.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/primer/ch04/ex-assign.cpp.o
+.PHONY : primer/ch04/ex-assign.cpp.o
+
+primer/ch04/ex-assign.i: primer/ch04/ex-assign.cpp.i
+
+.PHONY : primer/ch04/ex-assign.i
+
+# target to preprocess a source file
+primer/ch04/ex-assign.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/primer/ch04/ex-assign.cpp.i
+.PHONY : primer/ch04/ex-assign.cpp.i
+
+primer/ch04/ex-assign.s: primer/ch04/ex-assign.cpp.s
+
+.PHONY : primer/ch04/ex-assign.s
+
+# target to generate assembly for a file
+primer/ch04/ex-assign.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/primer/ch04/ex-assign.cpp.s
+.PHONY : primer/ch04/ex-assign.cpp.s
+
+primer/ch04/ex-bitwise.o: primer/ch04/ex-bitwise.cpp.o
+
+.PHONY : primer/ch04/ex-bitwise.o
+
+# target to build an object file
+primer/ch04/ex-bitwise.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/primer/ch04/ex-bitwise.cpp.o
+.PHONY : primer/ch04/ex-bitwise.cpp.o
+
+primer/ch04/ex-bitwise.i: primer/ch04/ex-bitwise.cpp.i
+
+.PHONY : primer/ch04/ex-bitwise.i
+
+# target to preprocess a source file
+primer/ch04/ex-bitwise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/primer/ch04/ex-bitwise.cpp.i
+.PHONY : primer/ch04/ex-bitwise.cpp.i
+
+primer/ch04/ex-bitwise.s: primer/ch04/ex-bitwise.cpp.s
+
+.PHONY : primer/ch04/ex-bitwise.s
+
+# target to generate assembly for a file
+primer/ch04/ex-bitwise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/primer/ch04/ex-bitwise.cpp.s
+.PHONY : primer/ch04/ex-bitwise.cpp.s
+
+primer/ch06/ex-array.o: primer/ch06/ex-array.cpp.o
+
+.PHONY : primer/ch06/ex-array.o
+
+# target to build an object file
+primer/ch06/ex-array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/primer/ch06/ex-array.cpp.o
+.PHONY : primer/ch06/ex-array.cpp.o
+
+primer/ch06/ex-array.i: primer/ch06/ex-array.cpp.i
+
+.PHONY : primer/ch06/ex-array.i
+
+# target to preprocess a source file
+primer/ch06/ex-array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/primer/ch06/ex-array.cpp.i
+.PHONY : primer/ch06/ex-array.cpp.i
+
+primer/ch06/ex-array.s: primer/ch06/ex-array.cpp.s
+
+.PHONY : primer/ch06/ex-array.s
+
+# target to generate assembly for a file
+primer/ch06/ex-array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/primer/ch06/ex-array.cpp.s
+.PHONY : primer/ch06/ex-array.cpp.s
+
+primer/ch06/ex-func.o: primer/ch06/ex-func.cpp.o
+
+.PHONY : primer/ch06/ex-func.o
+
+# target to build an object file
+primer/ch06/ex-func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/primer/ch06/ex-func.cpp.o
+.PHONY : primer/ch06/ex-func.cpp.o
+
+primer/ch06/ex-func.i: primer/ch06/ex-func.cpp.i
+
+.PHONY : primer/ch06/ex-func.i
+
+# target to preprocess a source file
+primer/ch06/ex-func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/primer/ch06/ex-func.cpp.i
+.PHONY : primer/ch06/ex-func.cpp.i
+
+primer/ch06/ex-func.s: primer/ch06/ex-func.cpp.s
+
+.PHONY : primer/ch06/ex-func.s
+
+# target to generate assembly for a file
+primer/ch06/ex-func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/primer/ch06/ex-func.cpp.s
+.PHONY : primer/ch06/ex-func.cpp.s
+
+primer/ch06/ex-varying.o: primer/ch06/ex-varying.cpp.o
+
+.PHONY : primer/ch06/ex-varying.o
+
+# target to build an object file
+primer/ch06/ex-varying.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/primer/ch06/ex-varying.cpp.o
+.PHONY : primer/ch06/ex-varying.cpp.o
+
+primer/ch06/ex-varying.i: primer/ch06/ex-varying.cpp.i
+
+.PHONY : primer/ch06/ex-varying.i
+
+# target to preprocess a source file
+primer/ch06/ex-varying.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/primer/ch06/ex-varying.cpp.i
+.PHONY : primer/ch06/ex-varying.cpp.i
+
+primer/ch06/ex-varying.s: primer/ch06/ex-varying.cpp.s
+
+.PHONY : primer/ch06/ex-varying.s
+
+# target to generate assembly for a file
+primer/ch06/ex-varying.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/primer/ch06/ex-varying.cpp.s
+.PHONY : primer/ch06/ex-varying.cpp.s
+
+primer/ch07/ex-adt.o: primer/ch07/ex-adt.cpp.o
+
+.PHONY : primer/ch07/ex-adt.o
+
+# target to build an object file
+primer/ch07/ex-adt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/primer/ch07/ex-adt.cpp.o
+.PHONY : primer/ch07/ex-adt.cpp.o
+
+primer/ch07/ex-adt.i: primer/ch07/ex-adt.cpp.i
+
+.PHONY : primer/ch07/ex-adt.i
+
+# target to preprocess a source file
+primer/ch07/ex-adt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/primer/ch07/ex-adt.cpp.i
+.PHONY : primer/ch07/ex-adt.cpp.i
+
+primer/ch07/ex-adt.s: primer/ch07/ex-adt.cpp.s
+
+.PHONY : primer/ch07/ex-adt.s
+
+# target to generate assembly for a file
+primer/ch07/ex-adt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/primer/ch07/ex-adt.cpp.s
+.PHONY : primer/ch07/ex-adt.cpp.s
+
+primer/ch07/ex-clz.o: primer/ch07/ex-clz.cpp.o
+
+.PHONY : primer/ch07/ex-clz.o
+
+# target to build an object file
+primer/ch07/ex-clz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/primer/ch07/ex-clz.cpp.o
+.PHONY : primer/ch07/ex-clz.cpp.o
+
+primer/ch07/ex-clz.i: primer/ch07/ex-clz.cpp.i
+
+.PHONY : primer/ch07/ex-clz.i
+
+# target to preprocess a source file
+primer/ch07/ex-clz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/primer/ch07/ex-clz.cpp.i
+.PHONY : primer/ch07/ex-clz.cpp.i
+
+primer/ch07/ex-clz.s: primer/ch07/ex-clz.cpp.s
+
+.PHONY : primer/ch07/ex-clz.s
+
+# target to generate assembly for a file
+primer/ch07/ex-clz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/primer/ch07/ex-clz.cpp.s
+.PHONY : primer/ch07/ex-clz.cpp.s
+
+primer/ch07/ex-constructor.o: primer/ch07/ex-constructor.cpp.o
+
+.PHONY : primer/ch07/ex-constructor.o
+
+# target to build an object file
+primer/ch07/ex-constructor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/primer/ch07/ex-constructor.cpp.o
+.PHONY : primer/ch07/ex-constructor.cpp.o
+
+primer/ch07/ex-constructor.i: primer/ch07/ex-constructor.cpp.i
+
+.PHONY : primer/ch07/ex-constructor.i
+
+# target to preprocess a source file
+primer/ch07/ex-constructor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/primer/ch07/ex-constructor.cpp.i
+.PHONY : primer/ch07/ex-constructor.cpp.i
+
+primer/ch07/ex-constructor.s: primer/ch07/ex-constructor.cpp.s
+
+.PHONY : primer/ch07/ex-constructor.s
+
+# target to generate assembly for a file
+primer/ch07/ex-constructor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/primer/ch07/ex-constructor.cpp.s
+.PHONY : primer/ch07/ex-constructor.cpp.s
+
+primer/ch07/ex-static.o: primer/ch07/ex-static.cpp.o
+
+.PHONY : primer/ch07/ex-static.o
+
+# target to build an object file
+primer/ch07/ex-static.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/primer/ch07/ex-static.cpp.o
+.PHONY : primer/ch07/ex-static.cpp.o
+
+primer/ch07/ex-static.i: primer/ch07/ex-static.cpp.i
+
+.PHONY : primer/ch07/ex-static.i
+
+# target to preprocess a source file
+primer/ch07/ex-static.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/primer/ch07/ex-static.cpp.i
+.PHONY : primer/ch07/ex-static.cpp.i
+
+primer/ch07/ex-static.s: primer/ch07/ex-static.cpp.s
+
+.PHONY : primer/ch07/ex-static.s
+
+# target to generate assembly for a file
+primer/ch07/ex-static.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/primer/ch07/ex-static.cpp.s
+.PHONY : primer/ch07/ex-static.cpp.s
+
+primer/ch07/main.o: primer/ch07/main.cpp.o
+
+.PHONY : primer/ch07/main.o
+
+# target to build an object file
+primer/ch07/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/primer/ch07/main.cpp.o
+.PHONY : primer/ch07/main.cpp.o
+
+primer/ch07/main.i: primer/ch07/main.cpp.i
+
+.PHONY : primer/ch07/main.i
+
+# target to preprocess a source file
+primer/ch07/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/primer/ch07/main.cpp.i
+.PHONY : primer/ch07/main.cpp.i
+
+primer/ch07/main.s: primer/ch07/main.cpp.s
+
+.PHONY : primer/ch07/main.s
+
+# target to generate assembly for a file
+primer/ch07/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/primer/ch07/main.cpp.s
+.PHONY : primer/ch07/main.cpp.s
+
+primer/ch08/ex-io.o: primer/ch08/ex-io.cpp.o
+
+.PHONY : primer/ch08/ex-io.o
+
+# target to build an object file
+primer/ch08/ex-io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/primer/ch08/ex-io.cpp.o
+.PHONY : primer/ch08/ex-io.cpp.o
+
+primer/ch08/ex-io.i: primer/ch08/ex-io.cpp.i
+
+.PHONY : primer/ch08/ex-io.i
+
+# target to preprocess a source file
+primer/ch08/ex-io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/primer/ch08/ex-io.cpp.i
+.PHONY : primer/ch08/ex-io.cpp.i
+
+primer/ch08/ex-io.s: primer/ch08/ex-io.cpp.s
+
+.PHONY : primer/ch08/ex-io.s
+
+# target to generate assembly for a file
+primer/ch08/ex-io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/primer/ch08/ex-io.cpp.s
+.PHONY : primer/ch08/ex-io.cpp.s
+
+primer/ch08/ex-string.o: primer/ch08/ex-string.cpp.o
+
+.PHONY : primer/ch08/ex-string.o
+
+# target to build an object file
+primer/ch08/ex-string.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/primer/ch08/ex-string.cpp.o
+.PHONY : primer/ch08/ex-string.cpp.o
+
+primer/ch08/ex-string.i: primer/ch08/ex-string.cpp.i
+
+.PHONY : primer/ch08/ex-string.i
+
+# target to preprocess a source file
+primer/ch08/ex-string.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/primer/ch08/ex-string.cpp.i
+.PHONY : primer/ch08/ex-string.cpp.i
+
+primer/ch08/ex-string.s: primer/ch08/ex-string.cpp.s
+
+.PHONY : primer/ch08/ex-string.s
+
+# target to generate assembly for a file
+primer/ch08/ex-string.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/primer/ch08/ex-string.cpp.s
+.PHONY : primer/ch08/ex-string.cpp.s
+
+primer/ch12/ex-allocator.o: primer/ch12/ex-allocator.cpp.o
+
+.PHONY : primer/ch12/ex-allocator.o
+
+# target to build an object file
+primer/ch12/ex-allocator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/primer/ch12/ex-allocator.cpp.o
+.PHONY : primer/ch12/ex-allocator.cpp.o
+
+primer/ch12/ex-allocator.i: primer/ch12/ex-allocator.cpp.i
+
+.PHONY : primer/ch12/ex-allocator.i
+
+# target to preprocess a source file
+primer/ch12/ex-allocator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/primer/ch12/ex-allocator.cpp.i
+.PHONY : primer/ch12/ex-allocator.cpp.i
+
+primer/ch12/ex-allocator.s: primer/ch12/ex-allocator.cpp.s
+
+.PHONY : primer/ch12/ex-allocator.s
+
+# target to generate assembly for a file
+primer/ch12/ex-allocator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/primer/ch12/ex-allocator.cpp.s
+.PHONY : primer/ch12/ex-allocator.cpp.s
+
+primer/ch12/ex-dynamic.o: primer/ch12/ex-dynamic.cpp.o
+
+.PHONY : primer/ch12/ex-dynamic.o
+
+# target to build an object file
+primer/ch12/ex-dynamic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/primer/ch12/ex-dynamic.cpp.o
+.PHONY : primer/ch12/ex-dynamic.cpp.o
+
+primer/ch12/ex-dynamic.i: primer/ch12/ex-dynamic.cpp.i
+
+.PHONY : primer/ch12/ex-dynamic.i
+
+# target to preprocess a source file
+primer/ch12/ex-dynamic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/primer/ch12/ex-dynamic.cpp.i
+.PHONY : primer/ch12/ex-dynamic.cpp.i
+
+primer/ch12/ex-dynamic.s: primer/ch12/ex-dynamic.cpp.s
+
+.PHONY : primer/ch12/ex-dynamic.s
+
+# target to generate assembly for a file
+primer/ch12/ex-dynamic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/primer/ch12/ex-dynamic.cpp.s
+.PHONY : primer/ch12/ex-dynamic.cpp.s
+
+primer/ch12/ex-new-free.o: primer/ch12/ex-new-free.cpp.o
+
+.PHONY : primer/ch12/ex-new-free.o
+
+# target to build an object file
+primer/ch12/ex-new-free.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/primer/ch12/ex-new-free.cpp.o
+.PHONY : primer/ch12/ex-new-free.cpp.o
+
+primer/ch12/ex-new-free.i: primer/ch12/ex-new-free.cpp.i
+
+.PHONY : primer/ch12/ex-new-free.i
+
+# target to preprocess a source file
+primer/ch12/ex-new-free.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/primer/ch12/ex-new-free.cpp.i
+.PHONY : primer/ch12/ex-new-free.cpp.i
+
+primer/ch12/ex-new-free.s: primer/ch12/ex-new-free.cpp.s
+
+.PHONY : primer/ch12/ex-new-free.s
+
+# target to generate assembly for a file
+primer/ch12/ex-new-free.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/primer/ch12/ex-new-free.cpp.s
+.PHONY : primer/ch12/ex-new-free.cpp.s
+
+primer/ch12/ex-unique.o: primer/ch12/ex-unique.cpp.o
+
+.PHONY : primer/ch12/ex-unique.o
+
+# target to build an object file
+primer/ch12/ex-unique.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/primer/ch12/ex-unique.cpp.o
+.PHONY : primer/ch12/ex-unique.cpp.o
+
+primer/ch12/ex-unique.i: primer/ch12/ex-unique.cpp.i
+
+.PHONY : primer/ch12/ex-unique.i
+
+# target to preprocess a source file
+primer/ch12/ex-unique.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/primer/ch12/ex-unique.cpp.i
+.PHONY : primer/ch12/ex-unique.cpp.i
+
+primer/ch12/ex-unique.s: primer/ch12/ex-unique.cpp.s
+
+.PHONY : primer/ch12/ex-unique.s
+
+# target to generate assembly for a file
+primer/ch12/ex-unique.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/primer/ch12/ex-unique.cpp.s
+.PHONY : primer/ch12/ex-unique.cpp.s
+
+primer/ch13/ex-copy.o: primer/ch13/ex-copy.cpp.o
+
+.PHONY : primer/ch13/ex-copy.o
+
+# target to build an object file
+primer/ch13/ex-copy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/primer/ch13/ex-copy.cpp.o
+.PHONY : primer/ch13/ex-copy.cpp.o
+
+primer/ch13/ex-copy.i: primer/ch13/ex-copy.cpp.i
+
+.PHONY : primer/ch13/ex-copy.i
+
+# target to preprocess a source file
+primer/ch13/ex-copy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/primer/ch13/ex-copy.cpp.i
+.PHONY : primer/ch13/ex-copy.cpp.i
+
+primer/ch13/ex-copy.s: primer/ch13/ex-copy.cpp.s
+
+.PHONY : primer/ch13/ex-copy.s
+
+# target to generate assembly for a file
+primer/ch13/ex-copy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/primer/ch13/ex-copy.cpp.s
+.PHONY : primer/ch13/ex-copy.cpp.s
+
+primer/ch14/ex-operator-overloading.o: primer/ch14/ex-operator-overloading.cpp.o
+
+.PHONY : primer/ch14/ex-operator-overloading.o
+
+# target to build an object file
+primer/ch14/ex-operator-overloading.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/primer/ch14/ex-operator-overloading.cpp.o
+.PHONY : primer/ch14/ex-operator-overloading.cpp.o
+
+primer/ch14/ex-operator-overloading.i: primer/ch14/ex-operator-overloading.cpp.i
+
+.PHONY : primer/ch14/ex-operator-overloading.i
+
+# target to preprocess a source file
+primer/ch14/ex-operator-overloading.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/primer/ch14/ex-operator-overloading.cpp.i
+.PHONY : primer/ch14/ex-operator-overloading.cpp.i
+
+primer/ch14/ex-operator-overloading.s: primer/ch14/ex-operator-overloading.cpp.s
+
+.PHONY : primer/ch14/ex-operator-overloading.s
+
+# target to generate assembly for a file
+primer/ch14/ex-operator-overloading.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/primer/ch14/ex-operator-overloading.cpp.s
+.PHONY : primer/ch14/ex-operator-overloading.cpp.s
+
+primer/ch15/main.o: primer/ch15/main.cpp.o
+
+.PHONY : primer/ch15/main.o
+
+# target to build an object file
+primer/ch15/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch15/main.cpp.o
+.PHONY : primer/ch15/main.cpp.o
+
+primer/ch15/main.i: primer/ch15/main.cpp.i
+
+.PHONY : primer/ch15/main.i
+
+# target to preprocess a source file
+primer/ch15/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch15/main.cpp.i
+.PHONY : primer/ch15/main.cpp.i
+
+primer/ch15/main.s: primer/ch15/main.cpp.s
+
+.PHONY : primer/ch15/main.s
+
+# target to generate assembly for a file
+primer/ch15/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch15/main.cpp.s
+.PHONY : primer/ch15/main.cpp.s
 
 primer/ch16/crtp.o: primer/ch16/crtp.cpp.o
 
@@ -309,7 +2015,7 @@ primer/ch16/main.o: primer/ch16/main.cpp.o
 
 # target to build an object file
 primer/ch16/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch16/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/primer/ch16/main.cpp.o
 .PHONY : primer/ch16/main.cpp.o
 
 primer/ch16/main.i: primer/ch16/main.cpp.i
@@ -318,7 +2024,7 @@ primer/ch16/main.i: primer/ch16/main.cpp.i
 
 # target to preprocess a source file
 primer/ch16/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch16/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/primer/ch16/main.cpp.i
 .PHONY : primer/ch16/main.cpp.i
 
 primer/ch16/main.s: primer/ch16/main.cpp.s
@@ -327,8 +2033,62 @@ primer/ch16/main.s: primer/ch16/main.cpp.s
 
 # target to generate assembly for a file
 primer/ch16/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/primer/ch16/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/primer/ch16/main.cpp.s
 .PHONY : primer/ch16/main.cpp.s
+
+primer/ch17/ex-random.o: primer/ch17/ex-random.cpp.o
+
+.PHONY : primer/ch17/ex-random.o
+
+# target to build an object file
+primer/ch17/ex-random.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/primer/ch17/ex-random.cpp.o
+.PHONY : primer/ch17/ex-random.cpp.o
+
+primer/ch17/ex-random.i: primer/ch17/ex-random.cpp.i
+
+.PHONY : primer/ch17/ex-random.i
+
+# target to preprocess a source file
+primer/ch17/ex-random.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/primer/ch17/ex-random.cpp.i
+.PHONY : primer/ch17/ex-random.cpp.i
+
+primer/ch17/ex-random.s: primer/ch17/ex-random.cpp.s
+
+.PHONY : primer/ch17/ex-random.s
+
+# target to generate assembly for a file
+primer/ch17/ex-random.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/primer/ch17/ex-random.cpp.s
+.PHONY : primer/ch17/ex-random.cpp.s
+
+primer/ch17/ex-tuple.o: primer/ch17/ex-tuple.cpp.o
+
+.PHONY : primer/ch17/ex-tuple.o
+
+# target to build an object file
+primer/ch17/ex-tuple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/primer/ch17/ex-tuple.cpp.o
+.PHONY : primer/ch17/ex-tuple.cpp.o
+
+primer/ch17/ex-tuple.i: primer/ch17/ex-tuple.cpp.i
+
+.PHONY : primer/ch17/ex-tuple.i
+
+# target to preprocess a source file
+primer/ch17/ex-tuple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/primer/ch17/ex-tuple.cpp.i
+.PHONY : primer/ch17/ex-tuple.cpp.i
+
+primer/ch17/ex-tuple.s: primer/ch17/ex-tuple.cpp.s
+
+.PHONY : primer/ch17/ex-tuple.s
+
+# target to generate assembly for a file
+primer/ch17/ex-tuple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/primer/ch17/ex-tuple.cpp.s
+.PHONY : primer/ch17/ex-tuple.cpp.s
 
 # Help Target
 help:
@@ -338,26 +2098,202 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 1.10"
+	@echo "... 1.11"
+	@echo "... 1.12"
+	@echo "... 1.14"
+	@echo "... 1.23"
+	@echo "... 2.36"
 	@echo "... a"
 	@echo "... b"
 	@echo "... c"
 	@echo "... crtp"
 	@echo "... d"
+	@echo "... e"
+	@echo "... ex-adt"
+	@echo "... ex-alias"
+	@echo "... ex-allocator"
+	@echo "... ex-array"
+	@echo "... ex-assign"
+	@echo "... ex-bitwise"
+	@echo "... ex-ccopy"
+	@echo "... ex-clz"
+	@echo "... ex-constructor"
+	@echo "... ex-decltype"
+	@echo "... ex-dynamic"
+	@echo "... ex-free"
+	@echo "... ex-func"
+	@echo "... ex-io"
+	@echo "... ex-multi"
+	@echo "... ex-operator-overloading"
+	@echo "... ex-pointer-arithmetic"
+	@echo "... ex-random"
+	@echo "... ex-static"
+	@echo "... ex-string"
+	@echo "... ex-tuple"
+	@echo "... ex-unique"
+	@echo "... ex-varying"
+	@echo "... ex1"
+	@echo "... ex3"
+	@echo "... ex5"
+	@echo "... ex6"
+	@echo "... ex8"
+	@echo "... f"
+	@echo "... learncpp_a"
+	@echo "... learncpp_cast"
+	@echo "... learncpp_class"
+	@echo "... learncpp_class_template"
+	@echo "... learncpp_ctad"
+	@echo "... learncpp_func"
+	@echo "... learncpp_goto"
+	@echo "... learncpp_struct"
+	@echo "... learncpp/cast.o"
+	@echo "... learncpp/cast.i"
+	@echo "... learncpp/cast.s"
+	@echo "... learncpp/class-template.o"
+	@echo "... learncpp/class-template.i"
+	@echo "... learncpp/class-template.s"
+	@echo "... learncpp/class.o"
+	@echo "... learncpp/class.i"
+	@echo "... learncpp/class.s"
+	@echo "... learncpp/ctad.o"
+	@echo "... learncpp/ctad.i"
+	@echo "... learncpp/ctad.s"
+	@echo "... learncpp/exp.o"
+	@echo "... learncpp/exp.i"
+	@echo "... learncpp/exp.s"
+	@echo "... learncpp/func.o"
+	@echo "... learncpp/func.i"
+	@echo "... learncpp/func.s"
+	@echo "... learncpp/goto.o"
+	@echo "... learncpp/goto.i"
+	@echo "... learncpp/goto.s"
+	@echo "... learncpp/struct.o"
+	@echo "... learncpp/struct.i"
+	@echo "... learncpp/struct.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... primer/ch01/1.10.o"
+	@echo "... primer/ch01/1.10.i"
+	@echo "... primer/ch01/1.10.s"
+	@echo "... primer/ch01/1.11.o"
+	@echo "... primer/ch01/1.11.i"
+	@echo "... primer/ch01/1.11.s"
+	@echo "... primer/ch01/1.12.o"
+	@echo "... primer/ch01/1.12.i"
+	@echo "... primer/ch01/1.12.s"
+	@echo "... primer/ch01/1.14.o"
+	@echo "... primer/ch01/1.14.i"
+	@echo "... primer/ch01/1.14.s"
+	@echo "... primer/ch01/1.23.o"
+	@echo "... primer/ch01/1.23.i"
+	@echo "... primer/ch01/1.23.s"
+	@echo "... primer/ch01/ex1.o"
+	@echo "... primer/ch01/ex1.i"
+	@echo "... primer/ch01/ex1.s"
+	@echo "... primer/ch01/ex3-while.o"
+	@echo "... primer/ch01/ex3-while.i"
+	@echo "... primer/ch01/ex3-while.s"
+	@echo "... primer/ch01/ex5-flow.o"
+	@echo "... primer/ch01/ex5-flow.i"
+	@echo "... primer/ch01/ex5-flow.s"
+	@echo "... primer/ch01/ex6-if.o"
+	@echo "... primer/ch01/ex6-if.i"
+	@echo "... primer/ch01/ex6-if.s"
+	@echo "... primer/ch01/ex8-book.o"
+	@echo "... primer/ch01/ex8-book.i"
+	@echo "... primer/ch01/ex8-book.s"
 	@echo "... primer/ch01/main.o"
 	@echo "... primer/ch01/main.i"
 	@echo "... primer/ch01/main.s"
+	@echo "... primer/ch02/2.36.o"
+	@echo "... primer/ch02/2.36.i"
+	@echo "... primer/ch02/2.36.s"
+	@echo "... primer/ch02/ex-alias.o"
+	@echo "... primer/ch02/ex-alias.i"
+	@echo "... primer/ch02/ex-alias.s"
+	@echo "... primer/ch02/ex-decltype.o"
+	@echo "... primer/ch02/ex-decltype.i"
+	@echo "... primer/ch02/ex-decltype.s"
+	@echo "... primer/ch03/ex-multidimension.o"
+	@echo "... primer/ch03/ex-multidimension.i"
+	@echo "... primer/ch03/ex-multidimension.s"
+	@echo "... primer/ch03/ex-pointer-arithmetic.o"
+	@echo "... primer/ch03/ex-pointer-arithmetic.i"
+	@echo "... primer/ch03/ex-pointer-arithmetic.s"
 	@echo "... primer/ch03/main.o"
 	@echo "... primer/ch03/main.i"
 	@echo "... primer/ch03/main.s"
+	@echo "... primer/ch04/ex-assign.o"
+	@echo "... primer/ch04/ex-assign.i"
+	@echo "... primer/ch04/ex-assign.s"
+	@echo "... primer/ch04/ex-bitwise.o"
+	@echo "... primer/ch04/ex-bitwise.i"
+	@echo "... primer/ch04/ex-bitwise.s"
+	@echo "... primer/ch06/ex-array.o"
+	@echo "... primer/ch06/ex-array.i"
+	@echo "... primer/ch06/ex-array.s"
+	@echo "... primer/ch06/ex-func.o"
+	@echo "... primer/ch06/ex-func.i"
+	@echo "... primer/ch06/ex-func.s"
+	@echo "... primer/ch06/ex-varying.o"
+	@echo "... primer/ch06/ex-varying.i"
+	@echo "... primer/ch06/ex-varying.s"
+	@echo "... primer/ch07/ex-adt.o"
+	@echo "... primer/ch07/ex-adt.i"
+	@echo "... primer/ch07/ex-adt.s"
+	@echo "... primer/ch07/ex-clz.o"
+	@echo "... primer/ch07/ex-clz.i"
+	@echo "... primer/ch07/ex-clz.s"
+	@echo "... primer/ch07/ex-constructor.o"
+	@echo "... primer/ch07/ex-constructor.i"
+	@echo "... primer/ch07/ex-constructor.s"
+	@echo "... primer/ch07/ex-static.o"
+	@echo "... primer/ch07/ex-static.i"
+	@echo "... primer/ch07/ex-static.s"
+	@echo "... primer/ch07/main.o"
+	@echo "... primer/ch07/main.i"
+	@echo "... primer/ch07/main.s"
+	@echo "... primer/ch08/ex-io.o"
+	@echo "... primer/ch08/ex-io.i"
+	@echo "... primer/ch08/ex-io.s"
+	@echo "... primer/ch08/ex-string.o"
+	@echo "... primer/ch08/ex-string.i"
+	@echo "... primer/ch08/ex-string.s"
+	@echo "... primer/ch12/ex-allocator.o"
+	@echo "... primer/ch12/ex-allocator.i"
+	@echo "... primer/ch12/ex-allocator.s"
+	@echo "... primer/ch12/ex-dynamic.o"
+	@echo "... primer/ch12/ex-dynamic.i"
+	@echo "... primer/ch12/ex-dynamic.s"
+	@echo "... primer/ch12/ex-new-free.o"
+	@echo "... primer/ch12/ex-new-free.i"
+	@echo "... primer/ch12/ex-new-free.s"
+	@echo "... primer/ch12/ex-unique.o"
+	@echo "... primer/ch12/ex-unique.i"
+	@echo "... primer/ch12/ex-unique.s"
+	@echo "... primer/ch13/ex-copy.o"
+	@echo "... primer/ch13/ex-copy.i"
+	@echo "... primer/ch13/ex-copy.s"
+	@echo "... primer/ch14/ex-operator-overloading.o"
+	@echo "... primer/ch14/ex-operator-overloading.i"
+	@echo "... primer/ch14/ex-operator-overloading.s"
+	@echo "... primer/ch15/main.o"
+	@echo "... primer/ch15/main.i"
+	@echo "... primer/ch15/main.s"
 	@echo "... primer/ch16/crtp.o"
 	@echo "... primer/ch16/crtp.i"
 	@echo "... primer/ch16/crtp.s"
 	@echo "... primer/ch16/main.o"
 	@echo "... primer/ch16/main.i"
 	@echo "... primer/ch16/main.s"
+	@echo "... primer/ch17/ex-random.o"
+	@echo "... primer/ch17/ex-random.i"
+	@echo "... primer/ch17/ex-random.s"
+	@echo "... primer/ch17/ex-tuple.o"
+	@echo "... primer/ch17/ex-tuple.i"
+	@echo "... primer/ch17/ex-tuple.s"
 .PHONY : help
 
 

@@ -73,11 +73,55 @@ CMAKE_BINARY_DIR = /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debu
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/crtp.dir/all
-all: CMakeFiles/d.dir/all
+all: CMakeFiles/ex-ccopy.dir/all
+all: CMakeFiles/ex-allocator.dir/all
+all: CMakeFiles/ex-varying.dir/all
+all: CMakeFiles/learncpp_class.dir/all
+all: CMakeFiles/learncpp_func.dir/all
+all: CMakeFiles/learncpp_cast.dir/all
+all: CMakeFiles/ex-io.dir/all
+all: CMakeFiles/f.dir/all
 all: CMakeFiles/b.dir/all
-all: CMakeFiles/c.dir/all
+all: CMakeFiles/learncpp_struct.dir/all
+all: CMakeFiles/2.36.dir/all
+all: CMakeFiles/1.23.dir/all
+all: CMakeFiles/ex-pointer-arithmetic.dir/all
+all: CMakeFiles/1.11.dir/all
+all: CMakeFiles/1.10.dir/all
+all: CMakeFiles/ex-assign.dir/all
+all: CMakeFiles/crtp.dir/all
+all: CMakeFiles/ex-string.dir/all
+all: CMakeFiles/ex-random.dir/all
+all: CMakeFiles/ex3.dir/all
 all: CMakeFiles/a.dir/all
+all: CMakeFiles/ex-clz.dir/all
+all: CMakeFiles/ex-unique.dir/all
+all: CMakeFiles/ex-adt.dir/all
+all: CMakeFiles/ex-array.dir/all
+all: CMakeFiles/ex-tuple.dir/all
+all: CMakeFiles/learncpp_goto.dir/all
+all: CMakeFiles/1.14.dir/all
+all: CMakeFiles/ex1.dir/all
+all: CMakeFiles/ex-func.dir/all
+all: CMakeFiles/c.dir/all
+all: CMakeFiles/ex6.dir/all
+all: CMakeFiles/ex-bitwise.dir/all
+all: CMakeFiles/ex-constructor.dir/all
+all: CMakeFiles/ex-operator-overloading.dir/all
+all: CMakeFiles/ex-dynamic.dir/all
+all: CMakeFiles/ex-decltype.dir/all
+all: CMakeFiles/learncpp_ctad.dir/all
+all: CMakeFiles/d.dir/all
+all: CMakeFiles/ex-alias.dir/all
+all: CMakeFiles/ex-free.dir/all
+all: CMakeFiles/ex8.dir/all
+all: CMakeFiles/e.dir/all
+all: CMakeFiles/ex-multi.dir/all
+all: CMakeFiles/ex-static.dir/all
+all: CMakeFiles/1.12.dir/all
+all: CMakeFiles/learncpp_a.dir/all
+all: CMakeFiles/learncpp_class_template.dir/all
+all: CMakeFiles/ex5.dir/all
 
 .PHONY : all
 
@@ -87,67 +131,273 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/crtp.dir/clean
-clean: CMakeFiles/d.dir/clean
+clean: CMakeFiles/ex-ccopy.dir/clean
+clean: CMakeFiles/ex-allocator.dir/clean
+clean: CMakeFiles/ex-varying.dir/clean
+clean: CMakeFiles/learncpp_class.dir/clean
+clean: CMakeFiles/learncpp_func.dir/clean
+clean: CMakeFiles/learncpp_cast.dir/clean
+clean: CMakeFiles/ex-io.dir/clean
+clean: CMakeFiles/f.dir/clean
 clean: CMakeFiles/b.dir/clean
-clean: CMakeFiles/c.dir/clean
+clean: CMakeFiles/learncpp_struct.dir/clean
+clean: CMakeFiles/2.36.dir/clean
+clean: CMakeFiles/1.23.dir/clean
+clean: CMakeFiles/ex-pointer-arithmetic.dir/clean
+clean: CMakeFiles/1.11.dir/clean
+clean: CMakeFiles/1.10.dir/clean
+clean: CMakeFiles/ex-assign.dir/clean
+clean: CMakeFiles/crtp.dir/clean
+clean: CMakeFiles/ex-string.dir/clean
+clean: CMakeFiles/ex-random.dir/clean
+clean: CMakeFiles/ex3.dir/clean
 clean: CMakeFiles/a.dir/clean
+clean: CMakeFiles/ex-clz.dir/clean
+clean: CMakeFiles/ex-unique.dir/clean
+clean: CMakeFiles/ex-adt.dir/clean
+clean: CMakeFiles/ex-array.dir/clean
+clean: CMakeFiles/ex-tuple.dir/clean
+clean: CMakeFiles/learncpp_goto.dir/clean
+clean: CMakeFiles/1.14.dir/clean
+clean: CMakeFiles/ex1.dir/clean
+clean: CMakeFiles/ex-func.dir/clean
+clean: CMakeFiles/c.dir/clean
+clean: CMakeFiles/ex6.dir/clean
+clean: CMakeFiles/ex-bitwise.dir/clean
+clean: CMakeFiles/ex-constructor.dir/clean
+clean: CMakeFiles/ex-operator-overloading.dir/clean
+clean: CMakeFiles/ex-dynamic.dir/clean
+clean: CMakeFiles/ex-decltype.dir/clean
+clean: CMakeFiles/learncpp_ctad.dir/clean
+clean: CMakeFiles/d.dir/clean
+clean: CMakeFiles/ex-alias.dir/clean
+clean: CMakeFiles/ex-free.dir/clean
+clean: CMakeFiles/ex8.dir/clean
+clean: CMakeFiles/e.dir/clean
+clean: CMakeFiles/ex-multi.dir/clean
+clean: CMakeFiles/ex-static.dir/clean
+clean: CMakeFiles/1.12.dir/clean
+clean: CMakeFiles/learncpp_a.dir/clean
+clean: CMakeFiles/learncpp_class_template.dir/clean
+clean: CMakeFiles/ex5.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/crtp.dir
+# Target rules for target CMakeFiles/ex-ccopy.dir
 
 # All Build rule for target.
-CMakeFiles/crtp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target crtp"
-.PHONY : CMakeFiles/crtp.dir/all
+CMakeFiles/ex-ccopy.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target ex-ccopy"
+.PHONY : CMakeFiles/ex-ccopy.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/crtp.dir/rule: cmake_check_build_system
+CMakeFiles/ex-ccopy.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/crtp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-ccopy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/crtp.dir/rule
+.PHONY : CMakeFiles/ex-ccopy.dir/rule
 
 # Convenience name for target.
-crtp: CMakeFiles/crtp.dir/rule
+ex-ccopy: CMakeFiles/ex-ccopy.dir/rule
 
-.PHONY : crtp
+.PHONY : ex-ccopy
 
 # clean rule for target.
-CMakeFiles/crtp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/clean
-.PHONY : CMakeFiles/crtp.dir/clean
+CMakeFiles/ex-ccopy.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-ccopy.dir/build.make CMakeFiles/ex-ccopy.dir/clean
+.PHONY : CMakeFiles/ex-ccopy.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/d.dir
+# Target rules for target CMakeFiles/ex-allocator.dir
 
 # All Build rule for target.
-CMakeFiles/d.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target d"
-.PHONY : CMakeFiles/d.dir/all
+CMakeFiles/ex-allocator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target ex-allocator"
+.PHONY : CMakeFiles/ex-allocator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/d.dir/rule: cmake_check_build_system
+CMakeFiles/ex-allocator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/d.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-allocator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/d.dir/rule
+.PHONY : CMakeFiles/ex-allocator.dir/rule
 
 # Convenience name for target.
-d : CMakeFiles/d.dir/rule
+ex-allocator: CMakeFiles/ex-allocator.dir/rule
 
-.PHONY : d
+.PHONY : ex-allocator
 
 # clean rule for target.
-CMakeFiles/d.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/clean
-.PHONY : CMakeFiles/d.dir/clean
+CMakeFiles/ex-allocator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-allocator.dir/build.make CMakeFiles/ex-allocator.dir/clean
+.PHONY : CMakeFiles/ex-allocator.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-varying.dir
+
+# All Build rule for target.
+CMakeFiles/ex-varying.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=69,70 "Built target ex-varying"
+.PHONY : CMakeFiles/ex-varying.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-varying.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-varying.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-varying.dir/rule
+
+# Convenience name for target.
+ex-varying: CMakeFiles/ex-varying.dir/rule
+
+.PHONY : ex-varying
+
+# clean rule for target.
+CMakeFiles/ex-varying.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-varying.dir/build.make CMakeFiles/ex-varying.dir/clean
+.PHONY : CMakeFiles/ex-varying.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_class.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_class.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=87,88 "Built target learncpp_class"
+.PHONY : CMakeFiles/learncpp_class.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_class.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_class.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_class.dir/rule
+
+# Convenience name for target.
+learncpp_class: CMakeFiles/learncpp_class.dir/rule
+
+.PHONY : learncpp_class
+
+# clean rule for target.
+CMakeFiles/learncpp_class.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class.dir/build.make CMakeFiles/learncpp_class.dir/clean
+.PHONY : CMakeFiles/learncpp_class.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_func.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_func.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=93,94 "Built target learncpp_func"
+.PHONY : CMakeFiles/learncpp_func.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_func.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_func.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_func.dir/rule
+
+# Convenience name for target.
+learncpp_func: CMakeFiles/learncpp_func.dir/rule
+
+.PHONY : learncpp_func
+
+# clean rule for target.
+CMakeFiles/learncpp_func.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_func.dir/build.make CMakeFiles/learncpp_func.dir/clean
+.PHONY : CMakeFiles/learncpp_func.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_cast.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_cast.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=85,86 "Built target learncpp_cast"
+.PHONY : CMakeFiles/learncpp_cast.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_cast.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_cast.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_cast.dir/rule
+
+# Convenience name for target.
+learncpp_cast: CMakeFiles/learncpp_cast.dir/rule
+
+.PHONY : learncpp_cast
+
+# clean rule for target.
+CMakeFiles/learncpp_cast.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_cast.dir/build.make CMakeFiles/learncpp_cast.dir/clean
+.PHONY : CMakeFiles/learncpp_cast.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-io.dir
+
+# All Build rule for target.
+CMakeFiles/ex-io.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=51,52 "Built target ex-io"
+.PHONY : CMakeFiles/ex-io.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-io.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-io.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-io.dir/rule
+
+# Convenience name for target.
+ex-io: CMakeFiles/ex-io.dir/rule
+
+.PHONY : ex-io
+
+# clean rule for target.
+CMakeFiles/ex-io.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-io.dir/build.make CMakeFiles/ex-io.dir/clean
+.PHONY : CMakeFiles/ex-io.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/f.dir
+
+# All Build rule for target.
+CMakeFiles/f.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=81,82 "Built target f"
+.PHONY : CMakeFiles/f.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/f.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/f.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/f.dir/rule
+
+# Convenience name for target.
+f : CMakeFiles/f.dir/rule
+
+.PHONY : f
+
+# clean rule for target.
+CMakeFiles/f.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/clean
+.PHONY : CMakeFiles/f.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/b.dir
@@ -156,7 +406,7 @@ CMakeFiles/d.dir/clean:
 CMakeFiles/b.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target b"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target b"
 .PHONY : CMakeFiles/b.dir/all
 
 # Build rule for subdir invocation for target.
@@ -177,13 +427,580 @@ CMakeFiles/b.dir/clean:
 .PHONY : CMakeFiles/b.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/learncpp_struct.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_struct.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=97,98 "Built target learncpp_struct"
+.PHONY : CMakeFiles/learncpp_struct.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_struct.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_struct.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_struct.dir/rule
+
+# Convenience name for target.
+learncpp_struct: CMakeFiles/learncpp_struct.dir/rule
+
+.PHONY : learncpp_struct
+
+# clean rule for target.
+CMakeFiles/learncpp_struct.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_struct.dir/build.make CMakeFiles/learncpp_struct.dir/clean
+.PHONY : CMakeFiles/learncpp_struct.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/2.36.dir
+
+# All Build rule for target.
+CMakeFiles/2.36.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target 2.36"
+.PHONY : CMakeFiles/2.36.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/2.36.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/2.36.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/2.36.dir/rule
+
+# Convenience name for target.
+2.36: CMakeFiles/2.36.dir/rule
+
+.PHONY : 2.36
+
+# clean rule for target.
+CMakeFiles/2.36.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2.36.dir/build.make CMakeFiles/2.36.dir/clean
+.PHONY : CMakeFiles/2.36.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1.23.dir
+
+# All Build rule for target.
+CMakeFiles/1.23.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target 1.23"
+.PHONY : CMakeFiles/1.23.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1.23.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1.23.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1.23.dir/rule
+
+# Convenience name for target.
+1.23: CMakeFiles/1.23.dir/rule
+
+.PHONY : 1.23
+
+# clean rule for target.
+CMakeFiles/1.23.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.23.dir/build.make CMakeFiles/1.23.dir/clean
+.PHONY : CMakeFiles/1.23.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-pointer-arithmetic.dir
+
+# All Build rule for target.
+CMakeFiles/ex-pointer-arithmetic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=57,58 "Built target ex-pointer-arithmetic"
+.PHONY : CMakeFiles/ex-pointer-arithmetic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-pointer-arithmetic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-pointer-arithmetic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-pointer-arithmetic.dir/rule
+
+# Convenience name for target.
+ex-pointer-arithmetic: CMakeFiles/ex-pointer-arithmetic.dir/rule
+
+.PHONY : ex-pointer-arithmetic
+
+# clean rule for target.
+CMakeFiles/ex-pointer-arithmetic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-pointer-arithmetic.dir/build.make CMakeFiles/ex-pointer-arithmetic.dir/clean
+.PHONY : CMakeFiles/ex-pointer-arithmetic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1.11.dir
+
+# All Build rule for target.
+CMakeFiles/1.11.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target 1.11"
+.PHONY : CMakeFiles/1.11.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1.11.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1.11.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1.11.dir/rule
+
+# Convenience name for target.
+1.11: CMakeFiles/1.11.dir/rule
+
+.PHONY : 1.11
+
+# clean rule for target.
+CMakeFiles/1.11.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.11.dir/build.make CMakeFiles/1.11.dir/clean
+.PHONY : CMakeFiles/1.11.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1.10.dir
+
+# All Build rule for target.
+CMakeFiles/1.10.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 1.10"
+.PHONY : CMakeFiles/1.10.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1.10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1.10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1.10.dir/rule
+
+# Convenience name for target.
+1.10: CMakeFiles/1.10.dir/rule
+
+.PHONY : 1.10
+
+# clean rule for target.
+CMakeFiles/1.10.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.10.dir/build.make CMakeFiles/1.10.dir/clean
+.PHONY : CMakeFiles/1.10.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-assign.dir
+
+# All Build rule for target.
+CMakeFiles/ex-assign.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target ex-assign"
+.PHONY : CMakeFiles/ex-assign.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-assign.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-assign.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-assign.dir/rule
+
+# Convenience name for target.
+ex-assign: CMakeFiles/ex-assign.dir/rule
+
+.PHONY : ex-assign
+
+# clean rule for target.
+CMakeFiles/ex-assign.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-assign.dir/build.make CMakeFiles/ex-assign.dir/clean
+.PHONY : CMakeFiles/ex-assign.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/crtp.dir
+
+# All Build rule for target.
+CMakeFiles/crtp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target crtp"
+.PHONY : CMakeFiles/crtp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/crtp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/crtp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/crtp.dir/rule
+
+# Convenience name for target.
+crtp: CMakeFiles/crtp.dir/rule
+
+.PHONY : crtp
+
+# clean rule for target.
+CMakeFiles/crtp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crtp.dir/build.make CMakeFiles/crtp.dir/clean
+.PHONY : CMakeFiles/crtp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-string.dir
+
+# All Build rule for target.
+CMakeFiles/ex-string.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=63,64 "Built target ex-string"
+.PHONY : CMakeFiles/ex-string.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-string.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-string.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-string.dir/rule
+
+# Convenience name for target.
+ex-string: CMakeFiles/ex-string.dir/rule
+
+.PHONY : ex-string
+
+# clean rule for target.
+CMakeFiles/ex-string.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-string.dir/build.make CMakeFiles/ex-string.dir/clean
+.PHONY : CMakeFiles/ex-string.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-random.dir
+
+# All Build rule for target.
+CMakeFiles/ex-random.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=59,60 "Built target ex-random"
+.PHONY : CMakeFiles/ex-random.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-random.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-random.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-random.dir/rule
+
+# Convenience name for target.
+ex-random: CMakeFiles/ex-random.dir/rule
+
+.PHONY : ex-random
+
+# clean rule for target.
+CMakeFiles/ex-random.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-random.dir/build.make CMakeFiles/ex-random.dir/clean
+.PHONY : CMakeFiles/ex-random.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex3.dir
+
+# All Build rule for target.
+CMakeFiles/ex3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=73,74 "Built target ex3"
+.PHONY : CMakeFiles/ex3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex3.dir/rule
+
+# Convenience name for target.
+ex3: CMakeFiles/ex3.dir/rule
+
+.PHONY : ex3
+
+# clean rule for target.
+CMakeFiles/ex3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/clean
+.PHONY : CMakeFiles/ex3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/a.dir
+
+# All Build rule for target.
+CMakeFiles/a.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target a"
+.PHONY : CMakeFiles/a.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/a.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/a.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/a.dir/rule
+
+# Convenience name for target.
+a : CMakeFiles/a.dir/rule
+
+.PHONY : a
+
+# clean rule for target.
+CMakeFiles/a.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/clean
+.PHONY : CMakeFiles/a.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-clz.dir
+
+# All Build rule for target.
+CMakeFiles/ex-clz.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target ex-clz"
+.PHONY : CMakeFiles/ex-clz.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-clz.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-clz.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-clz.dir/rule
+
+# Convenience name for target.
+ex-clz: CMakeFiles/ex-clz.dir/rule
+
+.PHONY : ex-clz
+
+# clean rule for target.
+CMakeFiles/ex-clz.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-clz.dir/build.make CMakeFiles/ex-clz.dir/clean
+.PHONY : CMakeFiles/ex-clz.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-unique.dir
+
+# All Build rule for target.
+CMakeFiles/ex-unique.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=67,68 "Built target ex-unique"
+.PHONY : CMakeFiles/ex-unique.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-unique.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-unique.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-unique.dir/rule
+
+# Convenience name for target.
+ex-unique: CMakeFiles/ex-unique.dir/rule
+
+.PHONY : ex-unique
+
+# clean rule for target.
+CMakeFiles/ex-unique.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-unique.dir/build.make CMakeFiles/ex-unique.dir/clean
+.PHONY : CMakeFiles/ex-unique.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-adt.dir
+
+# All Build rule for target.
+CMakeFiles/ex-adt.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target ex-adt"
+.PHONY : CMakeFiles/ex-adt.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-adt.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-adt.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-adt.dir/rule
+
+# Convenience name for target.
+ex-adt: CMakeFiles/ex-adt.dir/rule
+
+.PHONY : ex-adt
+
+# clean rule for target.
+CMakeFiles/ex-adt.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-adt.dir/build.make CMakeFiles/ex-adt.dir/clean
+.PHONY : CMakeFiles/ex-adt.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-array.dir
+
+# All Build rule for target.
+CMakeFiles/ex-array.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target ex-array"
+.PHONY : CMakeFiles/ex-array.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-array.dir/rule
+
+# Convenience name for target.
+ex-array: CMakeFiles/ex-array.dir/rule
+
+.PHONY : ex-array
+
+# clean rule for target.
+CMakeFiles/ex-array.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-array.dir/build.make CMakeFiles/ex-array.dir/clean
+.PHONY : CMakeFiles/ex-array.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-tuple.dir
+
+# All Build rule for target.
+CMakeFiles/ex-tuple.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=65,66 "Built target ex-tuple"
+.PHONY : CMakeFiles/ex-tuple.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-tuple.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-tuple.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-tuple.dir/rule
+
+# Convenience name for target.
+ex-tuple: CMakeFiles/ex-tuple.dir/rule
+
+.PHONY : ex-tuple
+
+# clean rule for target.
+CMakeFiles/ex-tuple.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-tuple.dir/build.make CMakeFiles/ex-tuple.dir/clean
+.PHONY : CMakeFiles/ex-tuple.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_goto.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_goto.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=95,96 "Built target learncpp_goto"
+.PHONY : CMakeFiles/learncpp_goto.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_goto.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_goto.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_goto.dir/rule
+
+# Convenience name for target.
+learncpp_goto: CMakeFiles/learncpp_goto.dir/rule
+
+.PHONY : learncpp_goto
+
+# clean rule for target.
+CMakeFiles/learncpp_goto.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_goto.dir/build.make CMakeFiles/learncpp_goto.dir/clean
+.PHONY : CMakeFiles/learncpp_goto.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1.14.dir
+
+# All Build rule for target.
+CMakeFiles/1.14.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target 1.14"
+.PHONY : CMakeFiles/1.14.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1.14.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1.14.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1.14.dir/rule
+
+# Convenience name for target.
+1.14: CMakeFiles/1.14.dir/rule
+
+.PHONY : 1.14
+
+# clean rule for target.
+CMakeFiles/1.14.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.14.dir/build.make CMakeFiles/1.14.dir/clean
+.PHONY : CMakeFiles/1.14.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex1.dir
+
+# All Build rule for target.
+CMakeFiles/ex1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=71,72 "Built target ex1"
+.PHONY : CMakeFiles/ex1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex1.dir/rule
+
+# Convenience name for target.
+ex1: CMakeFiles/ex1.dir/rule
+
+.PHONY : ex1
+
+# clean rule for target.
+CMakeFiles/ex1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex1.dir/build.make CMakeFiles/ex1.dir/clean
+.PHONY : CMakeFiles/ex1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-func.dir
+
+# All Build rule for target.
+CMakeFiles/ex-func.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target ex-func"
+.PHONY : CMakeFiles/ex-func.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-func.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-func.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-func.dir/rule
+
+# Convenience name for target.
+ex-func: CMakeFiles/ex-func.dir/rule
+
+.PHONY : ex-func
+
+# clean rule for target.
+CMakeFiles/ex-func.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-func.dir/build.make CMakeFiles/ex-func.dir/clean
+.PHONY : CMakeFiles/ex-func.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/c.dir
 
 # All Build rule for target.
 CMakeFiles/c.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target c"
 .PHONY : CMakeFiles/c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -204,31 +1021,490 @@ CMakeFiles/c.dir/clean:
 .PHONY : CMakeFiles/c.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/a.dir
+# Target rules for target CMakeFiles/ex6.dir
 
 # All Build rule for target.
-CMakeFiles/a.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target a"
-.PHONY : CMakeFiles/a.dir/all
+CMakeFiles/ex6.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=77,78 "Built target ex6"
+.PHONY : CMakeFiles/ex6.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/a.dir/rule: cmake_check_build_system
+CMakeFiles/ex6.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/a.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/a.dir/rule
+.PHONY : CMakeFiles/ex6.dir/rule
 
 # Convenience name for target.
-a : CMakeFiles/a.dir/rule
+ex6: CMakeFiles/ex6.dir/rule
 
-.PHONY : a
+.PHONY : ex6
 
 # clean rule for target.
-CMakeFiles/a.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/clean
-.PHONY : CMakeFiles/a.dir/clean
+CMakeFiles/ex6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex6.dir/build.make CMakeFiles/ex6.dir/clean
+.PHONY : CMakeFiles/ex6.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-bitwise.dir
+
+# All Build rule for target.
+CMakeFiles/ex-bitwise.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target ex-bitwise"
+.PHONY : CMakeFiles/ex-bitwise.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-bitwise.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-bitwise.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-bitwise.dir/rule
+
+# Convenience name for target.
+ex-bitwise: CMakeFiles/ex-bitwise.dir/rule
+
+.PHONY : ex-bitwise
+
+# clean rule for target.
+CMakeFiles/ex-bitwise.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-bitwise.dir/build.make CMakeFiles/ex-bitwise.dir/clean
+.PHONY : CMakeFiles/ex-bitwise.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-constructor.dir
+
+# All Build rule for target.
+CMakeFiles/ex-constructor.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target ex-constructor"
+.PHONY : CMakeFiles/ex-constructor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-constructor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-constructor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-constructor.dir/rule
+
+# Convenience name for target.
+ex-constructor: CMakeFiles/ex-constructor.dir/rule
+
+.PHONY : ex-constructor
+
+# clean rule for target.
+CMakeFiles/ex-constructor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-constructor.dir/build.make CMakeFiles/ex-constructor.dir/clean
+.PHONY : CMakeFiles/ex-constructor.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-operator-overloading.dir
+
+# All Build rule for target.
+CMakeFiles/ex-operator-overloading.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=55,56 "Built target ex-operator-overloading"
+.PHONY : CMakeFiles/ex-operator-overloading.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-operator-overloading.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-operator-overloading.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-operator-overloading.dir/rule
+
+# Convenience name for target.
+ex-operator-overloading: CMakeFiles/ex-operator-overloading.dir/rule
+
+.PHONY : ex-operator-overloading
+
+# clean rule for target.
+CMakeFiles/ex-operator-overloading.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-operator-overloading.dir/build.make CMakeFiles/ex-operator-overloading.dir/clean
+.PHONY : CMakeFiles/ex-operator-overloading.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-dynamic.dir
+
+# All Build rule for target.
+CMakeFiles/ex-dynamic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target ex-dynamic"
+.PHONY : CMakeFiles/ex-dynamic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-dynamic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-dynamic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-dynamic.dir/rule
+
+# Convenience name for target.
+ex-dynamic: CMakeFiles/ex-dynamic.dir/rule
+
+.PHONY : ex-dynamic
+
+# clean rule for target.
+CMakeFiles/ex-dynamic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-dynamic.dir/build.make CMakeFiles/ex-dynamic.dir/clean
+.PHONY : CMakeFiles/ex-dynamic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-decltype.dir
+
+# All Build rule for target.
+CMakeFiles/ex-decltype.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target ex-decltype"
+.PHONY : CMakeFiles/ex-decltype.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-decltype.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-decltype.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-decltype.dir/rule
+
+# Convenience name for target.
+ex-decltype: CMakeFiles/ex-decltype.dir/rule
+
+.PHONY : ex-decltype
+
+# clean rule for target.
+CMakeFiles/ex-decltype.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-decltype.dir/build.make CMakeFiles/ex-decltype.dir/clean
+.PHONY : CMakeFiles/ex-decltype.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_ctad.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_ctad.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=91,92 "Built target learncpp_ctad"
+.PHONY : CMakeFiles/learncpp_ctad.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_ctad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_ctad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_ctad.dir/rule
+
+# Convenience name for target.
+learncpp_ctad: CMakeFiles/learncpp_ctad.dir/rule
+
+.PHONY : learncpp_ctad
+
+# clean rule for target.
+CMakeFiles/learncpp_ctad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_ctad.dir/build.make CMakeFiles/learncpp_ctad.dir/clean
+.PHONY : CMakeFiles/learncpp_ctad.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/d.dir
+
+# All Build rule for target.
+CMakeFiles/d.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target d"
+.PHONY : CMakeFiles/d.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/d.dir/rule
+
+# Convenience name for target.
+d : CMakeFiles/d.dir/rule
+
+.PHONY : d
+
+# clean rule for target.
+CMakeFiles/d.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/d.dir/build.make CMakeFiles/d.dir/clean
+.PHONY : CMakeFiles/d.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-alias.dir
+
+# All Build rule for target.
+CMakeFiles/ex-alias.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target ex-alias"
+.PHONY : CMakeFiles/ex-alias.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-alias.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-alias.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-alias.dir/rule
+
+# Convenience name for target.
+ex-alias: CMakeFiles/ex-alias.dir/rule
+
+.PHONY : ex-alias
+
+# clean rule for target.
+CMakeFiles/ex-alias.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-alias.dir/build.make CMakeFiles/ex-alias.dir/clean
+.PHONY : CMakeFiles/ex-alias.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-free.dir
+
+# All Build rule for target.
+CMakeFiles/ex-free.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target ex-free"
+.PHONY : CMakeFiles/ex-free.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-free.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-free.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-free.dir/rule
+
+# Convenience name for target.
+ex-free: CMakeFiles/ex-free.dir/rule
+
+.PHONY : ex-free
+
+# clean rule for target.
+CMakeFiles/ex-free.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-free.dir/build.make CMakeFiles/ex-free.dir/clean
+.PHONY : CMakeFiles/ex-free.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex8.dir
+
+# All Build rule for target.
+CMakeFiles/ex8.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=79,80 "Built target ex8"
+.PHONY : CMakeFiles/ex8.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex8.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex8.dir/rule
+
+# Convenience name for target.
+ex8: CMakeFiles/ex8.dir/rule
+
+.PHONY : ex8
+
+# clean rule for target.
+CMakeFiles/ex8.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex8.dir/build.make CMakeFiles/ex8.dir/clean
+.PHONY : CMakeFiles/ex8.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/e.dir
+
+# All Build rule for target.
+CMakeFiles/e.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target e"
+.PHONY : CMakeFiles/e.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/e.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/e.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/e.dir/rule
+
+# Convenience name for target.
+e : CMakeFiles/e.dir/rule
+
+.PHONY : e
+
+# clean rule for target.
+CMakeFiles/e.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/clean
+.PHONY : CMakeFiles/e.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-multi.dir
+
+# All Build rule for target.
+CMakeFiles/ex-multi.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=53,54 "Built target ex-multi"
+.PHONY : CMakeFiles/ex-multi.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-multi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-multi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-multi.dir/rule
+
+# Convenience name for target.
+ex-multi: CMakeFiles/ex-multi.dir/rule
+
+.PHONY : ex-multi
+
+# clean rule for target.
+CMakeFiles/ex-multi.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-multi.dir/build.make CMakeFiles/ex-multi.dir/clean
+.PHONY : CMakeFiles/ex-multi.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex-static.dir
+
+# All Build rule for target.
+CMakeFiles/ex-static.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=61,62 "Built target ex-static"
+.PHONY : CMakeFiles/ex-static.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex-static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex-static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex-static.dir/rule
+
+# Convenience name for target.
+ex-static: CMakeFiles/ex-static.dir/rule
+
+.PHONY : ex-static
+
+# clean rule for target.
+CMakeFiles/ex-static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex-static.dir/build.make CMakeFiles/ex-static.dir/clean
+.PHONY : CMakeFiles/ex-static.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/1.12.dir
+
+# All Build rule for target.
+CMakeFiles/1.12.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target 1.12"
+.PHONY : CMakeFiles/1.12.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/1.12.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/1.12.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/1.12.dir/rule
+
+# Convenience name for target.
+1.12: CMakeFiles/1.12.dir/rule
+
+.PHONY : 1.12
+
+# clean rule for target.
+CMakeFiles/1.12.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/1.12.dir/build.make CMakeFiles/1.12.dir/clean
+.PHONY : CMakeFiles/1.12.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_a.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_a.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=83,84 "Built target learncpp_a"
+.PHONY : CMakeFiles/learncpp_a.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_a.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_a.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_a.dir/rule
+
+# Convenience name for target.
+learncpp_a: CMakeFiles/learncpp_a.dir/rule
+
+.PHONY : learncpp_a
+
+# clean rule for target.
+CMakeFiles/learncpp_a.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_a.dir/build.make CMakeFiles/learncpp_a.dir/clean
+.PHONY : CMakeFiles/learncpp_a.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/learncpp_class_template.dir
+
+# All Build rule for target.
+CMakeFiles/learncpp_class_template.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=89,90 "Built target learncpp_class_template"
+.PHONY : CMakeFiles/learncpp_class_template.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/learncpp_class_template.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learncpp_class_template.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/learncpp_class_template.dir/rule
+
+# Convenience name for target.
+learncpp_class_template: CMakeFiles/learncpp_class_template.dir/rule
+
+.PHONY : learncpp_class_template
+
+# clean rule for target.
+CMakeFiles/learncpp_class_template.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learncpp_class_template.dir/build.make CMakeFiles/learncpp_class_template.dir/clean
+.PHONY : CMakeFiles/learncpp_class_template.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ex5.dir
+
+# All Build rule for target.
+CMakeFiles/ex5.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles --progress-num=75,76 "Built target ex5"
+.PHONY : CMakeFiles/ex5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ex5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ex5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/viber/Mamba/THE-WAY-TO-THE-FUTURE/CPP/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ex5.dir/rule
+
+# Convenience name for target.
+ex5: CMakeFiles/ex5.dir/rule
+
+.PHONY : ex5
+
+# clean rule for target.
+CMakeFiles/ex5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ex5.dir/build.make CMakeFiles/ex5.dir/clean
+.PHONY : CMakeFiles/ex5.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

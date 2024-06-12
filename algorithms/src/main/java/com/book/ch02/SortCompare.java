@@ -1,5 +1,11 @@
 package com.book.ch02;
 
+import com.book.ch02.heap.Heap;
+import com.book.ch02.insertion.Insertion;
+import com.book.ch02.merge.Merge;
+import com.book.ch02.quick.Quick;
+import com.book.ch02.selection.Selection;
+import com.book.ch02.shellsort.Shell;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
